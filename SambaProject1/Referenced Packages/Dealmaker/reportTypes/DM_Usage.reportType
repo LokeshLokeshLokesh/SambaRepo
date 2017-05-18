@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>DM_Usage__c</baseObject>
+    <category>other</category>
+    <deployed>true</deployed>
+    <description>Dealmaker Usage object data with references to user data</description>
+    <label>DM Usage</label>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>OM Actions</displayNameOverride>
+            <field>Actions__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Actions_Mobile__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>AM Plan Details</displayNameOverride>
+            <field>AM_Details__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>AM_Objectives__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>AM_PPT__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>AM Scorecard</displayNameOverride>
+            <field>AM_ScoreCard__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>AM_Settings__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>AM Total Usage</displayNameOverride>
+            <field>AM_Usage__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>OM Assessment</displayNameOverride>
+            <field>Assessment__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Assessment_Mobile__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Coach__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Coach_Mobile__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CreatedBy</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Call_Planner__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Call_Planner_Mobile__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Usage Date</displayNameOverride>
+            <field>CreatedDate</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>OM Criteria</displayNameOverride>
+            <field>Criteria__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Criteria_Mobile__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>DealmakerID__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Id</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>DM Total Usage</displayNameOverride>
+            <field>DM_Usage__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Name</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>eLearning</displayNameOverride>
+            <field>DVLS__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>OM Insight</displayNameOverride>
+            <field>Insight__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastModifiedBy</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastModifiedDate</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>OM Launchpad</displayNameOverride>
+            <field>Launchpad__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>OM Milestones</displayNameOverride>
+            <field>Milestones__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>PB_Launchpad__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>OM_PPT__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>AM Opportunity Map</displayNameOverride>
+            <field>Opportunity_Map__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Owner</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>PB Total Usage</displayNameOverride>
+            <field>PB_Usage__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>AM Completeness</displayNameOverride>
+            <field>Plan_Completeness__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>PB Playbook</displayNameOverride>
+            <field>Playbook__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Playbook_Mobile__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Political Map Launchpad</displayNameOverride>
+            <field>PoliticalMap_Launchpad__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>OM Politics</displayNameOverride>
+            <field>Politics__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Quicklink__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>AM Segmentation</displayNameOverride>
+            <field>Segmentation_Map__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>OM Strategy</displayNameOverride>
+            <field>Strategy__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Strategy_Mobile__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>OM Total Usage</displayNameOverride>
+            <field>SOM_Usage__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>PB Team View</displayNameOverride>
+            <field>Team_View__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Usage_Date__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>User__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>AM Value Map</displayNameOverride>
+            <field>Value_Map__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Insight_Mobile__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Politics_Mobile__c</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>User Full Name</displayNameOverride>
+            <field>CreatedBy.Name</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>User Alias</displayNameOverride>
+            <field>CreatedBy.Alias</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>User Profile</displayNameOverride>
+            <field>CreatedBy.Profile</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>User Role</displayNameOverride>
+            <field>CreatedBy.UserRole</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Manager Full Name</displayNameOverride>
+            <field>CreatedBy.Manager.Name</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Manager Alias</displayNameOverride>
+            <field>CreatedBy.Manager.Alias</field>
+            <table>DM_Usage__c</table>
+        </columns>
+        <masterLabel>Dealmaker Usage</masterLabel>
+    </sections>
+</ReportType>

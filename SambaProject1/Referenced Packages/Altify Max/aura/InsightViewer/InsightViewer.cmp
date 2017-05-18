@@ -1,0 +1,3 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,force:hasRecordId" controller='DMMAX.InsightController' access="global">
+Altify MAX coming to Lightning in late 2016
+</aura:component>

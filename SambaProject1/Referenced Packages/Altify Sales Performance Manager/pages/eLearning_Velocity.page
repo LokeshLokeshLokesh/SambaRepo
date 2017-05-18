@@ -1,0 +1,250 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" applyHtmlTag="false">
+<html>
+<head>
+    <title></title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'></link>
+    
+</head>
+
+<body>        
+        <style>
+            @import url("{!URLFOR($Resource.eLearning,          'CSS/spm-default.css')}");
+        </style>
+        <ul class="content_list">
+            <li class="clearfix">
+                <div class="point_image"><img src="{!URLFOR($Resource.eLearning, 'images/icon1.png')}" /></div>
+                <div class="point_text">
+                <p id="overview-link" style="float:right;" ><a href="http://spm-v1.dealmakerhelp.com/Default.htm" target="_blank">Overview of Sales Performance Manager</a></p>
+                  
+                    <h2>Purpose</h2>
+                    <p>There is tremendous value in knowing how long it takes to win or lose sales opportunities. </p>
+                    <p>It is important to realize that losing sales cycles typically last longer than winning sales cycles. By comparing the rhythm of the two kinds of sales cycle, you can design for attaining more winning cycles. To do this, we believe that you must:</p>
+                    <ul>
+                        <li> measure sales velocity for each deal, and for each sales person</li>
+                        <li>establish thresholds by which to measure stellar sales performance </li>
+                    </ul>
+                    <p>You can determine the (negative) impact of rushing through the early stages in a sale and the key reasons for deal slippage or late losses.</p>
+                        
+                    <div class="more_info">
+                        <h3>Sales Velocity defined</h3>
+                        <p><i>Sales Velocity</i>, as a concept, is a measure of your sales achievement, the revenue that you close in a period. It is represented as dollars per day.  </p>
+                        <p>You should assess your <i>Sales Velocity</i> in accordance with your normal sales cycle every month or quarter (for example). </p>
+                        <h3>Four levers to improved sales performance</h3>
+                        <p>Regularly assessing your sales performance enables you to understand the four essential levers to improved sales performance:</p>
+                        <ul>
+                            <li>Your <b>average deal size</b>, including won deal size and lost deal size</li>
+                            <li>The <b>sales cycle days</b> (days to win and days to lose)</li>
+                            <li>Your <b>win rates</b>: value win rate and number win rate</li>
+                            <li>The <b>number of deals</b></li>
+                        </ul>
+                        <p>Each seller should understand their own metrics to improve their personal sales performance.</p>
+                        <p>Each sales manager should understand the sales performance of the team, and the relative performance of each team member. This enables them to:</p>
+                        <ul>
+                            <li>understand <u>objectively</u> who needs to be coached</li>
+                            <li>for each individual. highlight the key sales velocity levers that need attention  </li>
+                            <li>recognize good performance, and identify which team members need motivation to do something differently</li>
+                        </ul>
+                        <p>Here, <i>Sales Velocity</i> contains your teams' Salesforce opportunities that were closed in the defined period, organized by revenue type and win/loss status. (These settings are selected in the <b>Report Selection</b> drop-down in the top right of the screen.)</p>
+                        <p><i>Sales Velocity</i> shows the manager and the seller the actual performance against each of the four levers, so that when there is an opportunity whose profile deviates from the team or team member average, it highlights the need to look at the potential risk in that deal.</p>
+                        <p>Therefore on your Pipeline and Forecast calls, you use actual Sales Velocity metrics in order to:</p>
+                        <ul>
+                            <li> show the team how they are performing</li>
+                            <li>set the right expectations around qualification, deal size, priorities and deal coaching</li>
+                        </ul>
+                    </div>
+                    <p><a href="javascript:void[0]" class="more_info_link">More...</a></p>
+                </div>
+            </li>
+            <li class="clearfix">
+                <div class="point_image"><img src="{!URLFOR($Resource.eLearning, 'images/icon2.png')}" /></div>
+                <div class="point_text">
+                    <h2>How to Use with the Team</h2>
+                    <p>Maintaining pipeline and forecast integrity is essential to keep your sales process running smoothly to minimize surprises.  </p>
+                    <p>Sales Velocity helps to do that by identifying the ‘stick-outs’ or potentially risky deals that may be:</p>
+                    <ul>
+                        <li>unusually large</li>
+                        <li>moving more slowly than your average win cycle</li>
+                        <li>owned by a seller who has not been successful in winning deals of this profile in the past</li>
+                    </ul>
+                    <div class="more_info">
+                    <h3>Analytics</h3>
+            <p>Analytics is the best place to start to get an overall picture of performance, before you dive into the details. </p>
+            <p>To do this you must understand Sales Cycle Duration, Average Deal Size and Win Rate for all of your opportunities. </p>
+            <p> When you are looking at your Pipeline or Forecast, you should compare the Sale Velocity actual metrics with the attributes of the deals in your Pipeline or Forecast, to ensure you are in a position to achieve the quota.</p>
+                            <h3>Sales Cycle Duration (Days)</h3>
+            <p>Sales Cycle Duration shows:</p>
+            <ul>
+                <li>your days to win (the length of your winning sales cycle)</li>
+                <li>your days to lose</li>
+                <li>the average of the two of these</li>
+            </ul>
+            <p>Time is your worst enemy.  Opportunities that linger in your pipeline are usually less likely to close. You should regularly track the age of each opportunity in your Pipeline and Forecast and use the actual Sales Velocity metrics for winning and losing sales cycles as a reference comparison. This will help you to make a strategic decision on the amount of time and resources you are willing to invest. Every resource spent on a lingering deal that you subsequently lose is resource not spent on a deal you can win.</p>
+            <p>There is tremendous value in knowing how long it takes to win or lose opportunities. It is important to realize that losing sales cycles typically take longer than winning sales cycles. Once you understand this trend you can be more confident in walking away from an opportunity you may be losing.</p>
+            <p>What does good look like? </p>
+            <p>Ideally you want to lose early if you are to lose at all. This indicates that you are doing a good job of qualifying out of opportunities before you invest too much time and resources.</p>
+            <p>Clearly, it is then important to understand your team’s Average Sales Cycle for each Revenue Type.  </p>
+            <p>A lengthy (or increasing) sales cycle is often an indicator of an unhealthy sales process.  By understanding and communicating your team’s sales cycle, you are proactively identifying potential issues in the sales process.  Breaking down your analysis or discussions by stage can help you to identify these problematic areas quickly, so that you can coach your sellers to improve their velocity.</p>
+            <p>In addition to understanding the team’s Average Sales Cycle, there is tremendous value in examining how long it takes each of the sellers to win. </p>
+            <p>When one of your sellers is closing deals much faster than the rest of the team, you can examine their behavior and share with the rest of the team.</p>
+            <blockquote>
+            <br />
+                <h4>Typical Versus Average</h4>
+                <p>When you think about your sales cycle, you tend to consider the time it takes to close a new deal. You naturally measure the time it takes from when you start the sales cycle until you receive the order from the customer. </p>
+                <p>However, after the sale is actually recorded in Salesforce, there are often subsequent add-on orders that don’t go through the full sales cycle, but are still recorded as a closed deal with a start and end to the sale cycle.  </p>
+                <p>This can mean that the average of all transactions can give you an inaccurate measure of how long it takes to close what you consider a ‘typical’ deal.</p>
+                <p>To get a true measure of a Typical opportunity’s sale cycle, you need to eliminate the short sales cycles that apply to add-on sales or other abnormally fast transactions.  There will also be some transactions that are unusually long that you may want to eliminate from the calculation of your Typical sales cycle.</p>
+                <p>(These extremities in sales cycle measure will have been defined when Dealmaker Sales Performance Manager was set up.  You can constrain the calculations to just your Typical sales by selecting the <b>Typical Opportunities Only</b> checkbox in the <b>Report</b> drop-down in the top right.)</p>
+                <br />
+                <h4>Revenue Type</h4>
+                <p>In most sales organizations there are multiple sources of revenue, each of which follows its own specific sales cycle or sales process.  </p>
+                <p>You may have one sales process for large enterprise type deals, and another for contract renewals.  Be sure to measure the sales cycle independently for each of these.</p>
+                <p>(Revenue Types will have been determined when Dealmaker Sales Performance Manager was setup.  You can select the appropriate Revenue Type in the <b>Report</b> drop-down in the top right.)</p>
+                <br />
+            </blockquote>
+            <h3>Average Deal Size</h3>
+            <p>Average Deal Size shows your Average Won Opportunity Size, Average Lost Opportunity Size, and then of course the average between the two.  Just like Duration, an opportunity’s size tells you a lot about how likely you are to convert it into revenue.</p>
+            <p>In order to understand, in your Pipeline or Forecast calls, if your sellers are working opportunities that are materially larger than the average size of the deals that you win, you need to have the baseline metric to make that determination.</p>
+            <p>If the average size of deals won is smaller than the average of all closed deals, you should consider the impact on the expected value from your existing pipeline if this performance continues, by applying the Value Win Rate percentage to the active pipeline value.</p>
+            <p>Also, if there are opportunities in your Forecast or Pipeline that are materially is larger than your Average Won Deal Size, you may want to treat this opportunity as a <b>High Risk</b> opportunity. (This may be included in your <b>High Risk</b> definition).  Alternatively you might want to mark it as a <b>Must Win</b> opportunity so that it gets the attention you think it deserves.</p>
+            <p>As with Sales Cycle Duration, you should consider the Typical deal size parameters that you want to measure to eliminate very small and very large deals from your Average Deal Size calculations for each Revenue Type.</p>
+            <h3>Win Rate (Closed)</h3>
+            <p>Win Rate history tells you a lot about how likely you are to convert opportunities in the future.  More importantly, the $Win Rate (Value Win Rate) tells you more about: </p>
+            <ul>
+                <li>performance</li>
+                <li>resource utilization</li>
+                <li>your return on investment for time and resource investment in opportunities</li>
+                <li>qualification success or failure</li>
+                <li>your ability to make quota</li>
+            </ul>
+            <p>When you compare your Value Win Rate to your Number Win Rate, you can assess the performance of your team and provide some valuable coaching.</p>
+            <p>If your $Win Rate is greater than your #Win Rate, you are winning the larger deals.  </p>
+            <p>This is good in that you will be able to make your revenue target by working fewer deals.  To establish your best practices, you might want to understand how you are winning the larger deals, scale that best practice across your team, and potentially enhance your sales process steps.  </p>
+            <p>You do want to make sure, however, that you still have a good mix of Rocks, Stones and Pebbles in the pipeline to avoid lumpy sales forecasts.</p>
+            <p>If you #Win Rate is greater than your $Win Rate, you are winning the smaller deals and losing the larger deals. </p>
+            <p>Take a look at the larger deals lost and determine if there was some qualification criterion that you may have missed.  At the same time, consider reviewing the smaller deals that you won to verify they didn’t take up an unbalanced amount of your time that could have been spent winning some of those larger deals.  Evaluate the deals you have in the pipeline today to ensure they are the right size to warrant your investment of time, or evaluate if there is a way to increase the deal size to make it worth winning.</p>
+            <p>By monitoring your $Win Rate as compared to your #Win Rate, you can focus on the opportunities to coach on your pipeline calls.</p>
+            <h3>Sales Velocity (Revenue per day)</h3>
+            <p>The Sales Velocity Equation uses each of the four Sales Velocity levers to calculate the revenue achieved per day.  It is based on closed deals in the period you are reviewing, and as such tells you what happened in the past. You can learn from this.</p>
+            <p>Revenue per day is measured as the aggregate value of all deals that were won in the period, divided by the number of days in the period.  That’s pretty straightforward. </p>
+            <p>However, by unpacking the elements that contributed to the total sales number achieved in the period, you can quickly identify how you might improve performance against each of the four levers to increase the overall revenue you could achieve in a corresponding period.</p>
+            <p>For example, if you increase the Average Deal Size by 10% without impacting the Number of Closed Deals, Sales Cycle Duration or Win Rate, then your revenue will increase by 10%.  </p>
+            <p>If you reduce the Sales Cycle Duration by 10% you will close opportunities faster, thereby having more time to work on additional deals.</p>
+            <p>The opportunity here is tremendous.  Even if you don't increase the number of opportunities that you are working, but improve performance against Average Deal Size, Sales Cycle Duration and Win Rate by 10%, your overall Revenue per day will increase by 34%.</p>
+            <p>Looking at Sales Velocity for each of the team, comparing their results for each of the levers against the average performance of the team will allow you identify where there are opportunities to improve performance.</p>
+                        </div>
+                        <p><a href="javascript:void[0]" class="more_info_link">More...</a></p>
+                        
+                                          
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="point_image"><img src="{!URLFOR($Resource.eLearning, 'images/icon3.png')}" /></div>
+                    <div class="point_text">
+                        <h2>Actions to Consider</h2>
+                        <ul>
+                            <li>Assess the age of your open opportunities against Sales Cycle Duration for deals that you have won in the past to determine if the opportunity is slower or older than your typical win. For opportunities lingering in the pipeline, validate the qualification criteria and current standing of the deal to determine if you should continue to invest time and resources to win, or if you should walk away from a potentially unwinnable opportunity.</li>
+                        </ul>
+                        <div class="more_info">
+                        <ul>
+                        <li>To determine if you have any risk with deals that are larger than normal, examine the size of your open opportunities size against Average Deal Size for deals that you have won in the past.  Deals that are larger than normal behave differently, and are typically slower than normal in the sales cycle.</li>
+                <li>For deals that are smaller than normal, make sure they don’t make up more than 20% of your pipeline.  In addition, make sure they are not all centered with one or two sellers. You need for a balance of Rocks, Stones and Pebbles in the pipeline.</li>
+                <li>Consider your Value Win Rate compared to your Number Win Rate, to assess how you might reasonably expect each individual seller to perform on larger deals.  If you have a seller whose average deal size if smaller than average but is working a large opportunity, then you need to understand the associated risk.</li>
+                <li>Use Revenue per day for each seller, in conjunction with a review of the pipeline, considering the number of deals, and average deal size, win rate, and sales cycle as an indicator of his potential future performance.  There will be other factors at play, but if there are not enough deals of sufficient value in the funnel to achieve future targets, using historical performance as a reference point, then it is likely that some supporting action is required.</li>
+            </ul>
+                        </div>
+                        <p><a href="javascript:void[0]" class="more_info_link">More...</a></p>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="point_image"><img src="{!URLFOR($Resource.eLearning, 'images/icon4.png')}" /></div>
+                    <div class="point_text">
+                        <h2>Top Risks to Sales Velocity</h2>
+                        <p>Once you start paying attention to Average Opportunity Size, Sales Cycles, $Win Rate, you’ll start to notice that some of the opportunities in your Pipeline are outliers that can slow down your velocity.</p>
+                        <p>This section looks at the major types of risks to velocity.</p>
+                        
+           
+                        <div class="more_info">
+                        <h3>1. Lost Sales Cycle duration is materially greater than Won Sales Cycle</h3>
+                        <p>This often means that you have a qualification issue, and that you are not qualifying hard enough throughout the sales cycle. </p>
+                        <p>Sometimes it suggests that you are not following up on leads quickly enough, and you are losing momentum in the opportunity.</p>
+                        <p>Frequently it points to poor data management and deals are not being closed out in Salesforce when they are in fact lost or just languishing in the trough of No Decision. </p>
+            <p>In all of these cases, it means that your pipeline value is overstated, and in the worst scenario it means that you are wasting resources on deals that you hope will somehow convert but are destined to be lost.</p>
+                         <h3>2. Size of won deals is smaller than lost deals</h3>
+            <p>This indicates that you are losing the larger deals and winning the smaller deals. </p>
+            <p> The underlying reasons for this are usually:</p>
+            <ul>
+                <li> an inability to sell value</li>
+                <li>a tendency to discount too easily</li>
+                <li>a poor understanding of the customer’s business requirement, and therefore an inability to connect your solutions to the customer’s business problem effectively</li>
+                <li>a failure to communicate business value to the key business decision maker – sometimes because of an inability to access the key executives with effective business conversations</li>
+                <li>too little attention paid to the larger deals because of ineffective triage of deal focus</li>
+            </ul>
+            <p>A negative imbalance in won deal sizes causes a direct reduction in your sales velocity, a likely indicator that the value you expect from your existing pipeline will not be achieved.</p>
+            <h3>3. Opportunities are outside your sweet spot size</h3>
+            <p>We have all fallen at this hurdle – pursuing those enormous opportunities that can make the year or quarter without having muscle memory on how to do a deal of this scale. </p>
+            <p> If your pipeline has a disproportionate number of very large deals that are substantially larger that the size of deals that you normally win, it is likely that there is considerable risk to your pipeline or forecast, and consequently to your sales velocity.  </p>
+            <p>Similarly, if your pipeline is full of many small deals, it is likely that you will spend equal resources on each of these deals, which means that you will just not have enough time to win enough opportunities to make your number.</p>
+            <h3>4. Slow-moving opportunities</h3>
+            <p>A deal is unlikely to close if it has been in your pipeline for materially longer than the time it usually takes to win a sale. </p>
+            <p>This speaks to point 1 – 'Lost Sales Cycle duration is materially greater than Won Sales Cycle' – and is one of the greatest inhibitors to sales velocity. </p>
+            <p>Be ruthless in assessing opportunities that are moving unusually slowly. It usually speaks to a lack of a Compelling Event, or suggests that an opportunity does not in fact exist.  </p>
+            <p>This is why there are so many opportunities recorded as Closed Lost – No Decision.</p>
+            <h3>5. Unbalanced performance in the team</h3>
+            <p>Every sales organization will have its star performers, and we all wish we had more of them.  </p>
+            <p>Behind the star performers are core performers – those who usually make 50-70% of quota, while not making their number contribute significantly to the business. </p>
+            <p>It is very hard to run a sales business effectively if a small number of star performers represent a disproportionate percentage of the revenue of the team. </p>
+            <p>You can’t scale that, and you have an impending disaster when one of them does not perform or leaves the company. </p>
+            <p>The key to reducing this risk is to focus your coaching efforts on the core performers, while replacing the bottom performers.</p>
+                        </div>
+                        <p><a href="javascript:void[0]" class="more_info_link">More...</a></p>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="point_image"><img src="{!URLFOR($Resource.eLearning, 'images/icon5.png')}" /></div>
+                    <div class="point_text">
+                        <h2>Best Practice</h2>
+                        <ul>
+                            <li>Once a month, validate your Sales Velocity Numbers for both the team and your individual sellers.</li>
+                            <li>Use the Sales Velocity numbers to assess your Pipeline and Forecast to determine ‘at risk’ opportunities, high-percentage opportunities or purge opportunities.</li>
+                            </ul>
+                        <div class="more_info">
+                        <ul>
+                            <li>Present the Sales Velocity numbers during your pipeline and forecast calls, to keep them top-of-mind for both yourself and your sellers. Recognize and share good behaviors based on the performance numbers.</li>
+                            
+                            <li>Set realistic goals for the sellers to improve their Sales Velocity Numbers, and create any sales readiness plans to support their goals.</li>
+                            <li>Use the Sales Velocity numbers to investigate performance in your 1:1’s, and provide the right coaching and expertise on any given opportunity.</li>
+                        </ul>
+                        </div>
+                        <p><a href="javascript:void[0]" class="more_info_link">More...</a></p>
+                    </div>
+                </li>
+            </ul>
+
+            <p class="align-right"><a target="_blank" href="{!URLFOR($Resource.eLearning, 'PDF/velocity.pdf')}">Printable version</a></p>
+            
+            
+            
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript">
+            $('.more_info_link').click(function() {
+                $(this).parent().prev('.more_info').slideToggle('fast');
+                $(this).text(function(_,txt) {
+                    var ret='';
+            
+                    if ( txt == 'More...' ) {
+                       ret = 'Less...';
+                    }else{
+                       ret = 'More...';
+                    }
+                    return ret;
+                });
+                return false;
+            });
+        </script>
+    </body>
+
+
+</html>
+</apex:page>

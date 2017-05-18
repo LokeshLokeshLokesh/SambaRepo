@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Hierarchy_Level__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(ParentId==null,0,1+
+IF(Parent.ParentId==null,0,1+
+IF(Parent.Parent.ParentId==null,0,1)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Hierarchy Level</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <webLinks>
+        <fullName>Auto_Mark</fullName>
+        <availability>online</availability>
+        <description>for dedup manager</description>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Auto Mark</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>if(licenseStatus!=&apos;Active&apos;){
+alert(&quot;This is a premium feature – contact sales@zaapit.com to activate!&quot;);
+return;
+}
+var ix=1;$(&quot;.list .dataRow&quot;).each(function(){
+if(!$(this).hasClass(&quot;tcx&quot;+ix)){
+ix=1-ix;
+}else{
+$(this).find(&quot;.lcbXRow&quot;).click();
+}
+});</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Mass_Merge</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Mass Merge</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>massMergeX(&quot;Account&quot;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Merge_Accounts</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Merge Accounts</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>var checkedIds=&quot;&quot;; 
+var checkedId1=&quot;&quot;; 
+var accName=&quot;&quot;;
+var leadCount=0; 
+$(&quot;.lcbX input:checked&quot;).each(function(){ 
+checkedId1=$(this).parents(&quot;.lcbX:first&quot;).attr(&quot;rid&quot;); 
+accName=$.trim($(this).parents(&quot;tr:first&quot;).find(&quot;.oSt_name&quot;).text());
+checkedIds+=&quot;&amp;cid=&quot;+checkedId1; 
+leadCount++; 
+}); 
+if(leadCount&gt;3){ 
+alert(&quot;Please select up to 3 Accounts to merge!&quot;); 
+}else if(leadCount&lt;2){ 
+alert(&quot;Please select at least 2 Accounts to merge!&quot;); 
+}else{ 
+var win1=window.open(&quot;/merge/accmergewizard.jsp?currentStage=0&amp;goNext=Next&amp;buttonPressed=0&amp;currentStage=0&amp;srchbutton=Find Accounts&quot;+checkedIds+&quot;&amp;retURL=%2Fapex%2Fzaapit__Merge_Completed&amp;isdtp=vw&amp;srch=&quot;+escape(accName),&quot;Merge_Leads&quot;,&quot;height=800,width=800,top=100,left=100,fullscreen=0,scrollbars=yes&quot;);
+
+var timer = setInterval(function() { 
+if(win1.closed) { 
+clearInterval(timer); 
+//$(&quot;.seatchInptFZP&quot;).keyup(); 
+jumpToClk(currPageCls,600);
+} 
+}, 1000); 
+} 
+return false;</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Merge_Accounts_L</fullName>
+        <availability>online</availability>
+        <description>Merge Accounts in lists (works in lightning)</description>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Merge Accounts (L)</masterLabel>
+        <openType>sidebar</openType>
+        <page>Merge_Accounts</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>zp_actions</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>ZP Actions</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!requireScript($Label.zaapit__zp_action_link)}</url>
+    </webLinks>
+</CustomObject>

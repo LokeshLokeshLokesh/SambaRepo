@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>DM_Account_Plan__c.Plan_Units__r$Account__c.Name</field>
+    </columns>
+    <columns>
+        <field>DM_Account_Plan__c.Plan_Units__r$Name</field>
+    </columns>
+    <columns>
+        <field>DM_Account_Plan__c$Owner</field>
+    </columns>
+    <description>Account Plan report providing a list of the plan units, associated accounts and their owners.</description>
+    <filter>
+        <criteriaItems>
+            <column>DM_Account_Plan__c$Id</column>
+            <operator>startsWith</operator>
+            <value></value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>DM_Account_Plan__c$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Account Plan Units</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Account_Plans__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>DM_Account_Plan__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>DM_DVLS_Curriculum_User__c$Owner.Name</field>
+    </columns>
+    <columns>
+        <field>DM_DVLS_Curriculum_User__c$DVLS_Curriculum__c.Name</field>
+    </columns>
+    <columns>
+        <field>DM_DVLS_Curriculum_User__c$Mark__c</field>
+    </columns>
+    <columns>
+        <field>DM_DVLS_Curriculum_User__c$Status__c</field>
+    </columns>
+    <description>High level report showing eLearning curriculum progress per user.
+
+Note that curricula will not display against a user if it has not been started. Similarly, users will not display in the report, if they have not started any curricula.</description>
+    <format>Summary</format>
+    <name>eLearning High Level Progress</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>eLearning_Activity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>DM_DVLS_Curriculum_User__c.DM_DVLS_Module_Users__r.DM_DVLS_Component_Users__r$LastModifiedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

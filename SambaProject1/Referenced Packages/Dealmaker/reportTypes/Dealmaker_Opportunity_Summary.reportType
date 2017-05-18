@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>DM_Opportunity_Extra__c</baseObject>
+    <category>other</category>
+    <deployed>true</deployed>
+    <description>Supports the reporting of the individual module summary and completeness scores against the opportunity</description>
+    <label>Dealmaker Opportunity Summary</label>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Name</displayNameOverride>
+            <field>Opportunity__c.Account</field>
+            <table>DM_Opportunity_Extra__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity Name</displayNameOverride>
+            <field>Opportunity__c.Name</field>
+            <table>DM_Opportunity_Extra__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Owner</displayNameOverride>
+            <field>Opportunity__c.Owner</field>
+            <table>DM_Opportunity_Extra__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>% Complete</displayNameOverride>
+            <field>Dealmaker_Completeness__c</field>
+            <table>DM_Opportunity_Extra__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Assessment #</displayNameOverride>
+            <field>Assessment_Count__c</field>
+            <table>DM_Opportunity_Extra__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Political Map #</displayNameOverride>
+            <field>Political_Map_Count__c</field>
+            <table>DM_Opportunity_Extra__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Decision Criteria #</displayNameOverride>
+            <field>Decision_Criteria_Count__c</field>
+            <table>DM_Opportunity_Extra__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Insight #</displayNameOverride>
+            <field>Collaboration_Map_Count__c</field>
+            <table>DM_Opportunity_Extra__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Strategy</displayNameOverride>
+            <field>Effective_Strategy__c</field>
+            <table>DM_Opportunity_Extra__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>PRIME #</displayNameOverride>
+            <field>PRIME_Count__c</field>
+            <table>DM_Opportunity_Extra__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Assessment %</displayNameOverride>
+            <field>Assessment_Completeness__c</field>
+            <table>DM_Opportunity_Extra__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Politics %</displayNameOverride>
+            <field>Political_Map_Completeness__c</field>
+            <table>DM_Opportunity_Extra__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Decision Criteria %</displayNameOverride>
+            <field>Decision_Criteria_Completeness__c</field>
+            <table>DM_Opportunity_Extra__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Insight %</displayNameOverride>
+            <field>Collaboration_Map_Completeness__c</field>
+            <table>DM_Opportunity_Extra__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Strategy %</displayNameOverride>
+            <field>Strategy_Completeness__c</field>
+            <table>DM_Opportunity_Extra__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>PRIME %</displayNameOverride>
+            <field>PRIME_Completeness__c</field>
+            <table>DM_Opportunity_Extra__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Amount</displayNameOverride>
+            <field>Opportunity__c.Amount</field>
+            <table>DM_Opportunity_Extra__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Closed</displayNameOverride>
+            <field>Opportunity__c.IsClosed</field>
+            <table>DM_Opportunity_Extra__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Probability (%)</displayNameOverride>
+            <field>Opportunity__c.Probability</field>
+            <table>DM_Opportunity_Extra__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Stage</displayNameOverride>
+            <field>Opportunity__c.StageName</field>
+            <table>DM_Opportunity_Extra__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Won</displayNameOverride>
+            <field>Opportunity__c.IsWon</field>
+            <table>DM_Opportunity_Extra__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created Date</displayNameOverride>
+            <field>Opportunity__c.CreatedDate</field>
+            <table>DM_Opportunity_Extra__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Close Date</displayNameOverride>
+            <field>Opportunity__c.CloseDate</field>
+            <table>DM_Opportunity_Extra__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Opportunity__c</field>
+            <table>DM_Opportunity_Extra__c</table>
+        </columns>
+        <masterLabel>DM Opportunity Extras</masterLabel>
+    </sections>
+</ReportType>

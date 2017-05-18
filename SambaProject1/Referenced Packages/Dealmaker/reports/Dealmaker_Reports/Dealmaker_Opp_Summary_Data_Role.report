@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$Owner</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Amount</field>
+    </columns>
+    <columns>
+        <field>Opportunity.DM_Opportunity_Extras__r$Assessment_Count__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.DM_Opportunity_Extras__r$Political_Map_Count__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.DM_Opportunity_Extras__r$Decision_Criteria_Count__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.DM_Opportunity_Extras__r$Collaboration_Map_Count__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.DM_Opportunity_Extras__r$Effective_Strategy__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.DM_Opportunity_Extras__r$PRIME_Count__c</field>
+    </columns>
+    <description>Opportunity report providing the number of items added for each of the plan elements in Dealmaker.
+
+Run the report for users below a selected role.</description>
+    <format>Tabular</format>
+    <name>Opp Plan Data Summary</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Dealmaker_Opportunity_Information__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,37 @@
+<apex:page tabStyle="Admin_Setting__tab">
+    <style type="text/css">   
+        .imgclass:hover{   
+            background-image: url(/img/help/helpOrbs.gif);   
+            background-repeat: no-repeat;   
+            width: 15px;   
+            height: 15px;      
+            background-position: right;   
+          
+        }   
+        .imgclass{   
+            background-image: url(/img/help/helpOrbs.gif);   
+            background-repeat: no-repeat;   
+            width: 15px;   
+            height: 15px;   
+        }   
+    </style>   
+    <apex:sectionHeader title="Admin Setting" id="idSecHeader"/>
+    <apex:form > 
+        <apex:pageBlock id="pageBlokId" >
+            <apex:pageMessages id="pb"/>
+            <apex:pageBlockSection title="Logs Deletion Schedulers" columns="1">
+                <apex:outputPanel >   
+                    <img src="/s.gif" Class="imgclass" title="View, edit or create deletion tasks on a reoccurring schedule." />   
+                    <b><font color="red" size="2">This feature is not available in the free version of Update Anything app.</font></b>
+                </apex:outputPanel>   
+            </apex:pageBlockSection>  
+            
+            <apex:pageBlockSection title="Query/Update Schedulers" columns="1">
+                <apex:outputPanel >   
+                    <img src="/s.gif" Class="imgclass" title="View, edit or create query/update tasks on a reoccurring schedule." />   
+                    <b><font color="red" size="2">This feature is not available in the free version of Update Anything app.</font></b>
+                </apex:outputPanel>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

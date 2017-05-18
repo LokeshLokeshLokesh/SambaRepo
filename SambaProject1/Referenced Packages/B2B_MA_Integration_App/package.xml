@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B2B_MA_Integration_App</fullName>
+    <apiAccessLevel>Unrestricted</apiAccessLevel>
+    <namespacePrefix>pi</namespacePrefix>
+    <types>
+        <members>B2B_MA_Integration_App</members>
+        <name>Application</name>
+    </types>
+    <version>36.0</version>
+</Package>

@@ -1,0 +1,81 @@
+<apex:page sidebar="false" showheader="false">
+<div id="msec1">
+<h1 style="font-size: 16pt;text-align: left;display: block;padding: 10px 10px 10px 10px;color:#353535;text-decoration:underline;text-align:center;">
+Smart Tables / Smart-Mass-Update / Smart-Activity-Manager / Dedup Manager
+</h1>
+<h2 style="font-size: 13pt;text-align: left;display: block;padding: 10px 10px 0px 10px;color:#555555;">
+Thank you for installing ZaapIT's tools for Salesforce.
+</h2>
+<br/>
+<span class="mititle">Start using the apps for the first time:</span>
+<ul id="psix1">
+<li>
+<span  class="lititle">Smart-Mass-Update&trade;:</span> The tabs<sup>1</sup> are on the top-right app-drop-down - <a href="#postInstall1">As illustrated on image #1</a>.
+</li>
+<li>
+<span class="lititle">Smart-Activity-Manager&trade;:</span> The tabs<sup>1</sup> are on the top-right app-drop-down - <a href="#postInstall1">As illustrated on image #1</a>.
+</li>
+<li>
+<span  class="lititle">Dedup Manager&trade;:</span> The tabs<sup>1</sup> are on the top-right app-drop-down - <a href="#postInstall1">As illustrated on image #1</a>.
+</li>
+<li>
+<span class="lititle">Smart-Tables&trade;:</span> ZaapIT's predefined related-list / related tabs are under the object-layout-editor (pages 34-35 on this <a href="{!$Label.user_guide_link}" target="_blank">user guide</a>)<!-- - <a href="#postInstall1">see below</a>-->.
+</li>
+</ul>
+<div style="color:#666666;width:925px;padding-left:15px;">
+<ol style="margin:0px; padding: 0 0 20px 10px;">
+<li> You can replace the regular tab(s) on sales/marketing with the Smart-Tab(s), just go to "your name">my setting>tabs> sales/marketing apps or go to >your name">setup>apps>sales / marketing apps and add/remove the relevant tabs (the smart tabs are at the bottom of the "available tabs" list )
+</li>
+</ol>
+</div>
+<div class="moreinf">
+For more information about the apps read the <a href="{!$Label.user_guide_link}" target="_blank">user guide</a> or <a href="mailto:support@zaapit.com">contact ZaapIT's support</a>, you can access this post install page later by going to setup>installed packages>Zaapit Tools.
+</div> 
+<br/><br/>
+<style>
+.lititle{
+width: 205px;
+display: inline-block;
+font-weight:bold;
+color:#555555;
+}
+
+.mititle{
+font-size: 12pt;
+display: block;
+font-weight:bold;
+margin: 10px 0px 0px 10px;
+color:#555555;
+}
+.moreinf{
+font-size: 12pt;
+display: block;
+margin: 10px 0px 0px 10px;
+font-weight:normal;
+color:#555555;
+}
+
+#psix1{font-size: 12pt;text-align: left;display: block;padding: 5px 10px 10px 10px;margin: 0px 10px 10px 10px;color:#555555;}
+#msec1 a,#msec1:link{color:#555555;}
+#psix1 li{padding:3px; color:#555555;}
+#mainIng1{
+border: 7px solid rgb(100, 100, 100);
+ border: 7px solid rgba(225, 225, 225, 0.8); 
+ -webkit-background-clip: padding-box; /* for Safari */
+ background-clip: padding-box; 
+/*-webkit-box-shadow: 0px 0px 10px 15px rgba(238,255,0,1);
+-moz-box-shadow: 0px 0px 10px 15px rgba(238,255,0,1);
+box-shadow: 0px 0px 10px 15px rgba(238,255,0,1);
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+*/
+border-radius: 5px;
+background:url(http://sc2.zaapit.com/images/email_pre_listviews.jpg) -7px -7px no-repeat;width:1155px;height: 334px;
+}
+</style>
+
+<a name="postInstall1" style="font-weight:bold;font-size:12pt;color:#666666;display:block;padding:5px 10px 10px 10px;">Image #1: Smart-Mass-Update / Smart-Activity-Manager  / Dedup-Manager app pull-down:</a>
+
+<img src="http://sc2.zaapit.com/images/email_pre_listviews.jpg" width="100%;"/>
+</div>
+</apex:page>

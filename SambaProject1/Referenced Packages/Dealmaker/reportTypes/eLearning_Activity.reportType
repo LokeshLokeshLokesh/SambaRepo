@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>DM_DVLS_Curriculum_User__c</baseObject>
+    <category>other</category>
+    <deployed>true</deployed>
+    <description>Report focussed on eLearning activity for users</description>
+    <join>
+        <join>
+            <outerJoin>true</outerJoin>
+            <relationship>DM_DVLS_Component_Users__r</relationship>
+        </join>
+        <outerJoin>true</outerJoin>
+        <relationship>DM_DVLS_Module_Users__r</relationship>
+    </join>
+    <label>Dealmaker eLearning Activity</label>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Full Name</displayNameOverride>
+            <field>Owner.Name</field>
+            <table>DM_DVLS_Curriculum_User__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Owner.Alias</field>
+            <table>DM_DVLS_Curriculum_User__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Curriculum</displayNameOverride>
+            <field>DVLS_Curriculum__c.Name</field>
+            <table>DM_DVLS_Curriculum_User__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Curriculum Mark</displayNameOverride>
+            <field>Mark__c</field>
+            <table>DM_DVLS_Curriculum_User__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Curriculum Status</displayNameOverride>
+            <field>Status__c</field>
+            <table>DM_DVLS_Curriculum_User__c</table>
+        </columns>
+        <masterLabel>Curriculum Users</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Module</displayNameOverride>
+            <field>DVLS_Module__c.Name</field>
+            <table>DM_DVLS_Curriculum_User__c.DM_DVLS_Module_Users__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Module Passed</displayNameOverride>
+            <field>Is_Passed__c</field>
+            <table>DM_DVLS_Curriculum_User__c.DM_DVLS_Module_Users__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Module Status</displayNameOverride>
+            <field>Status__c</field>
+            <table>DM_DVLS_Curriculum_User__c.DM_DVLS_Module_Users__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Module Order</displayNameOverride>
+            <field>DVLS_Module__c.Order__c</field>
+            <table>DM_DVLS_Curriculum_User__c.DM_DVLS_Module_Users__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Module%</displayNameOverride>
+            <field>Score__c</field>
+            <table>DM_DVLS_Curriculum_User__c.DM_DVLS_Module_Users__r</table>
+        </columns>
+        <masterLabel>Module Users</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Component</displayNameOverride>
+            <field>DVLS_Component__c.Name</field>
+            <table>DM_DVLS_Curriculum_User__c.DM_DVLS_Module_Users__r.DM_DVLS_Component_Users__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Component Passed</displayNameOverride>
+            <field>Is_Passed__c</field>
+            <table>DM_DVLS_Curriculum_User__c.DM_DVLS_Module_Users__r.DM_DVLS_Component_Users__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastModifiedDate</field>
+            <table>DM_DVLS_Curriculum_User__c.DM_DVLS_Module_Users__r.DM_DVLS_Component_Users__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Links Completed</displayNameOverride>
+            <field>Quicklink_Complete_Rollup__c</field>
+            <table>DM_DVLS_Curriculum_User__c.DM_DVLS_Module_Users__r.DM_DVLS_Component_Users__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Link Count</displayNameOverride>
+            <field>DVLS_Component__c.Quicklink_Rollup__c</field>
+            <table>DM_DVLS_Curriculum_User__c.DM_DVLS_Module_Users__r.DM_DVLS_Component_Users__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Questions Correct</displayNameOverride>
+            <field>Score_Rollup__c</field>
+            <table>DM_DVLS_Curriculum_User__c.DM_DVLS_Module_Users__r.DM_DVLS_Component_Users__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Question Count</displayNameOverride>
+            <field>DVLS_Component__c.Question_Rollup__c</field>
+            <table>DM_DVLS_Curriculum_User__c.DM_DVLS_Module_Users__r.DM_DVLS_Component_Users__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Component: Order</displayNameOverride>
+            <field>DVLS_Component__c.Order__c</field>
+            <table>DM_DVLS_Curriculum_User__c.DM_DVLS_Module_Users__r.DM_DVLS_Component_Users__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Component Status</displayNameOverride>
+            <field>Status__c</field>
+            <table>DM_DVLS_Curriculum_User__c.DM_DVLS_Module_Users__r.DM_DVLS_Component_Users__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Component%</displayNameOverride>
+            <field>Score__c</field>
+            <table>DM_DVLS_Curriculum_User__c.DM_DVLS_Module_Users__r.DM_DVLS_Component_Users__r</table>
+        </columns>
+        <masterLabel>Component Users</masterLabel>
+    </sections>
+</ReportType>

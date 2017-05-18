@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Deal_Review__c$Amount__c</field>
+    </columns>
+    <columns>
+        <field>Deal_Review__c$Dealmaker_Completeness__c</field>
+    </columns>
+    <columns>
+        <field>Deal_Review__c$Opportunity_Age__c</field>
+    </columns>
+    <columns>
+        <field>Deal_Review__c$Opportunity_Stage__c</field>
+    </columns>
+    <columns>
+        <field>Deal_Review__c$Probability__c</field>
+    </columns>
+    <columns>
+        <field>Deal_Review__c$Effective_Date__c</field>
+    </columns>
+    <description>Record of the opportunity fields when each Test &amp; Improve was completed. Recorded values are: opportunity stage, age, completeness, probability and amount.</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Deal_Review__c$Dealmaker_Opportunity__c.Opportunity__c.Owner.Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Deal_Review__c$Dealmaker_Opportunity__c.Opportunity__c.Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Test &amp; Improve History</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Deal_Reviews__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Deal_Review__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

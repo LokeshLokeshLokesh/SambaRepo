@@ -1,0 +1,167 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" applyHtmlTag="false">
+<html>
+<head>
+	<title></title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'></link>
+	
+</head>
+
+<body>
+		<style>
+			@import url("{!URLFOR($Resource.eLearning,          'CSS/spm-default.css')}");
+		</style>
+	   
+		<ul class="content_list">
+			<li class="clearfix">
+				<div class="point_image"><img src="{!URLFOR($Resource.eLearning, 'images/icon1.png')}" /></div>
+				<div class="point_text">
+					<p id="overview-link" style="float:right;" ><a href="http://spm-v1.dealmakerhelp.com/Default.htm" target="_blank">Overview of Sales Performance Manager</a></p>
+					<h2>Purpose of Revenue Trends</h2>
+					<p>Forecasting is difficult. Less than 50% of deals actually close as forecast. Understanding the recent past helps you to assess the risks in your current forecast.</p>
+					<p>Revenue Trends helps you to understand the accuracy of your sales forecasting process by showing what happened to the deals that existed 30, 60 or 90 days ago, organized by Forecast category, Revenue Type, team or individual sales person.</p>
+	   
+		
+		
+					<div class="more_info">
+					
+						<p>You can look back at the opportunities in each Forecast category to see whether the opportunities progressed as expected over the reporting period.</p>
+						
+						<p>By looking at Projected deals that are still open, were lost, or have changed materially in value, you may be able to spot potentially similar outcomes in your current forecast. This informs the accuracy of your current forecast and helps you to uncover weaknesses in process, qualification, and deal progressions. </p>
+		
+					</div>
+					<p>
+						<a href="javascript:void[0]" class="more_info_link">More...</a>
+					</p>
+				</div>
+			</li>
+			<li class="clearfix">
+				<div class="point_image"><img src="{!URLFOR($Resource.eLearning, 'images/icon2.png')}" /></div>
+				<div class="point_text">
+					<h2>How to Use Revenue Trends with your Team</h2>
+					<p>There are three areas in the Revenue Trends screen:</p>
+					<ul>
+						<li>Revenue Outlook Trends</li>
+						<li>What Happened to the Revenue Outlook</li>
+						<li>Detailed Changes to the Revenue Outlook</li>
+					</ul>
+					<p>These areas of analysis are explored below:</p>
+					<div class="more_info">					
+					<h2>Revenue Outlook Trends</h2>
+					<p>The Revenue Outlook Trends chart summarizes:</p>
+					<ul>
+						<li>the Forecast status of the opportunities that existed 30, 60, or 90 days ago</li>
+						<li>their current status </li>
+					</ul>
+					<p>Only opportunities that existed on the past date are included in the analysis. Opportunities that entered the system since that date are not represented.  This maintains the integrity of the ‘what happened’ analysis.</p>
+					<h2>What Happened to the Revenue Outlook</h2>
+					<p>This chart shows the current state of the historical opportunities for each Forecast category. </p>
+					<p>Forecast categories are listed vertically, and the horizontal stacked bars show today's distribution of the opportunities that belonged in each Forecast category at the start of the reporting period.</p>
+					<p>Ideally, a good percentage of Projected opportunities will have moved to Won, some of the Possible opportunities will have progressed to Projected or Won, and some of the Unlikely opportunities will also have progressed. </p>
+					<p> You may also see regressions, where opportunities that were Projected are now Possible, Unlikely, or Lost.</p>
+					<p>Moving from 90 Days Ago to 30 Days Ago, you should see fewer changes, and ideally no losses arising from Projected opportunities. Such a regression usually indicates a late-stage loss.</p>
+					<h2>Detailed Changes to the Revenue Outlook</h2>
+					<p>Beneath the two charts on the Revenue Trends screen you'll see a detailed table of how opportunities have moved from their Forecast category at the start of the period (90, 60, or 30 days ago) to today.</p>
+					<p>The leftmost column shows the the value and number of opportunities in that Forecast category at the beginning of the period. </p>
+					<p>Moving rightwards you see where those opportunities are today, and any change in the value of the opportunities since the start of the period.</p>
+					<p>Opportunities with a green background have progressed from:</p>
+					<ul>
+						<li>Unlikely to Possible, Projected or Won</li>
+						<li>Possible to Projected or Won</li>
+						<li>Projected to Won</li>
+					</ul>
+					<p>Opportunities with an orange background have regressed.</p>
+					<p>Click any number to see the opportunities that make up that number, along with any changes in Stage, Value, Close Date and Close Probability for each.</p>
+		
+					</div>
+					<p><a href="javascript:void[0]" class="more_info_link">More...</a></p>
+				</div>
+			</li>
+			<li class="clearfix">
+				<div class="point_image"><img src="{!URLFOR($Resource.eLearning, 'images/icon3.png')}" /></div>
+				<div class="point_text">
+					<h2>Actions to Consider</h2>
+					<ul>
+						<li>You'll normally wait until your quarter is over to see what went wrong: why opportunities slipped, how they dropped in value, and why some projected opportunities were in fact lost. This can be valuable for future forecast periods. But it may be even more valuable to review historical behavior at the start of the quarter and apply the lessons learned to this period’s forecast.</li>
+						<li>Establish a rhythm with each of the sales team – we'd recommend monthly – where you review the progress of deals that were projected 30, 60, and 90 days ago, and examine any unexpected movement in those deals.</li>
+					</ul>
+					<div class="more_info">
+						<ul>
+							<li>Check Projected opportunities that moved backwards (to Possible, or Unlikely) or were Lost.  If this pattern is common across the sales team, it usually means a poorly defined sales process, poor qualification practices, or an ineffective discovery or customer alignment. If it is limited to just one or two sellers, coaching is required.</li>
+							<li>Dig into the detail of any opportunities that were Projected 90 days ago, and still are. Establish whether there has been any progress through the pipeline states. If there has been none, this means there is probably no Customer Compelling Event.</li>
+							<li>Check for opportunities that were Unlikely (or Possible, depending on the timeframe you are looking at) but have been Won. This suggests that the salesperson may not have been fully aware of what is going on in the opportunity, or that they were entering  data into the system at too late a stage, or that they were not maintaining the data. If the system is not up to date, it is very difficult for the sales manager or sales person to achieve an accurate sales forecast, and everyone’s time is wasted.</li>
+	   					</ul>
+					</div>
+					<p><a href="javascript:void[0]" class="more_info_link">More...</a></p>
+				</div>
+			</li>
+			<li class="clearfix">
+				<div class="point_image"><img src="{!URLFOR($Resource.eLearning, 'images/icon5.png')}" /></div>
+				<div class="point_text">
+					<h2>Best Practice</h2>
+					<ul>
+						<li>Review Revenue Outlook Trends monthly with each team member</li>
+						<p>The purpose of these calls is to learn from a comparison of expected outcome and actual outcome for Projected and other opportunities. </p>
+						<p>This process enables the manager and seller to align on any remediation needed so that they can:</p>
+						<ul>
+							<li>more accurately set expectations, so that neither party is surprised by the outcome</li>
+							<li>identify where there may be risks to the accuracy of the forecast</li>
+						</ul>
+					</ul>
+		
+					<div class="more_info">
+						<ul>
+							<li>Ask the Salesperson to prepare in advance</li>
+							<p>To have a productive call, both manager and seller should have the requisite information already to hand. </p>
+							<p>These calls should focus on improving behavior to attain more accurate future projections, saving time for both seller and manager.</p>
+							<p>Where there are deviations between expected outcomes and actual outcomes, ask: </p>
+							<ul>
+								<li>What is the root cause of the inaccuracy, on a deal-by-deal basis? </li>
+								<li>What should have been done differently? </li>
+								<li>What changes should be made in the next month to refine the outlook?</li>
+							</ul>
+						</ul>
+						<ul>
+							<li>Use Insights to examine four key areas:</li>
+							<ul>
+								<li>Projected Analysis: What has been the movement in Projected opportunities?</li>
+								<li>Movement: What opportunities have moved forwards or backwards through the Forecast categories?</li>
+								<li>Value Change: Are Projected opportunities increasing or decreasing in value as they progress?</li>
+								<li>Won / Lost Deals Analysis: Which Forecast categories did Won / Lost deals come from?</li>
+							</ul>
+						</ul>
+					</div>
+					
+					<p><a href="javascript:void[0]" class="more_info_link">More...</a></p>
+				</div>
+				
+			</li>
+		</ul>		
+			
+		<p class="align-right"><a target="_blank" href="{!URLFOR($Resource.eLearning, 'PDF/rev-outlk-trends.pdf')}">Printable version</a></p>
+		<p>&#160;</p>
+		
+		 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript">
+		$('.more_info_link').click(function() {
+			$(this).parent().prev('.more_info').slideToggle('fast');
+			$(this).text(function(_,txt) {
+				var ret='';
+		
+				if ( txt == 'More...' ) {
+				   ret = 'Less...';
+				}else{
+				   ret = 'More...';
+				}
+				return ret;
+			});
+			return false;
+		});
+	</script>
+		
+	</body>
+
+
+</html>
+</apex:page>

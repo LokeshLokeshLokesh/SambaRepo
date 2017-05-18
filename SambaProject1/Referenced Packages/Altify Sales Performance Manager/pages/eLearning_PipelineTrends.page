@@ -1,0 +1,171 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" applyHtmlTag="false">
+<html>
+<head>
+	<title></title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'></link>
+	
+</head>
+
+<body>
+		<style>
+			@import url("{!URLFOR($Resource.eLearning,          'CSS/spm-default.css')}");
+		</style>
+	   
+		<ul class="content_list">
+			<li class="clearfix">
+				<div class="point_image"><img src="{!URLFOR($Resource.eLearning, 'images/icon1.png')}" /></div>
+				<div class="point_text">
+				<p id="overview-link" style="float:right;" ><a href="http://spm-v1.dealmakerhelp.com/Default.htm" target="_blank">Overview of Sales Performance Manager</a></p>
+					<h2>Purpose of Pipeline Trends</h2>
+					<p>Pipeline Trends helps you to understand: </p>
+		<ul>
+			<li>the flow of opportunities through your pipeline</li>
+			<li>the change in value or count of opportunities over the past 90 days</li>
+			<li>the trend (in increments of 30 days) from 90 days ago to today </li>
+		</ul>
+		
+		
+					<div class="more_info">
+					<p>The growth or decline in a pipeline is tracked by each stage so that you see the overall changes in each pipeline stage as well as the overall trend. </p>
+		<p>Dealmaker also displays the portion of each pipeline stage that has progressed or regressed during the period.</p>
+		<p>Use Pipeline Trends to understand your pipeline velocity, to determine where opportunities are languishing, and to assess your ability to make future sales targets based on these factors and the current state of the pipeline. </p>
+		<p>If opportunities that were in the later stages of the pipeline have been won, then your pipeline stages and the activities  undertaken to progress to those stages in the funnel are probably well defined and well executed.  </p>
+		<p>If, on the other hand, there are opportunities from the last few stages that have not moved, then it is likely that you should be concerned about these deals.</p>
+		<p>It is likely that there is already adequate focus on the latter stages of the pipeline, because they typically contain active and Must Win deals that are closer to closing and are the focus of this particular quarter. </p>
+		<p>However, to ensure the future health of your business, early pipeline is just as important in terms of overall pipeline health, managing your sales business, and consistently achieving quota.</p>
+		<p>Pipeline Trends shows what happened to the deals in each stage of the pipeline from 90 days ago, organized by Revenue Type, by team or by individual sales person.</p>
+				</div>
+					<p><a href="javascript:void[0]" class="more_info_link">More...</a></p>
+				</div>
+			</li>
+			<li class="clearfix">
+				<div class="point_image"><img src="{!URLFOR($Resource.eLearning, 'images/icon2.png')}" /></div>
+				<div class="point_text">
+					<h2>How to Use Pipeline Trends with your Team</h2>
+					 <p>There are three elements to this capability in Dealmaker Sales Performance Manager:</p>
+		<ul>
+			<li>Pipeline Trends</li>
+			<li>What Happened to the Pipeline</li>
+			<li>Detailed Changes to the Pipeline</li>
+		</ul>
+		<p>These areas of analysis are explored in the sections that follow.</p>
+					<div class="more_info">
+					
+					<h2>Pipeline Trends</h2>
+		<p>Pipeline Trends shows, at a summary level, the development and changes in the pipeline over the past 90 days and the current pipeline value. </p>
+		<p>The change in the value in each pipeline stage is displayed graphically in increments of 30 days.  Also, any opportunities that were closed won or lost during the 90 days are aggregated and represented graphically below the line.</p>
+		<p><b>Note:</b> If opportunities were created after 90 days ago and were won or lost during the 90 days, these will also be included here.</p>
+		<h2>What Happened to the Pipeline</h2>
+		<p>The chart in the top right quadrant on the Pipeline Trends screen shows, in aggregate value, the resulting pipeline stage and value for each of the historical opportunities. </p>
+		<p>The y-axis is used to separate each of the pipeline stages (in today’s pipeline), and the horizontal stacked bars shows the value of the opportunities today in each stage.</p>
+		<p>Clicking on the pipeline timeline links (90 days ago, 60 days ago or 30 days ago) in the Pipeline Trends chart on the left will show the distribution of those opportunities today, displayed by stage. </p>
+		<p>You can get more granular in your analysis by clicking an individual pipeline stage in any of the columns in the Pipeline Trends chart to see today’s stage distribution of the opportunities.</p>
+		<p>Ideally, a good percentage of the opportunities that were in late stages in pipeline will have moved to Won, and a majority of the opportunities from earlier stages will also have moved forward. </p>
+		<p> In some cases you will also see regressions where opportunities have moved back in the pipeline, or where opportunities are lost.  Late stage losses are particularly damaging.</p>
+		<h2>Detailed Changes to the Pipeline</h2>
+		<p>The matrix beneath the two charts on the Pipeline trends screens shows the detail behind the movement of opportunities through the funnel from 90, 60, or 30 days ago to today.  </p>
+		<p>Click the pipeline timeline links (90 days ago, 60 days ago or 30 days ago) in the Pipeline Trends chart on the top left of the screen to scope the analysis  to that timeframe (from then until now).</p>
+		<p>On each row, the left-most column shows the starting position for both the value and number of opportunities in that Pipeline stage. </p>
+		<p>Moving left to right along the row, Dealmaker shows you where those opportunities are today and it also shows the value change if there has been a change in the value of the opportunities since the start of the period.</p>
+		<p>Opportunities are displayed on a green background when they have progressed forward. </p>
+		<p>Conversely, when opportunities have regressed they are displayed on a light orange background</p>
+		<p>Opportunities that have not moved are displayed on a grey background.</p>
+		<p>Clicking any of the numbers in the matrix lists the specific opportunities that make up that number. It shows any changes in Stage, Value, Close Date and Close Probability for each of the deals.</p>
+	
+					
+					</div>
+					<p><a href="javascript:void[0]" class="more_info_link">More...</a></p>
+				</div>
+			</li>
+			<li class="clearfix">
+				<div class="point_image"><img src="{!URLFOR($Resource.eLearning, 'images/icon3.png')}" /></div>
+				<div class="point_text">
+					<h2>Actions to Consider</h2>
+					 <ul>
+			<li>Establish a rhythm with each of the sales team – we’d recommend monthly – where you review the progress of deals, and the growth (or otherwise) in the pipeline over the past 90 days. (If your sales cycle is materially shorter than 90 days, then you might select the 60 or 30 day view.)</li>
+			<li>In conjunction with the Pipeline Goals in the Pipeline section of Sales Performance Manager, compare total pipeline value and examine any shortfall to goal.</li>
+		</ul>
+					<div class="more_info">
+					<ul><li>Examine carefully any deals that moved backwards – these are displayed on the light orange background in the matrix – so that you can uncover the reasons for the regressions. </li>
+			<p>If you have a pattern across the team of deals moving backwards, his is usually an indicator of a poorly defined sales process, poor qualification practices, or an ineffective discovery or customer alignment.  </p>
+			<p>If this is not a common problem in the sales team, but is limited to just one or two sellers, then specific execution guidance or coaching is required.</p>
+			<li>When opportunities have not moved forward from one stage to the next – you can see these represented in the matrix with a grey background – dig into the detail of the opportunities to determine whether these deals are in trouble.  </li>
+			<p>Sales usually go backwards or forwards – they rarely stay the same – and you will to need determine the reasons behind the loss in momentum.</p>
+			<li>Check also for opportunities that have moved through the pipeline to Closed Won very quickly.  If these were in the early stages of the pipeline (or did not exist at all) at the start of the period, then there will likely be some cases where either the salesperson is not fully aware of what is going on in the opportunity, or the salesperson is not entering the data into the system too late, or not maintaining it. If keeping the system up to date is the problem, then it is very difficult for the sales manager or sales person to have an outlook on the true value of the pipeline.</li>
+		</ul>
+					</div>
+					<p><a href="javascript:void[0]" class="more_info_link">More...</a></p>
+				</div>
+			</li>
+			
+			<li class="clearfix">
+				<div class="point_image"><img src="{!URLFOR($Resource.eLearning, 'images/icon5.png')}" /></div>
+				<div class="point_text">
+					<h2>Best Practice</h2>
+					<ul>
+			<li>Conduct Pipeline Trends monthly call with each team member</li>
+			<p>The purpose of these calls is to determine what can be learned from reviewing the progress of opportunities through the funnel. This process enables the manager and seller to align where deals might be getting stuck, or whether opportunities have in fact truly been lost. </p>
+			<p>Develop a plan to determine how to unstick the deals, or clarify whether the opportunity should in fact be removed from the pipeline to give you both a more accurate view of the pipeline value.</p>
+		</ul>
+		
+					<div class="more_info">
+					<ul>
+			<li>Ask the Salesperson to prepare in advance</li>
+			<p>To have a productive meeting, both manager and seller should get into a habit of coming to the call with the requisite information already in hand. It is important that these meetings are focused on improving behavior that will lead to:</p>
+			<ul>
+				<li> greater pipeline velocity</li>
+				<li>an accurate reflection of the potential future business</li>
+				<li>a roadmap to building value in subsequent quarters</li>
+			</ul>
+			<p>Ask the salesperson to review the actual static and regressed deals in particular. The salesperson should try to answer the following questions: </p>
+			<ul>
+				<li>What is the root cause of the loss in momentum, on a deal-by-deal basis? </li>
+				<li>What should have been done differently? </li>
+				<li>What changes should be made in the next month to improve funnel velocity or add to the pipeline to increase overall value?</li>
+			</ul>
+		</ul>
+		<ul>
+			<li>Use Insights to examine these four key areas:</li>
+			<ul>
+				<li>Development: What has been the overall value/number change in the pipeline?</li>
+				<li>Movement: What opportunities have moved forwards or backwards?</li>
+				<li>Value Change: Are opportunities increasing or decreasing in value as they progress through the funnel?</li>
+				<li>Won / Lost Deals Analysis: Where stages did Won / Lost deals come from?</li>
+			</ul>
+		</ul>
+					</div>
+					
+					<p><a href="javascript:void[0]" class="more_info_link">More...</a></p>
+				</div>
+				
+			</li>
+		</ul>		
+			
+		<p class="align-right"><a target="_blank" href="{!URLFOR($Resource.eLearning, 'PDF/pipeline-trends.pdf')}">Printable version</a></p>
+		<p>&#160;</p>
+		
+		 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript">
+		$('.more_info_link').click(function() {
+			$(this).parent().prev('.more_info').slideToggle('fast');
+			$(this).text(function(_,txt) {
+				var ret='';
+		
+				if ( txt == 'More...' ) {
+				   ret = 'Less...';
+				}else{
+				   ret = 'More...';
+				}
+				return ret;
+			});
+			return false;
+		});
+	</script>
+		
+	</body>
+
+
+</html>	
+</apex:page>

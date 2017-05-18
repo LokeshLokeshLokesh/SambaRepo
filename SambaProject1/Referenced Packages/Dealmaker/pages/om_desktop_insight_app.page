@@ -1,0 +1,55 @@
+<apex:page docType="html-5.0"
+	showHeader="{! NOT(isFullscreen || $CurrentPage.parameters.hide_summary  == 'true') }" 
+
+
+	sidebar="false" 
+	 
+	standardController="Opportunity" 
+	extensions="DMAPP.InsightMapController,DMAPP.MaxNotificationController,DMAPP.PrimeActionController,DMAPP.SummaryController,DMAPP.StandardControllerPPTExtension"
+	action="{!logInsightMapUsage}"	
+		
+	>
+
+	
+		<apex:include pageName="DMAPP__APIDelegate"/>
+
+		
+			
+			
+			
+				<c:InsightBanner id="InsightBanner"
+					rendered="{!fullScreen}" 
+					enableMaxInSOM="{!enableMaxInSOM}"
+					opportunityid="{!opportunity.id}" 
+					hidePRIMETypeColumn="{!hidePRIMETypeColumn}"
+					listAllActions="{!listAllActions}"
+					jQueryUIDateFormat="{!jQueryUIDateFormat}"
+					currencyISO="{!currencyISO}"
+					isPRIMEActionsEnabled="{!isPRIMEActionsEnabled}"
+					showPPTLink="{!ShowPPTLink}"
+					isTAS120Editable="{!isTAS120Editable}"
+					isLicensedForPPT="{!isLicensedForPPT}"
+					/>  
+			
+			
+		
+			<apex:include pageName="DMAPP__SummaryTab2" rendered="{! NOT(isFullscreen || $CurrentPage.parameters.hide_summary  == 'true') }"/>
+		
+
+        
+
+	
+
+	
+
+	
+
+	
+	<c:om_desktop_insight_app oppExtraId="{! shadowOpportunity.Id }" />
+
+	
+		<apex:includeScript value="{! URLFOR($Resource.JQueryUI, 'js/jquery.paging.min.js') }" />
+	
+	
+
+</apex:page>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Enable_ZaapIT_s_Layout_Editor__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Enable the user to change ZaapIT&apos;s Layout Editor for smart tables/update</description>
+        <externalId>false</externalId>
+        <label>Enable ZaapIT&apos;s Layout Editor</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Enable_ZaapIT_s_View_Editor__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Enable ZaapIT&apos;s View Editor for none admin users</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enable ZaapIT&apos;s View Editor for none admin users (don&apos;t mark with enable layout editor for the same user)</inlineHelpText>
+        <label>Enable ZaapIT&apos;s View Editor</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+</CustomObject>

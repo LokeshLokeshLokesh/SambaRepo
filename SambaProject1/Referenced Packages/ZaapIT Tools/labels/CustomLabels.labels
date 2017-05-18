@@ -1,0 +1,1389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Account_Hierarchy</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account Hierarchy</shortDescription>
+        <value>Account Hierarchy</value>
+    </labels>
+    <labels>
+        <fullName>Action</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Action</shortDescription>
+        <value>Action</value>
+    </labels>
+    <labels>
+        <fullName>AutoLandscapePDFColumnsNum</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AutoLandscapePDFColumnsNum</shortDescription>
+        <value>7</value>
+    </labels>
+    <labels>
+        <fullName>Billing_Address</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Billing Address</shortDescription>
+        <value>Billing Address:</value>
+    </labels>
+    <labels>
+        <fullName>Blanks_none_black</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Blanks &amp; none-black</shortDescription>
+        <value>Blanks &amp; none-blacks values CAN NOT be selected together for child filtering</value>
+    </labels>
+    <labels>
+        <fullName>Blanks_radio_txt</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Blanks radio txt</shortDescription>
+        <value>Blanks</value>
+    </labels>
+    <labels>
+        <fullName>Blanks_txt</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Blanks</shortDescription>
+        <value>(Blanks)</value>
+    </labels>
+    <labels>
+        <fullName>Browse_Tables</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Browse Tables</shortDescription>
+        <value>Browse Tables</value>
+    </labels>
+    <labels>
+        <fullName>Calculate</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Calculate</shortDescription>
+        <value>Calculate</value>
+    </labels>
+    <labels>
+        <fullName>Cancel_button</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cancel button</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>Cancel_filter_button</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Cancel filter button</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>Cancel_mass_update</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cancel mass update</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>Changed_Row_s</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Changed Rows</shortDescription>
+        <value>Changed Row(s)</value>
+    </labels>
+    <labels>
+        <fullName>Clear</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Clear</shortDescription>
+        <value>Clear</value>
+    </labels>
+    <labels>
+        <fullName>Clear_Filter</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Clear Filter</shortDescription>
+        <value>Clear Filter</value>
+    </labels>
+    <labels>
+        <fullName>Click_here_full_Interactive_Version</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Click here full / Interactive Version</shortDescription>
+        <value>Click here full / Interactive Version</value>
+    </labels>
+    <labels>
+        <fullName>Conditional_Formatting</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Conditional Styling</shortDescription>
+        <value>Conditional Styling</value>
+    </labels>
+    <labels>
+        <fullName>Contact_address</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Contact_address</shortDescription>
+        <value>Address</value>
+    </labels>
+    <labels>
+        <fullName>Create_a_new_Smart_Table</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Create a new Smart-Table</shortDescription>
+        <value>- Create a new Smart-Table</value>
+    </labels>
+    <labels>
+        <fullName>Create_rows_Preview</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Create rows  &amp; Preview</shortDescription>
+        <value>Create &amp; Preview</value>
+    </labels>
+    <labels>
+        <fullName>Customize_link</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Customize link</shortDescription>
+        <value>Customize</value>
+    </labels>
+    <labels>
+        <fullName>Date_Format_Filter_Pattern</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Date Format Filter Pattern</shortDescription>
+        <value>-</value>
+    </labels>
+    <labels>
+        <fullName>Default_PD_txt</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>(Default)</shortDescription>
+        <value>(Default)</value>
+    </labels>
+    <labels>
+        <fullName>Delete_All</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Delete All</shortDescription>
+        <value>Delete All</value>
+    </labels>
+    <labels>
+        <fullName>Delete_button</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Delete button</shortDescription>
+        <value>Delete</value>
+    </labels>
+    <labels>
+        <fullName>Delete_the_current_view</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Delete the current view</shortDescription>
+        <value>Delete the current view</value>
+    </labels>
+    <labels>
+        <fullName>Delete_this_view</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Delete this view</shortDescription>
+        <value>Delete this view?</value>
+    </labels>
+    <labels>
+        <fullName>Delete_view_link</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Delete view link</shortDescription>
+        <value>Delete VIew</value>
+    </labels>
+    <labels>
+        <fullName>Duplicate_Selected_Items</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Clone Selected Rows</shortDescription>
+        <value>Clone Selected Rows</value>
+    </labels>
+    <labels>
+        <fullName>Duplicate_Selected_Items_Shallow</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Duplicate Selected Rows (Shallow)</shortDescription>
+        <value>Duplicate Selected Rows(Shallow)</value>
+    </labels>
+    <labels>
+        <fullName>Duplicate_button_msg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Clone button msg</shortDescription>
+        <value>This action will clone each selected row without its related lists e.g. tasks, events, etc...</value>
+    </labels>
+    <labels>
+        <fullName>Edit_Layout</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Edit Layout</shortDescription>
+        <value>Edit Layout</value>
+    </labels>
+    <labels>
+        <fullName>Error_creating_map</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error creating map</shortDescription>
+        <value>Address not found!</value>
+    </labels>
+    <labels>
+        <fullName>Expected_Result</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Expected Result:</shortDescription>
+        <value>Expected Result: [CELL VALUE]</value>
+    </labels>
+    <labels>
+        <fullName>ExportMenuOptions</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ExportMenuOptions</shortDescription>
+        <value>-</value>
+    </labels>
+    <labels>
+        <fullName>Export_Gray_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Export Gray Message</shortDescription>
+        <value>Save the first {0} rows into a file, use a date filter to export more rows in batches.</value>
+    </labels>
+    <labels>
+        <fullName>Export_to_File</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Export to File</shortDescription>
+        <value>Export to File</value>
+    </labels>
+    <labels>
+        <fullName>Field_header</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Field header</shortDescription>
+        <value>Field</value>
+    </labels>
+    <labels>
+        <fullName>Fill_in_the_fields_to_create_X_rows</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Fill in the fields to create X rows</shortDescription>
+        <value>Fill in the fields to create {0} {1}</value>
+    </labels>
+    <labels>
+        <fullName>Filter_box_help_Title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Filter box help (Title)</shortDescription>
+        <value>&lt;b&gt;Type a search term and press enter to filter&lt;/b&gt;&lt;br/&gt;Use != at the beginning for not equals to&lt;br/&gt;Use &amp;gt; at the beginning for greater than&lt;br/&gt;Use &amp;lt; at the beginning for less than&lt;br/&gt;Use * for wildcard&lt;br/&gt;Use , to separate multiple values</value>
+    </labels>
+    <labels>
+        <fullName>Filter_sort_select</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Filter sort select</shortDescription>
+        <value>Filter / Sort / Select</value>
+    </labels>
+    <labels>
+        <fullName>Filtered_By</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Filtered By</shortDescription>
+        <value>Filtered By:</value>
+    </labels>
+    <labels>
+        <fullName>Find</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Find:</shortDescription>
+        <value>Find:</value>
+    </labels>
+    <labels>
+        <fullName>Find_Replace</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Find Replace</shortDescription>
+        <value>Find &amp; Replace / Calculate</value>
+    </labels>
+    <labels>
+        <fullName>Found_x_results</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Found x results.</shortDescription>
+        <value>Found {0} results.</value>
+    </labels>
+    <labels>
+        <fullName>Generated_By</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Generated By</shortDescription>
+        <value>Generated By:</value>
+    </labels>
+    <labels>
+        <fullName>Generated_on</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Generated on</shortDescription>
+        <value>Generated on:</value>
+    </labels>
+    <labels>
+        <fullName>Graphs_title_count_txt</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Graphs title count txt</shortDescription>
+        <value>Count</value>
+    </labels>
+    <labels>
+        <fullName>Graphs_title_field_per_col</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Graphs title field per col</shortDescription>
+        <value>Chart  - {0} Grouped by {1}</value>
+    </labels>
+    <labels>
+        <fullName>Help_for_this_Page</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Help for this Page</shortDescription>
+        <value>LInks</value>
+    </labels>
+    <labels>
+        <fullName>Instant_Graph</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Instant Chart</shortDescription>
+        <value>Instant Chart</value>
+    </labels>
+    <labels>
+        <fullName>Items_per_page</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Rows per page</shortDescription>
+        <value>Rows per page</value>
+    </labels>
+    <labels>
+        <fullName>Later_label</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Later label</shortDescription>
+        <value>Later</value>
+    </labels>
+    <labels>
+        <fullName>Layout_Editor</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Layout Editor</shortDescription>
+        <value>Layout Editor</value>
+    </labels>
+    <labels>
+        <fullName>Mailing_Address</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Mailing Address:</shortDescription>
+        <value>Mailing Address:</value>
+    </labels>
+    <labels>
+        <fullName>Mark_to_overwrite_this_field</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Mark to overwrite this field</shortDescription>
+        <value>&lt;b&gt;Mark to overwrite this field&lt;/b&gt; &lt;br&gt; The value is taken from the New-Value column.</value>
+    </labels>
+    <labels>
+        <fullName>Mass_Duplicate</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Mass Clone</shortDescription>
+        <value>Mass Clone</value>
+    </labels>
+    <labels>
+        <fullName>Mass_Duplicate_title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Mass Clone title</shortDescription>
+        <value>Mass Clone</value>
+    </labels>
+    <labels>
+        <fullName>Mass_Update</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Mass Update</shortDescription>
+        <value>Mass Update</value>
+    </labels>
+    <labels>
+        <fullName>Mass_Update_All_btn_help</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Mass Update All btn - help</shortDescription>
+        <value>Mass Update &lt;u&gt;all&lt;/u&gt; the rows in the current view/table - this option respects the search &amp; filters. For example: type banana in the top right search and click the Mass-Update-All-Rows button - as a result you will update all the rows that have the word banana (in one of their text fields). This action will only update the rows that the current user can edit (based on his security settings / sharing rules), read-only rows will be ignored.&lt;br/&gt;&lt;br/&gt;Stopping the update process in the middle will result in partial update e.g. stopping at 50% will update 50% of the rows.&lt;br/&gt;&lt;br/&gt;This option is only available for table&apos;s admin (that can edit the layout).
+&lt;br/&gt;&lt;br/&gt;* Leaving this page / disconnecting from your network will stop the process - as if the stop button was pressed, you can continue the process at a later time.</value>
+    </labels>
+    <labels>
+        <fullName>Mass_Update_all_items</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Mass Update All Rows</shortDescription>
+        <value>Mass Update All Rows</value>
+    </labels>
+    <labels>
+        <fullName>Mass_Update_title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Mass Update title</shortDescription>
+        <value>Mass Update</value>
+    </labels>
+    <labels>
+        <fullName>Mass_edit_row_title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Mass_edit_row_title</shortDescription>
+        <value>Edit Row</value>
+    </labels>
+    <labels>
+        <fullName>MathOper</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MathOper</shortDescription>
+        <value>&lt;option value=&quot;*&quot;&gt;Multiply&lt;/option&gt;
+ &lt;option value=&quot;/&quot;&gt;Divide&lt;/option&gt;
+ &lt;option value=&quot;+&quot;&gt;Add&lt;/option&gt;
+ &lt;option value=&quot;-&quot;&gt;Subtract&lt;/option&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Max_Title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Max Title</shortDescription>
+        <value>Max:</value>
+    </labels>
+    <labels>
+        <fullName>Min_title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Min title</shortDescription>
+        <value>Min:</value>
+    </labels>
+    <labels>
+        <fullName>New_Value_header</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>New Value header</shortDescription>
+        <value>New Value</value>
+    </labels>
+    <labels>
+        <fullName>New_button</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>New button</shortDescription>
+        <value>New</value>
+    </labels>
+    <labels>
+        <fullName>Next_Column</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Next Column</shortDescription>
+        <value>Next Column</value>
+    </labels>
+    <labels>
+        <fullName>Next_Page</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Next Page</shortDescription>
+        <value>Next Page</value>
+    </labels>
+    <labels>
+        <fullName>No_Chart_Data</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No Chart Data</shortDescription>
+        <value>No Available Data</value>
+    </labels>
+    <labels>
+        <fullName>No_export_boolean</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No- export boolean</shortDescription>
+        <value>No</value>
+    </labels>
+    <labels>
+        <fullName>OK_buttons</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OK buttons</shortDescription>
+        <value>OK</value>
+    </labels>
+    <labels>
+        <fullName>Operation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Operation</shortDescription>
+        <value>Operation</value>
+    </labels>
+    <labels>
+        <fullName>Other_Address</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Other Address</shortDescription>
+        <value>Other Address:</value>
+    </labels>
+    <labels>
+        <fullName>Overwrite</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Overwrite</shortDescription>
+        <value>Overwrite</value>
+    </labels>
+    <labels>
+        <fullName>Page_x_of_y</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Page x of y</shortDescription>
+        <value>Page &lt;b&gt;{0} of {1}&lt;/b&gt;{3}</value>
+    </labels>
+    <labels>
+        <fullName>Pages</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Pages</shortDescription>
+        <value>Pages</value>
+    </labels>
+    <labels>
+        <fullName>Pin_Chart</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Pin Chart</shortDescription>
+        <value>Pin Chart</value>
+    </labels>
+    <labels>
+        <fullName>Please_select_at_least_one_row</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Please select at least one row</shortDescription>
+        <value>Please select at least one row</value>
+    </labels>
+    <labels>
+        <fullName>Please_select_the_field_s_you_want_to_update</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Please select the field(s) you want to update</shortDescription>
+        <value>Please select the field(s) you want to update</value>
+    </labels>
+    <labels>
+        <fullName>Powered_by</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Powered by</shortDescription>
+        <value>&lt;span style=&quot;color:#999999;font-size:8pt;&quot;&gt;Powered by &lt;a style=&quot;color:#999999;font-size:8pt;&quot; href=&quot;http://www.zaapit.com/?utm_source=app&amp;utm_medium=wt1&amp;utm_campaign=AppWG&quot; target=&quot;_blank&quot;&gt;ZaapIT.com&lt;/a&gt;&lt;/span&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Powered_by2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Powered by2</shortDescription>
+        <value>&lt;span style=&quot;color:#999999;font-size:8pt;&quot;&gt;Powered by &lt;a style=&quot;color:#999999;font-size:8pt;&quot; href=&quot;http://www.zaapit.com/?utm_source=app&amp;utm_medium=btm1&amp;utm_campaign=AppBTM&quot; target=&quot;_blank&quot;&gt;ZaapIT.com&lt;/a&gt;&lt;/span&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Preview_button</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Preview button</shortDescription>
+        <value>Preview</value>
+    </labels>
+    <labels>
+        <fullName>Preview_not_Available</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Preview not Available</shortDescription>
+        <value>Preview not Available</value>
+    </labels>
+    <labels>
+        <fullName>Previous_Column</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Previous Column</shortDescription>
+        <value>Previous Column</value>
+    </labels>
+    <labels>
+        <fullName>Previous_button</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Previous button</shortDescription>
+        <value>&lt; Previous</value>
+    </labels>
+    <labels>
+        <fullName>Previous_page</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Previous page</shortDescription>
+        <value>Previous page</value>
+    </labels>
+    <labels>
+        <fullName>Printable_View</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Printable View</shortDescription>
+        <value>Printable View</value>
+    </labels>
+    <labels>
+        <fullName>Problematic_Rows</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Problematic Rows</shortDescription>
+        <value>Problematic Rows:</value>
+    </labels>
+    <labels>
+        <fullName>Range_Filter</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Range Filter</shortDescription>
+        <value>Range Filter</value>
+    </labels>
+    <labels>
+        <fullName>Refresh_Chart</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Refresh Chart</shortDescription>
+        <value>Refresh Chart</value>
+    </labels>
+    <labels>
+        <fullName>Refresh_View</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Refresh_View</shortDescription>
+        <value>Refresh</value>
+    </labels>
+    <labels>
+        <fullName>Refresh_current_view</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Refresh_current_view</shortDescription>
+        <value>Refresh the current view</value>
+    </labels>
+    <labels>
+        <fullName>Remove</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Remove row</shortDescription>
+        <value>Remove</value>
+    </labels>
+    <labels>
+        <fullName>Replace</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Replace:</shortDescription>
+        <value>Replace:</value>
+    </labels>
+    <labels>
+        <fullName>Replace_all_occurrences_for_all_selected_rows</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Replace all occurrences for all / selected rows</shortDescription>
+        <value>Replace all occurrences for all / selected rows</value>
+    </labels>
+    <labels>
+        <fullName>Salesforce_Full_URL</fullName>
+        <categories>Salesforce Full URL to overwrite ZaapIT auto detect</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Salesforce Full URL</shortDescription>
+        <value>-</value>
+    </labels>
+    <labels>
+        <fullName>Save_File_button</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Save File button</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>Save_Ignore_Errors_Button</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Save Ignore Errors Button</shortDescription>
+        <value>Skip Error Rows &amp; Save</value>
+    </labels>
+    <labels>
+        <fullName>Save_View</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Save View</shortDescription>
+        <value>Save View</value>
+    </labels>
+    <labels>
+        <fullName>Save_as_CSV</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Save as CSV</shortDescription>
+        <value>CSV - Comma Delimited (*.csv)</value>
+    </labels>
+    <labels>
+        <fullName>Save_as_Excel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Save as Excel</shortDescription>
+        <value>Excel Workbook (*.xls)</value>
+    </labels>
+    <labels>
+        <fullName>Save_as_New_View</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Save as New View</shortDescription>
+        <value>Save as New View</value>
+    </labels>
+    <labels>
+        <fullName>Save_as_PDF</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Save as PDF</shortDescription>
+        <value>PDF Document (*.pdf)</value>
+    </labels>
+    <labels>
+        <fullName>Save_as_Word</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Save as Word</shortDescription>
+        <value>Word Document (*.doc)</value>
+    </labels>
+    <labels>
+        <fullName>Save_as_XML</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Save_as_XML</shortDescription>
+        <value>XML (*.xml)</value>
+    </labels>
+    <labels>
+        <fullName>Save_button</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Save button</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>Save_file_as</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Save file as</shortDescription>
+        <value>Save file as:</value>
+    </labels>
+    <labels>
+        <fullName>Save_the_View_to_keep_the_current_charts_on_top</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Save the View - to keep the current charts on top</shortDescription>
+        <value>Save the View - to keep the current grid changes</value>
+    </labels>
+    <labels>
+        <fullName>Save_the_current_table_save_new_view</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Save the current table - save new view</shortDescription>
+        <value>Save the current table&apos;s filters, sorting, search and charts as a new view</value>
+    </labels>
+    <labels>
+        <fullName>Save_the_current_table_txt</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Save the current table txt</shortDescription>
+        <value>Save the current table&apos;s filters, sorting, search and charts as the current selected view.&lt;br/&gt;&lt;br/&gt;Use the layout editor to change the charts in the default-view.&lt;br/&gt;&lt;br/&gt;When Auto-Save is activated, the current page and number of rows per page are also auto-saved. &lt;br&gt;Auto-Save can be deactivated from the layout editor(customize link).</value>
+    </labels>
+    <labels>
+        <fullName>Saved</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Saved</shortDescription>
+        <value>Saved</value>
+    </labels>
+    <labels>
+        <fullName>Scroll_Down</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Scroll Down</shortDescription>
+        <value>Scroll Down</value>
+    </labels>
+    <labels>
+        <fullName>Scroll_Up</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Scroll Up</shortDescription>
+        <value>Scroll Up</value>
+    </labels>
+    <labels>
+        <fullName>Search_Radio_txt</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search Radio txt</shortDescription>
+        <value>Search</value>
+    </labels>
+    <labels>
+        <fullName>Search_label</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search label</shortDescription>
+        <value>Search</value>
+    </labels>
+    <labels>
+        <fullName>Select_All</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Select All</shortDescription>
+        <value>(Select All)</value>
+    </labels>
+    <labels>
+        <fullName>Shipping_Address</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Shipping Address</shortDescription>
+        <value>Shipping Address:</value>
+    </labels>
+    <labels>
+        <fullName>Showing_first_X_rows</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Showing first X rows</shortDescription>
+        <value>Showing first {0} rows</value>
+    </labels>
+    <labels>
+        <fullName>Showing_first_x_Result</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Showing first x Result.</shortDescription>
+        <value>Showing first {0} Result.</value>
+    </labels>
+    <labels>
+        <fullName>Sort_Ascending</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sort Ascending</shortDescription>
+        <value>Sort Ascending</value>
+    </labels>
+    <labels>
+        <fullName>Sort_Descending</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sort Descending</shortDescription>
+        <value>Sort Descending</value>
+    </labels>
+    <labels>
+        <fullName>Sort_color1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sort color1</shortDescription>
+        <value>#FFFFFF</value>
+    </labels>
+    <labels>
+        <fullName>Sort_color2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sort color2</shortDescription>
+        <value>#DBFFD6</value>
+    </labels>
+    <labels>
+        <fullName>Sum</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sum</shortDescription>
+        <value>Sum</value>
+    </labels>
+    <labels>
+        <fullName>The_selected_rows_were_cloned_successfully</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The selected rows were cloned successfully</shortDescription>
+        <value>The selected rows were cloned successfully</value>
+    </labels>
+    <labels>
+        <fullName>The_selected_rows_were_deleted_successfully</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The selected rows were deleted successfully</shortDescription>
+        <value>The selected rows were deleted successfully</value>
+    </labels>
+    <labels>
+        <fullName>Total_text</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Total text</shortDescription>
+        <value>Total</value>
+    </labels>
+    <labels>
+        <fullName>Unmark_to_ignore_row</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Unmark to ignore row</shortDescription>
+        <value>Unmark to ignore row</value>
+    </labels>
+    <labels>
+        <fullName>Update_Selected_Items</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Update Selected Rows</shortDescription>
+        <value>Update Selected Rows</value>
+    </labels>
+    <labels>
+        <fullName>Update_header</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Update header</shortDescription>
+        <value>Update</value>
+    </labels>
+    <labels>
+        <fullName>User_Guide</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>User Guide</shortDescription>
+        <value>User Guide</value>
+    </labels>
+    <labels>
+        <fullName>User_Hierarchy</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>User Hierarchy</shortDescription>
+        <value>User Hierarchy</value>
+    </labels>
+    <labels>
+        <fullName>Value</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Value</shortDescription>
+        <value>Value</value>
+    </labels>
+    <labels>
+        <fullName>View_Download</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>View / Download</shortDescription>
+        <value>View / Download</value>
+    </labels>
+    <labels>
+        <fullName>View_Name_DLG</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>View  Name DLG</shortDescription>
+        <value>Name:</value>
+    </labels>
+    <labels>
+        <fullName>View_Row</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>View Row</shortDescription>
+        <value>View</value>
+    </labels>
+    <labels>
+        <fullName>Welcome_Tour</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Welcome Tour</shortDescription>
+        <value>Welcome Tour</value>
+    </labels>
+    <labels>
+        <fullName>X0_1_were_created_Successfully</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>X rows were created Successfully</shortDescription>
+        <value>{0} {1} were created successfully</value>
+    </labels>
+    <labels>
+        <fullName>X1_row_was_created_Successfully</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>1 row was created Successfully</shortDescription>
+        <value>{0} {1} was created successfully</value>
+    </labels>
+    <labels>
+        <fullName>Yes_export_boolean</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Yes-export boolean</shortDescription>
+        <value>Yes</value>
+    </labels>
+    <labels>
+        <fullName>Your_changes_were_saved_successfully</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Your changes were saved successfully</shortDescription>
+        <value>Your changes were saved successfully</value>
+    </labels>
+    <labels>
+        <fullName>add_row_button</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>add row button</shortDescription>
+        <value>Add Row(s)</value>
+    </labels>
+    <labels>
+        <fullName>add_style_txt</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>add_style_txt</shortDescription>
+        <value>&lt;b&gt;Conditional Styling:&lt;/b&gt;&lt;br/&gt;
+Add color, style and images to any row / field based on a condition / formula.&lt;br&gt;Each view has a separate set of conditions / rules.</value>
+    </labels>
+    <labels>
+        <fullName>adding_a_new_row_message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>adding a new row message</shortDescription>
+        <value>Please save or cancel your work before adding a new row.</value>
+    </labels>
+    <labels>
+        <fullName>ajaxtoolkitprefix</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ajaxtoolkitprefix</shortDescription>
+        <value>/</value>
+    </labels>
+    <labels>
+        <fullName>are_you_sure</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>are you sure</shortDescription>
+        <value>Are you sure?</value>
+    </labels>
+    <labels>
+        <fullName>autoShowGuides</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>autoShowGuides</shortDescription>
+        <value>1</value>
+    </labels>
+    <labels>
+        <fullName>back_button</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>back button</shortDescription>
+        <value>Back</value>
+    </labels>
+    <labels>
+        <fullName>backgroundcolortxt</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>backgroundcolortxt</shortDescription>
+        <value>Background color</value>
+    </labels>
+    <labels>
+        <fullName>bold</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>bold</shortDescription>
+        <value>Bold</value>
+    </labels>
+    <labels>
+        <fullName>charts_colors</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>charts_colors</shortDescription>
+        <value>[&apos;blue&apos;,&apos;#CC0000&apos;,&apos;orange&apos;,&apos;#00CC00&apos;,&apos;#800080&apos;,&apos;#FFAA00&apos;,&apos;#00FFFF&apos;,&apos;#FF00AA&apos;,&apos;green&apos;,&apos;#AA00AA&apos;,&apos;#00AAAA&apos;,&apos;#AAAA00&apos;,&apos;#999900&apos;,&apos;#555500&apos;,&apos;lime&apos;]</value>
+    </labels>
+    <labels>
+        <fullName>charts_css</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>charts css</shortDescription>
+        <value>.empty1{}</value>
+    </labels>
+    <labels>
+        <fullName>charts_script</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>charts_script</shortDescription>
+        <value>&lt;span/&gt;</value>
+    </labels>
+    <labels>
+        <fullName>chatter_feed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>chatter_feed</shortDescription>
+        <value>Open Chatter Feed</value>
+    </labels>
+    <labels>
+        <fullName>create_rows_close</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>create rows</shortDescription>
+        <value>Create</value>
+    </labels>
+    <labels>
+        <fullName>delete_link</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>delete link</shortDescription>
+        <value>Del</value>
+    </labels>
+    <labels>
+        <fullName>disableincludescript</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>disableincludescript</shortDescription>
+        <value>-</value>
+    </labels>
+    <labels>
+        <fullName>edit_button</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>edit button</shortDescription>
+        <value>Edit</value>
+    </labels>
+    <labels>
+        <fullName>edit_explain</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>edit_explain</shortDescription>
+        <value>This link is only available for the app-installer-user and for selected users&lt;br&gt;&lt;br&gt;To grant-access to this link just add the &amp;#34;Enable ZaapIT&apos;s Layout Editor&amp;#34; field to the manage-users layout (via setup&gt;manage users&gt;users&gt;choose a user&gt;edit layout)  and tick this check-box-field for the relevant&lt;br&gt; user(s).&lt;br&gt;&lt;br&gt;See the user guide for more info.</value>
+    </labels>
+    <labels>
+        <fullName>edit_link</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>edit link</shortDescription>
+        <value>Edit</value>
+    </labels>
+    <labels>
+        <fullName>error_enter_value</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>error_enter_value</shortDescription>
+        <value>Error:#You must enter a value</value>
+    </labels>
+    <labels>
+        <fullName>export_button</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>export button</shortDescription>
+        <value>Export</value>
+    </labels>
+    <labels>
+        <fullName>export_to_url</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>export_to_url</shortDescription>
+        <value>-</value>
+    </labels>
+    <labels>
+        <fullName>filter_ex_Btn</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Filter button multi choice</shortDescription>
+        <value>Filter</value>
+    </labels>
+    <labels>
+        <fullName>fixCommuniZPD1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fixCommuniZPD1</shortDescription>
+        <value>/**/</value>
+    </labels>
+    <labels>
+        <fullName>follow_chatter</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>follow chatter</shortDescription>
+        <value>Click to follow / un-follow - to receive updates in your feed.</value>
+    </labels>
+    <labels>
+        <fullName>follow_instruction_guide</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>follow_instruction_guide</shortDescription>
+        <value>Please follow the instructions and then click the next button.</value>
+    </labels>
+    <labels>
+        <fullName>guide_grid_manager</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>guide_grid_manager</shortDescription>
+        <value>body~~~Grid Manager - Overview~~~&lt;b style=&quot;font-size:11pt;line-height:30px;&quot;&gt;Welcome to ZaapIT&apos;s Grid Manager Tab!&lt;/b&gt; &lt;br/&gt;In this tab you can do the following actions: &lt;ul style=&quot;margin:5px;padding:5px;&quot;&gt;&lt;li&gt;Create new Smart Tabs (Grid Tab / Sub Tabs of Grids)&lt;/li&gt;&lt;li&gt; Create new Virtual Grids (Smart-Tables) &lt;/li&gt;&lt;li&gt; Create new Related Grids / Sub Tab related grids &lt;/li&gt;&lt;li&gt; Manage the grid&apos;s settings in mass&lt;/li&gt;&lt;li&gt;Import / Export the grid settings from another system&lt;/li&gt;&lt;/ul&gt; &lt;br/&gt; Click next to take the quick tour.~~~ Dismiss~~~Next###.btnBox2~~~Welcome Tour~~~Use the following buttons to create new grids / Sub Tabs &lt;br/&gt; Click next to see the default grids. ~~~ Dismiss ~~~Next###body~~~Welcome Tour~~~&lt;span class=&quot;bluearrowtop&quot; &gt;&lt;/span&gt;&lt;span style=&quot;margin-top: 32px; display: inline-block; vertical-align: top;&quot;&gt;Click the contacts tab to see the new grids! &lt;/span&gt; ~~~Dismiss ~~~Done</value>
+    </labels>
+    <labels>
+        <fullName>italictxt</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>italictxt</shortDescription>
+        <value>Italic</value>
+    </labels>
+    <labels>
+        <fullName>massUpdateProgTexts</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>massUpdateProgTexts</shortDescription>
+        <value>Starting Mass Update...#Stop#Stopping...#Current Progress: #All items were updated successfully#Close#Are you sure you want to update all the rows</value>
+    </labels>
+    <labels>
+        <fullName>mass_update_0_rows</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>mass_update_0_rows</shortDescription>
+        <value>The current view has 0 rows to update!</value>
+    </labels>
+    <labels>
+        <fullName>more_actions</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>More Actions</shortDescription>
+        <value>Related Information</value>
+    </labels>
+    <labels>
+        <fullName>new_tab_tooltip</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>new_tab_tooltip</shortDescription>
+        <value>&lt;b&gt;Create Sub Tab options:&lt;/b&gt;&lt;br&gt;&lt;ol style=&apos;padding-left:5px;&apos;&gt;&lt;li&gt;Use the Generic Sub Tab to create a new Smart-Table as sub tab (no dedicated vf-pages) &lt;/li&gt;&lt;li&gt; Choose a predefined Smart-Table-vf-page, use case: use the same table configurations in related-lists and sub-tabs &lt;/li&gt;&lt;li&gt;Use General-Working-list-XXX If you didn&apos;t create any vf-page and want to use this sub-tab elsewhere&lt;/li&gt;&lt;li&gt;&lt;b&gt;Developers:&lt;/b&gt; Create a new visualforcepage and use it as a tab - &lt;a href=&apos;http://sc2.zaapit.com/pdf/ZaapitTools__User_Guide.pdf&apos; target=&apos;_blank&apos;&gt;page 24 on zaapit&apos;s user guide&lt;/a&gt; &lt;/li&gt;&lt;/ol&gt;&lt;b&gt;Tab Label Translation:&lt;/b&gt; Specify a custom label name in the tabLabelTranslation field on the sub-tabs&apos;s custom settings.</value>
+    </labels>
+    <labels>
+        <fullName>next_button</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>next button</shortDescription>
+        <value>Next &gt;</value>
+    </labels>
+    <labels>
+        <fullName>of_entries</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>of_entries</shortDescription>
+        <value>of</value>
+    </labels>
+    <labels>
+        <fullName>replace_txt</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>replace txt</shortDescription>
+        <value>Replace</value>
+    </labels>
+    <labels>
+        <fullName>search_box_help</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search box help (Title)</shortDescription>
+        <value>&lt;b&gt;Press enter to search&lt;/b&gt;&lt;br/&gt;Use * for wildcard search, e.g. l*g</value>
+    </labels>
+    <labels>
+        <fullName>show_feed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>show_feed</shortDescription>
+        <value>Show Feed</value>
+    </labels>
+    <labels>
+        <fullName>tabs_Cancel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>tabs_Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>tabs_click_edit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>tabs_click_edit</shortDescription>
+        <value>&lt;b&gt;Click to Edit&lt;/b&gt;</value>
+    </labels>
+    <labels>
+        <fullName>tabs_click_pencil</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>tabs_click_pencil</shortDescription>
+        <value>Click the pencil button to edit the tabs layout</value>
+    </labels>
+    <labels>
+        <fullName>tabs_dont_forget</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>tabs_dont_forget</shortDescription>
+        <value>Don&apos;t forget to hit the Save-Button</value>
+    </labels>
+    <labels>
+        <fullName>tabs_new_tab</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>tabs_new_tab</shortDescription>
+        <value>New Tab</value>
+    </labels>
+    <labels>
+        <fullName>tabs_save</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>tabs_save</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>tabs_smart_table</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>tabs_smart_table</shortDescription>
+        <value>Tab Content</value>
+    </labels>
+    <labels>
+        <fullName>tabs_title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>tabs_title</shortDescription>
+        <value>Tab Name</value>
+    </labels>
+    <labels>
+        <fullName>temp_smart_table_list_view_name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Temp Smart Table view autosaved</shortDescription>
+        <value>{0} - AutoSaved</value>
+    </labels>
+    <labels>
+        <fullName>temp_smart_table_list_view_name_suffix</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Temp Smart Table view autosaved - exclude suffix</shortDescription>
+        <value>AutoSaved</value>
+    </labels>
+    <labels>
+        <fullName>textcolortxt</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>textcolortxt</shortDescription>
+        <value>Text color</value>
+    </labels>
+    <labels>
+        <fullName>unavailable_page</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>unavailable_page</shortDescription>
+        <value>This page is unavailable, it exceeds the maximum row-offset allowed by Salesforce. \n\nTo see the other rows please sort by created date and use the &apos;created date column filter&apos; to splits the rows into batches (use the from - to fields). \n\For example: fetch all the rows created from 01-01-2012 to 01-01-2013, and then fetch all the rows created from 01-01-2013 to 01-01-2014.</value>
+    </labels>
+    <labels>
+        <fullName>underlinetxt</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>underlinetxt</shortDescription>
+        <value>Underline</value>
+    </labels>
+    <labels>
+        <fullName>user_guide_link</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>user-guide-link</shortDescription>
+        <value>http://sc2.zaapit.com/pdf/ZaapitTools__User_Guide.pdf</value>
+    </labels>
+    <labels>
+        <fullName>view_button</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>view_button</shortDescription>
+        <value>View</value>
+    </labels>
+    <labels>
+        <fullName>welcome_guide_me</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>welcome guide me</shortDescription>
+        <value>body~~~Welcome Tour~~~&lt;b style=&quot;font-size:11pt;line-height:30px;&quot;&gt;Welcome to your new &amp; improved grid!&lt;/b&gt; &lt;br/&gt;  Click next to take the quick tour.~~~ Dismiss ~~~Next###.seatchInptFZPW2~~~Welcome Tour~~~Grid search~~~ Dismiss ~~~Next###.helpELTL:first~~~Welcome Tour~~~Layout Editor~~~ Dismiss ~~~Next###.fltIC:visible:first~~~Welcome Tour~~~Click to open the Column Filter / Search~~~ Dismiss ~~~Next###.filterino:visible~~~Welcome Tour~~~Column Filter with Search &amp; Charts~~~ Dismiss ~~~Next###.prevnext~~~Welcome Tour~~~Page Selector~~~ Dismiss ~~~Next
+###.TotRowsPerPage~~~Welcome Tour~~~Number of rows Selector~~~ Dismiss ~~~Next###.btnBox2:visible~~~Welcome Tour~~~Mass Update / Edit &amp; other actions~~~-~~~Done</value>
+    </labels>
+    <labels>
+        <fullName>zp_action_link</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>zp_action_link</shortDescription>
+        <value>/resource/1438677018000/zaapit__zaapit_actions</value>
+    </labels>
+</CustomLabels>

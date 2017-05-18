@@ -1,0 +1,41 @@
+<apex:page >
+<c:zaapit_tables_v1 />
+    <!-- Thank you for looking :) please contact us for customizing this application -->
+    
+    <script>
+    	autoShowGuides="0";
+        function importExportSettings(){
+            var cIds="";
+            $(".lcbX input:checked").each(function(){
+                cIds+="~"+$(this).parents(".lcbX:first").attr("rid");
+            }); 
+            window.open("/apex/zaapit__Import_Export_Settings?ZET2="+(cIds.substring(1)),"import_export_settings","width=850,height=800");
+        }
+        
+        function newRL1(){
+            window.open(unescape('http://sc2.zaapit.com/pdf/ZaapitTools__User_Guide.pdf?page=37%23page=37'),'UG1','width=800,height=800');
+        }
+        function newST1(){
+            alert('On the next page choose a General-Working-List or General-Tabs (for sub tabs) ');
+            window.open('/setup/ui/tab/apexpages/apexPageTabWizard.jsp?setupid=CustomTabs&retURL=/apex/zaapit__closewin&isdtp=vw','_blank','width=800,height=800');
+        }
+        
+        function NewSmartTable1(){
+            window.location='/apex/zaapit__zaapit_tb_generalWL?tp=zp_'+(new Date().getTime().toString(24));
+        }
+        $(document).ready(function(){
+        if(!isSF1()){
+			var guide_grid_manager=getLS1("guide_grid_manager");
+			//alert(welcome_guide_meLS);
+			if(guide_grid_manager==null){
+				setLS1("guide_grid_manager","1")
+				setTimeout(function(){guideMe('guide_grid_manager',0);},600);
+			}
+		}
+        });
+    </script>
+    <div class="hd1">{!$label.guide_grid_manager}</div>
+    <style>
+    	.bluearrowtop{background:url("{!$resource.bluearrowtop}") top left no-repeat;width:69px;height:75px;display:inline-block;}
+    </style>
+</apex:page>

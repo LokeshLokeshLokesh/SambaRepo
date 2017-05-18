@@ -1,0 +1,30 @@
+<apex:page sidebar="false" showHeader="false" >
+<script type="text/javascript" src="{!$Resource.zp_jquery172}"></script>
+<script>
+function srcUp(t){
+    window.open((t.replace("isdtp=vw","aaa=aa1")),"_blank");
+}
+function navigateToUrl(t){
+    var sfd="salesforce.com/";
+    if(t.indexOf(sfd)>-1 && t.indexOf(sfd)<50){
+        t=t.substring(t.indexOf(sfd)+sfd.length-1);
+    }
+    self.location=t;
+}
+
+function lnkFx1(){
+    $("a[href]").each(function(){
+        var href1=$(this).attr("href");
+        if(href1.indexOf("http")==0){
+           $(this).attr("onclick","srcUp($(this).attr('href'));return false;");
+        }
+    });
+}
+$(document).ready(function(){
+    lnkFx1();
+    $(document).click(function(){setTimeout("lnkFx1()",1000);});
+    $(document).resize(function(){lnkFx1();});
+});
+</script>
+<chatter:feedWithFollowers entityId="{!$CurrentPage.parameters.id}" showHeader="false"/>
+</apex:page>

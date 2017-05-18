@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opinion__c$Downvote__c</field>
+    </columns>
+    <columns>
+        <field>Opinion__c$Upvote__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <column>Opinion__c$Downvote__c</column>
+            <operator>notEqual</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opinion__c$Upvote__c</column>
+            <operator>notEqual</operator>
+            <value>0</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opinion__c$User__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opinion__c$Insight__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>MAX Upvote/Downvote</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Max_Opinions__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Opinion__c$CreatedDate</dateColumn>
+        <endDate>2020-04-30</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2010-02-01</startDate>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Added_To_The_Funnel_Explanation</fullName>
+        <categories>SPM</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Added To The Funnel Explanation</shortDescription>
+        <value>This panel displays the net change in your pipeline for the selected period. Net change is the combined value of all opportunities added to your pipeline for the period, less the combined value of all opportunities removed from your pipeline (won or lost) for the period.</value>
+    </labels>
+    <labels>
+        <fullName>Develop_Explanation</fullName>
+        <categories>SPM</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Develop Explanation</shortDescription>
+        <value>Develop opportunities are deals that require background development work, so that you can position for the future, and maximize revenue in the medium-to-long term.&lt;br/&gt;These opportunities are generally not expected to close in the current quarter.</value>
+    </labels>
+    <labels>
+        <fullName>Forecast_Value_Explanation</fullName>
+        <categories>SPM</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Forecast Value Explanation</shortDescription>
+        <value>This chart shows where the team or team member stands with in relation to their revenue goal (if one has been applied).&lt;br/&gt;It compares the goal with the total value of opportunities marked as Projected, Possible and Unlikely.</value>
+    </labels>
+    <labels>
+        <fullName>High_Risk_Explanation</fullName>
+        <categories>SPM</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>High Risk Explanation</shortDescription>
+        <value>This panel lists the team or team member&apos;s top five High Risk opportunities in decreasing order of opportunity value.&lt;br/&gt;An opportunity is deemed to be high risk when:&lt;br/&gt;It is projected to close but it is inactive or stalled (hasn’t been updated in the last 30 days)&lt;br/&gt;It is possible that it will but it is inactive (hasn’t been updated in the last 60 days)</value>
+    </labels>
+    <labels>
+        <fullName>High_Risk_Opportunity_Explanation</fullName>
+        <categories>SPM</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>High Risk Opportunity Explanation</shortDescription>
+        <value>This is a High Risk opportunity.&lt;br/&gt;An opportunity is deemed to be high risk when:&lt;br/&gt;It is projected to close but it is inactive or stalled (hasn’t been updated in the last 30 days)&lt;br/&gt;It is possible that it will but it is inactive (hasn’t been updated in the last 60 days)</value>
+    </labels>
+    <labels>
+        <fullName>Mix_Explanation</fullName>
+        <categories>SPM</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Mix Explanation</shortDescription>
+        <value>A &lt;i&gt;rock&lt;/i&gt; is a &apos;large’ opportunity greater than $250,000.&lt;br/&gt;A &lt;i&gt;stone&lt;/i&gt; is a &apos;medium’ opportunity between $25,000 and $250,000.&lt;br/&gt;A &lt;i&gt;pebble&lt;/i&gt; is a &apos;small’ opportunity that is less than $25,000.</value>
+    </labels>
+    <labels>
+        <fullName>Must_Win_Explanation</fullName>
+        <categories>SPM</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Must Win Explanation</shortDescription>
+        <value>Must Win opportunities require priority focus to maximize your revenue in the immediate term. They are deals that it&apos;s important to close in this time period.&lt;br/&gt;By making an opportunity Must Win, you help to ensure that it&apos;s always ‘front-of-mind’ and receives the right level of attention to maximize the chance of winning.</value>
+    </labels>
+    <labels>
+        <fullName>New_Opp_Explanation</fullName>
+        <categories>SPM</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>New Opp Explanation</shortDescription>
+        <value>This panel lists the top 5 opportunities, by amount, that were added to your pipeline for the selected period.</value>
+    </labels>
+    <labels>
+        <fullName>Pipeline_Health_by_Stage_Explanation</fullName>
+        <categories>SPM</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Pipeline Health by Stage Explanation</shortDescription>
+        <value>This chart shows the activity of the team’s opportunities for each stage of the Sales Cycle.&lt;br/&gt;The size of the bar and each segment represents the $value of opportunities contained within it.</value>
+    </labels>
+    <labels>
+        <fullName>Pipeline_Mix_Pebble_Label</fullName>
+        <categories>SPM</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Pipeline Mix Pebble Label</shortDescription>
+        <value>Pebble</value>
+    </labels>
+    <labels>
+        <fullName>Pipeline_Mix_Pebble_Plural_Label</fullName>
+        <categories>SPM</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Pipeline Mix Pebble Plural Label</shortDescription>
+        <value>Pebbles</value>
+    </labels>
+    <labels>
+        <fullName>Pipeline_Mix_Rock_Label</fullName>
+        <categories>SPM</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Pipeline Mix Rock Label</shortDescription>
+        <value>Rock</value>
+    </labels>
+    <labels>
+        <fullName>Pipeline_Mix_Rock_Plural_Label</fullName>
+        <categories>SPM</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Pipeline Mix Rock Plural Label</shortDescription>
+        <value>Rocks</value>
+    </labels>
+    <labels>
+        <fullName>Pipeline_Mix_Stone_Label</fullName>
+        <categories>SPM</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Pipeline Mix Stone Label</shortDescription>
+        <value>Stone</value>
+    </labels>
+    <labels>
+        <fullName>Pipeline_Mix_Stone_Plural_Label</fullName>
+        <categories>SPM</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Pipeline Mix Stone Plural Label</shortDescription>
+        <value>Stones</value>
+    </labels>
+    <labels>
+        <fullName>Pipeline_Mix_by_Stage_Explanation</fullName>
+        <categories>SPM</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Pipeline Mix by Stage Explanation</shortDescription>
+        <value>This chart shows the relative size of the team’s opportunities for each stage of the Sales Cycle.&lt;br/&gt;The size of the bar and each segment represents the $value of opportunities contained within it.</value>
+    </labels>
+    <labels>
+        <fullName>Pipeline_Trend_90</fullName>
+        <categories>SPM</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Pipeline Trend 90 Explanation</shortDescription>
+        <value>Tracking the movement in your Pipeline shows changes in each stage to see if your pipeline is growing. Clicking on the period label (e.g. 90 days ago) will display the changes in What Happened chart. Clicking on a individual graph segment will limit the breakout to the opportunities from that segment.</value>
+    </labels>
+    <labels>
+        <fullName>Pipeline_Trend_Grid</fullName>
+        <categories>SPM</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Pipeline Trend Grid Explanation</shortDescription>
+        <value>Click on the period label (e.g. 90 days ago) in the Pipeline Trends chart to see the start and end positions for deals the past pipeline. Static deals are in the gray diagonal, with regressed deals to the left of the gray diagonal, and progressed deals to the right. Click on any cell and scroll down to see the specific deals.</value>
+    </labels>
+    <labels>
+        <fullName>Pipeline_Trend_Where</fullName>
+        <categories>SPM</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Pipeline Trend Where Explanation</shortDescription>
+        <value>To understand pipeline momentum you can see what happened to the deals that were in the pipeline in the past. Click on the period label (e.g. 90 days ago) in the Pipeline Trends chart to see the changes. Clicking on an individual graph segment in that chart will limit the breakout to the opportunities from that segment.</value>
+    </labels>
+    <labels>
+        <fullName>Revenue_Outlook_Possible_Label</fullName>
+        <categories>SPM</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Revenue Outlook Possible Label</shortDescription>
+        <value>Possible</value>
+    </labels>
+    <labels>
+        <fullName>Revenue_Outlook_Projected_Label</fullName>
+        <categories>SPM</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Revenue Outlook Projected Label</shortDescription>
+        <value>Projected</value>
+    </labels>
+    <labels>
+        <fullName>Revenue_Outlook_Unlikely_Label</fullName>
+        <categories>SPM</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Revenue Outlook Unlikely Label</shortDescription>
+        <value>Unlikely</value>
+    </labels>
+    <labels>
+        <fullName>Revenue_Trend_90</fullName>
+        <categories>SPM</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Revenue Trend 90 Explanation</shortDescription>
+        <value>Track the changes in your Revenue Outlook to establish your sales forecast accuracy. The bar on the left displays opportunities that are forecasted to close in the selected period (90/60/30 days ago) to today and the status of the opportunities at the beginning of the selected period. The chart on the right displays the current status of those opportunities. This helps to illustrate if the deals have progressed during the period and if your forecast was accurate.</value>
+    </labels>
+    <labels>
+        <fullName>Revenue_Trend_Grid</fullName>
+        <categories>SPM</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Revenue Trend Grid Explanation</shortDescription>
+        <value>The matrix shows the status of deals at the beginning of the selected period and where they are today. Deals where the status remains static are represented in the diagonal gray cells, deals that have progressed are represented in the green cells to the right of the gray diagonal and deals that have regressed in status are represented in amber cells to the left of the gray diagonal. The current value of all of the deals in each status, as well as any changes from the value at the beginning of the period, are displayed in each cell. Click on any cell and scroll down to see the specific details of the individual opportunities.</value>
+    </labels>
+    <labels>
+        <fullName>Revenue_Trend_Where</fullName>
+        <categories>SPM</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Revenue Trend Where Explanation</shortDescription>
+        <value>To understand Revenue Outlook changes you can see what has happened to the status of your deals from the past to the present. You can see the current status of opportunities based on the original status of the opportunity from the selected period (90/60/30 days ago). This helps you to see how your opportunity has progressed and helps to ascertain the accuracy of your forecast.</value>
+    </labels>
+    <labels>
+        <fullName>Status_Explanation</fullName>
+        <categories>SPM</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Status Explanation</shortDescription>
+        <value>This chart shows where the team or team member stands with in relation to their current pipeline goal (if one has been applied).&lt;br/&gt;It compares the goal with the total value of pipeline opportunities marked as &lt;i&gt;Active&lt;/i&gt;, &lt;i&gt;Stalled&lt;/i&gt; and &lt;i&gt;Inactive&lt;/i&gt;.</value>
+    </labels>
+    <labels>
+        <fullName>Velocity_Avg_Deal_Size_Explanation</fullName>
+        <categories>SPM</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Velocity Avg Deal Size Explanation</shortDescription>
+        <value>The Won number below is the average value of opportunities that you won.&lt;br/&gt;The Lost number below is the average value of opportunities that you lost.&lt;br/&gt;The average number represents the average value of both won and lost opportunities.</value>
+    </labels>
+    <labels>
+        <fullName>Velocity_Sales_Cycle_Duration_Explanation</fullName>
+        <categories>SPM</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Velocity Sales Cycle Duration Explanation</shortDescription>
+        <value>The Won number below is the average amount of days it takes to win an opportunity.&lt;br/&gt;The Lost number represents the amount of days, on average, that it takes to lose a deal.&lt;br/&gt;The average number represents the average sales cycle duration, in days, of both won and lost opportunities.</value>
+    </labels>
+    <labels>
+        <fullName>Velocity_Summary_Explanation</fullName>
+        <categories>SPM</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Velocity Summary Explanation</shortDescription>
+        <value>The numbers below represent your Sales Velocity for the selected period. These are:&lt;br/&gt;Revenue Won – The total amount of Revenue Won in the period&lt;br/&gt;Closed Opportunities – The amount of opportunities that were closed won and lost&lt;br/&gt;Average Sales Cycle – The Average Sales Cycle for both won and lost opportunities in the period&lt;br/&gt;Average Deal Size – The Average Deal size for both won and lost opportunities in the period&lt;br/&gt;Win Rate ($) - The Value Win Rate for all closed deals in the period</value>
+    </labels>
+    <labels>
+        <fullName>Velocity_Win_Rate_Explanation</fullName>
+        <categories>SPM</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Velocity Win Rate Explanation</shortDescription>
+        <value>The Value Win Rate represents the total %, in value, of all of the opportunities that you have won and lost.&lt;br/&gt;The Number Win rate represents the total %, in number of opportunities, which you have won and lost.</value>
+    </labels>
+</CustomLabels>

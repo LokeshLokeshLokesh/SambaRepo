@@ -1,0 +1,254 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" applyHtmlTag="false">
+<html>
+<head>
+	<title></title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'></link>
+    
+
+</head>
+<body>
+        <style>
+            @import url("{!URLFOR($Resource.eLearning,          'CSS/spm-default.css')}");
+        </style>
+
+        <ul class="content_list">
+            <li class="clearfix">
+                <div class="point_image"><img src="{!URLFOR($Resource.eLearning, 'images/icon1.png')}" /></div>
+                <div class="point_text">
+				<p id="overview-link" style="float:right;" ><a href="http://spm-v1.dealmakerhelp.com/Default.htm" target="_blank">Overview of Sales Performance Manager</a></p>
+                
+                    <h2>Purpose</h2>                    
+					<p>Revenue Outlook helps you to keep the team on track using metrics for the questions you care about, providing visibility into your sales business. Use Revenue Outlook when you are conducting your weekly Revenue or Forecast Calls.   </p>
+        <p>Uncovering risks or vulnerabilities early is what most great sales managers want to achieve.  When you know there is a problem you can do something about it.  Surprises are bad, particularly when they mean that you suddenly miss your forecast number.</p>
+        
+                    <div class="more_info">
+					<p>Managing your Revenue Outlook is critical to managing sales effectively. Identifying risks early removes surprises, and gives you time to act to fix the problem and secure your forecast. </p>
+        
+					<p>When you have poor visibility into projected sales, you generally have poorer sales results. You can help to alleviate that risk by using smart data-based forecasting measures. </p>
+        <p>Traditionally, less than 50% of deals that are forecasted actually close as forecast, and that makes it hard to plan your business. </p>
+        <p>Revenue Outlook is a data-driven forecasting approach, uncovering risk and enabling you to determine where you should focus.</p>
+        <p>Revenue Outlook shows your team’s opportunities in Salesforce, organized by Revenue Type and Forecast Status, for a defined period.</p>
+					</div>
+                    <p><a href="javascript:void[0]" class="more_info_link">More...</a></p>
+                </div>
+            </li>
+            <li class="clearfix">
+                <div class="point_image"><img src="{!URLFOR($Resource.eLearning, 'images/icon2.png')}" /></div>
+                <div class="point_text">
+                    <h2>How to Use with the Team</h2>
+                    <p><b>Analytics</b> is the best place to start to get an overall picture of performance, before you dive into the details.  </p>
+        <p>To do this, you must understand your:</p>
+        <ul>
+            <li>Forecast Value</li>
+            <li>Forecast Risk: Top 5 High Risk Opportunities</li>
+            <li>Top 5 Must Win Opportunities</li>
+            <li>Top 5 Develop Opportunities</li>
+        </ul>
+		<p>These areas of analysis are explored in this section.</p>
+                    <div class="more_info">
+					
+        <h3>Forecast Value</h3>
+        <p>Forecast Value shows your:</p>
+        <ul>
+            <li> Goal</li>
+            <li>Won revenue and any gap to goal</li>
+            <li>Projected revenue (some companies refer to this as Commit)</li>
+            <li>Possible revenue (some companies refer to the is Upside) in the period</li>
+            <li>Unlikely revenue – opportunities that are too early in a sales cycle or insufficiently advanced </li>
+        </ul>
+        
+        <p>If you are using Dealmaker Smart Sales Playbook, your <b>Projected</b> revenue is any opportunity with a close probability of 70% or greater, and adequate time left in the period to close.</p>
+        <p>And your <b>Possible</b> revenue is any opportunity that has reached 40% close probability and still has enough time in the period to close.  </p>
+        <p>If you are not using Dealmaker Smart Sales Playbook, the parameters that define <b>Projected</b> or <b>Possible</b> are configured during the Dealmaker Sales Performance Manager setup process.</p>
+        
+        <p>If you manage revenue Billing separately to Booking, there may be a difference between the Bookings or Invoiced amount and what you forecast using your company's Revenue Recognition principles.</p>
+        <p>You can  extend or 'nudge' your forecast period by one month to see what deals from the next period that it might be possible to accelerate . (This is done by selecting the <b>Extend Forecast Date by One Month</b> checkbox in the <b>Report</b> drop-down.)</p>
+        
+        <p>Forecast Value gives you the current state of your sales forecast for a specific period and for a specific Revenue Type.  </p>
+        <p>To maximize the likelihood of achieving or exceeding the forecast, you need to:</p>
+        <ul>
+            <li> look at any deals that present a risk to the forecast</li>
+            <li>focus on your must-win deals for the period</li>
+        </ul>
+        <h3>Forecast Risk: Top 5 High Risk Opportunities</h3>
+        <p>Forecast Risk: Top 5 High Risk Opportunities shows the deals that present a potentially high risk to your forecast. High Risk Deals require your immediate attention to get them on the right track.</p>
+        <p>In many cases, the problem with your Forecast is that the opportunities that are included here are often marked as Forecasted or Commit by the sales person using only their subjective assessment.  There are certainly situations where this is an accurate assessment, but statistically only 50% of deals that are forecasted actually close.</p>
+        <p>The best way to accurately assess whether a deal belongs in the Forecast is to have an objective and scientific assessment of risk. Look for risks in the forecasted deals in order to:</p>
+        <ul>
+            <li>determine how to mitigate those risks</li>
+            <li>reduce those unpleasant surprises of deal slippage or late-stage deal losses</li>
+        </ul>
+       
+        <p>The High Risk criteria have been set by your system administrator, and should include:</p>
+        <ul>
+            <li> abnormally large deals</li>
+            <li>opportunities that are moving more slowly than your typical winning sales cycle</li>
+            <li>opportunities that have not been updated over a material time period</li>
+        </ul>
+        
+        <p>In addition, you may have other risk factors identified that indicate High Risk.  We recommend that when you are assessing High Risk, you also consider:</p>
+        <ul>
+            <li> Compelling Event</li>
+            <li>proven Unique Business Value</li>
+            <li>Competitive Strategy</li>
+            <li>evidence of a positive relationship with the Decision Maker</li>
+            <li>Inside Support</li>
+            <li>whether you have a complete understanding of the customer’s business problem</li>
+        </ul>
+        <p>If you use Dealmaker Smart Opportunity Manager, we strongly recommend performing a Test &amp; Improve on all High Risk opportunities. </p>
+        <p>(If you have another mechanism to assess or strategize an opportunity, you should apply that process to all High Risk deals.) </p>
+        <p>At the end of the Test &amp; Improve, you should define your strategy to mitigate the risk, modify the projected close date, or qualify out and clean up the pipeline.</p>
+        <h3>Top 5 Must Win Opportunities</h3>
+        <p>Top 5 Must Win Opportunities shows the opportunities that require priority focus to maximize your revenue in the immediate term. </p>
+        <p>The Must Win opportunities that are listed are either suggested by Dealmaker or are opportunities that the Sales Manager or seller has manually indicated as Must Win opportunities.</p>
+        <p>(Your system administrator has configured the ‘Must Win’ criteria for your company.)</p>
+        <p>You would select a deal to be a Must Win in order to ensure that it is always ‘front-of-mind’ and receives the right level of attention to maximize your opportunity to win. </p>
+        <p>Every deal that is Must Win should be the subject of a Test &amp; Improve session, so that you can uncover vulnerabilities, determine the optimum strategy to win, corral the necessary resources to be applied, and develop a set of actions to advance the opportunity.</p>
+        <br />
+		<h4>Selecting Must Win Opportunities</h4>
+        <p>All deals are important, of course, but some opportunities are more strategic, and require more focus and potential resources to ensure the win. </p>
+        <p>Maximizing sales performance results is all about prioritization. You want to make sure you are allocating your precious resources to opportunities that are strategically important. </p>
+        <p>Strategically important may be defined in terms of absolute monetary value, a chance to develop a strategic position in an account, the introduction of a new product, defending a position with an existing customer against a competitor, or one of a myriad of other reasons.</p>
+        <p>Think about it this way: Winning four deals out of seven is better than three deals out of ten.  If you can achieve this level of focus, the results are remarkable. Your absolute number of wins goes up by 33%, and your win rate goes from 30% (3/10) to 57% (4/7).  This is a much greater return on investment, and makes sure that you are not wasting resources on the other seven deals.</p>
+        <p>Must Win opportunities (for this period) must be very well qualified, with a fully active selling engagement. And it must be reasonably well-advanced.  </p>
+        <p>Must Win opportunities can have a projected date outside of the forecast period, but you are usually considering Must Win opportunities to be of a short-to-medium-term focus. </p>
+        <p>Where opportunities have a longer horizon, and you are positioning for a deal in the future, they are likely to belong in Must Develop.</p>
+        <p>Consider the following questions to guide your selection of Must Win deals:</p>
+        <ol>
+            <li>Is the opportunity of sufficient value that merits specific focused resources?</li>
+            <li>Is it a strategic competitive replacement to establish a beachhead for future business?</li>
+            <li>Is this a strategic or marquee account?</li>
+            <li>Does it provide an opportunity to establish a reference account for a new product?</li>
+            <li>Are you are defending a position against an important competitor?</li>
+            <li>Does it provide an opportunity to establish a reference customer in a new industry?</li>
+        </ol>
+        <h3>Top 5 Must Develop Opportunities</h3>
+        <p>Top 5 Must Develop Opportunities shows the opportunities that require attention, so that you can position for a future opportunity and maximize revenue in the medium-to-long term. </p>
+        <p>The listed Must Develop opportunities are either suggested by Dealmaker or are opportunities that the Sales Manager or seller has manually selected.</p>
+        <p>Great sales teams, the ones that consistently hit the number, understand that while it is important to be very clear on the sales opportunities that you need to win to make this quarter’s target, you have to continue to make progress on future opportunities. </p>
+        <p>That’s why it's important to identify Must Develop opportunities. Just like Must Win opportunities, these are strategically important to win, but are not the deals you are planning to close in the immediate term.</p>
+        <p>The key thing is that you proactively decide to adopt a Develop Strategy that allows you to continue to make progress without putting undue pressure on the natural rhythm of the customer’s buying cycle, or the other factors that cause you to determine that this one is better for next quarter. In any case you still need to take action.</p>
+       
+					</div>
+                    <p><a href="javascript:void[0]" class="more_info_link">More...</a></p>
+                </div>
+            </li>
+            <li class="clearfix">
+                <div class="point_image"><img src="{!URLFOR($Resource.eLearning, 'images/icon3.png')}" /></div>
+                <div class="point_text">
+                    <h2>Actions to Consider</h2>
+                     <ul>
+            <li>Establish and communicate a vision for the cadence of your weekly Revenue Outlook calls, making sure that everyone is clear on the agenda, the preparation required, and the normal flow of the session.</li>
+            <li>At a basic level, ensure that everyone on the team understands his/her Goals by Revenue Type per Period.  This should be the easiest thing to do, but it is nevertheless essential that each of the sellers can tell what 'good' looks like before the start of any revenue cycle.</li>
+           </ul>
+                    <div class="more_info">
+					<ul><li>Ensure that Managers and sellers are fully conversant with the rules that determine High Risk, Must Win, and Must Develop opportunities.  Ideally, there will have been some consultation prior to the configuration of Dealmaker Sales Performance Manager.</li>
+            <li>It is important that everyone understands the quality of accurate data. Establish a weekly cadence whereby you can be sure that the data used in the weekly calls is accurate.  This will make the calls more efficient, and both sellers and managers will consequently spend less time massaging the forecast.</li>
+        </ul>
+					</div>
+                    <p><a href="javascript:void[0]" class="more_info_link">More...</a></p>
+                </div>
+            </li>
+            <li class="clearfix">
+                <div class="point_image"><img src="{!URLFOR($Resource.eLearning, 'images/icon4.png')}" /></div>
+                <div class="point_text">
+                    <h2>Top Risks to Forecast</h2>
+					<p>This section deals with the major risks to your forecast:</p>
+					
+					<p> 1. Relying on Subjective Assessment</p>
+					<p> 2. Using a Weighted Pipeline Model</p>
+					<p> 3. Expecting Previously Forecasted Deals to ‘Close This Time’</p>
+					<p> 4. Poor Data, or No Common Sales Language</p>
+					<p> 5. Relying on a Small Number of Large Deals</p>
+					
+					                        
+                    <div class="more_info">
+					 <h3>1. Relying on Subjective Assessment</h3>
+        <p>In many cases, the problem with your Forecast is that the included opportunities are often marked as Forecasted or Commit by the sales person using only their subjective assessment.  </p>
+        <p>There are certainly situations where this is an accurate assessment, but statistically only 50% of deals that are forecasted actually close. So flipping a coin to determine whether a deal will close or not is, on average, as accurate as most forecasting practices.</p>
+        <p>If you have applied a structured sales process, or utilize a structured sales methodology, it is more likely that you will identify weaker deals early. </p>
+        <p>A simple check for Compelling Event, Solution Fit and Unique Business Value, Inside Support, and Access to Funds will help you select the winners.  </p>
+        <p>Even without the application of a methodology, you can identify risks that are a function of deal activity, opportunity age, and velocity though the sales cycle.</p>
+        <h3>2. Using a Weighted Pipeline Model</h3>
+        <p>It can be more difficult to get an accurate determination of the closure likelihood of Possible deals, particularly when it is early in the forecast period.  </p>
+        <p>A common practice that we would caution against is the ‘weighted pipeline’ model, where you take all of the Possible Opportunities and multiple their value by their closure probability, and then assume that this is a safe value to forecast. </p>
+        <p> For example, if you have a $1,000,000 opportunity that 15% likely to close, and you have a $200,000 deal that is 75% likely to close, this approach will value both (in terms of their possible contribution to forecast) at $150,000.  </p>
+        <p>Clearly this isn't terribly helpful.  In the first case, the customer never buys 15% or 75% of a solution, and secondly there are too many other factors in play to view the $1m deal and $200k deal as the same.</p>
+        <h3>3. Expecting Previously Forecasted Deals to ‘Close This Time’</h3>
+        <p>We have all been in this situation.  We didn't lose the deal last quarter – it just slipped into this quarter. </p>
+        <p>This sometimes means that you have a qualification issue, but usually means that there is no Compelling Event identified by the customer.  </p>
+        <p>When the age of an opportunity in your forecast is materially longer than your average winning sales cycle for that type of deal, the likelihood of your winning that deal is extremely low. </p>
+        <p>A useful test for this type of opportunity is to simply ask the customer to explain the worst thing that would happen if they never embarked on this project. </p>
+        <p> If the customer does not exhibit real concern and potentially serious impact, then the opportunity might not belong in the forecast.</p>
+        <h3>4. Poor Data, or No Common Sales Language</h3>
+        <p>If the data in Salesforce is inaccurate or incomplete, it is impossible for your sales forecast to be accurate.  </p>
+        <p>There is then a lot of wasted resources applied to understanding the ‘real story’ behind each opportunity, and less time spent on activities that can help progress the deal. This is not in anyone’s interest. </p>
+        <p>There is little value transacted when manager and seller have to spend time validating the forecast. </p>
+        <p> Similarly, unless the whole organization has a common language that can be used to communicate clearly the current state of an opportunity, the likelihood of having a common assessment of whether a deal should be forecasted is reduced. </p>
+        <p>Then you end up with unexpected losses and occasionally unexpected wins. In either case your forecast will be inaccurate.</p>
+        <h3>5. Relying on a Small Number of Large Deals</h3>
+        <p>If your forecast contains opportunities that are substantially larger that the size of deals that you normally win, they can obviously represent a significant swing factor in your results. </p>
+        <p> If these large deals represent a disproportionate percentage of your forecasted number, and are not balanced by a reasonable number of average size deals, then your forecast is clearly at risk. </p>
+        <p>If you find yourself in this situation during a forecast period. it is likely that you can do little to improve the balance of deals in time to change the outcome.  </p>
+        <p>In that case you need to assess each of these large deals, mark them as Must Win if appropriate, and strategize each deal effectively to maximize your chance of winning.  </p>
+        <p>At the same time you need to engage in business development activity to balance your future pipeline so that this is not a recurring situation.</p>
+		
+		
+					</div>
+                    <p><a href="javascript:void[0]" class="more_info_link">More...</a></p>
+                </div>
+            </li>
+            <li class="clearfix">
+                <div class="point_image"><img src="{!URLFOR($Resource.eLearning, 'images/icon5.png')}" /></div>
+                <div class="point_text">
+                    <h2>Best Practice</h2>
+                    <ul>
+            <li><p>Conduct Revenue Outlook calls weekly with each team member.</p><p>The purpose of these calls is to accurately project deals that can close inside the reporting period, and identify timely strategies for closing those deals.  This process enables the manager and seller to level-set on opportunities. It should be conducted according to a predictable routine.</p>
+              </li>
+            <li><p>Prepare in advance</p><p>Both manager and seller should get into a habit of coming to the call with the requisite information already in hand to have a productive meeting.  </p>
+            <p>Review the opportunity status/details in Dealmaker (or other opportunity planning system) prior to the Revenue Outlook call and prepare questions.  In the manager’s case, the questions can be for clarification, but should be mainly focused on determining what assistance or guidance can be provided.</p>
+          </li>
+             </ul>
+                    <div class="more_info">
+					<ul>
+					<li><p>Begin with Current State metrics, Forecast Value, Won, Projected and Possible.</p> <p>Identify gap to quota.  Discuss changes since the last call. Recognize achievement, and celebrate wins.</p>
+           </li>
+             <li><p>Validate Projected opportunities using verifiable outcomes for each sales stage to re-evaluate the likelihood of closing the opportunity, and refine strategies to help the process. </p><p>The goal is for seller and manager to maximize success, and to help the seller to succeed. If applicable, look for ways to close any quota gaps.</p>
+            </li>
+            <li><p>Evaluate High Risk deals, and schedule Test &amp; Improve (or 'Deal Review') sessions to mitigate risk and strengthen the strategy to win.</p></li>
+            <li><p>For Must Win or High Risk deals, ensure that there is a detailed call or meeting plan for the next step in the process.  </p><p>Detailed call plans will ensure that you are well coordinated as a team, and that you have a clear understanding of key messages, competitive positioning, questions to ask, information to convey, and a common understanding of the minimal and optimal objectives for the call.</p>
+            </li>
+            <li><p>Review remaining Possible deals and Must Develop opportunities to identify situations where you may be able to accelerate sales cycles and maintain momentum for future forecast periods.</p></li>
+            <li><p>Close out any opportunities that either should have been qualified out, or have no reasonable likelihood of winning.</p></li>
+        </ul>
+					</div>
+                    <p><a href="javascript:void[0]" class="more_info_link">More...</a></p>
+                </div>
+            </li>
+        </ul>
+
+        <p class="align-right"><a target="_blank" href="{!URLFOR($Resource.eLearning, 'PDF/revenue-outlook.pdf')}">Printable version</a></p>
+		
+		 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript">
+		$('.more_info_link').click(function() {
+			$(this).parent().prev('.more_info').slideToggle('fast');
+			$(this).text(function(_,txt) {
+				var ret='';
+		
+				if ( txt == 'More...' ) {
+				   ret = 'Less...';
+				}else{
+				   ret = 'More...';
+				}
+				return ret;
+			});
+			return false;
+		});
+	</script>
+		
+    </body>
+</html>
+</apex:page>

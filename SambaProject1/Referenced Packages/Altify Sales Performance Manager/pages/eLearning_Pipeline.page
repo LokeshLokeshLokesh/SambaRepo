@@ -1,0 +1,266 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" applyHtmlTag="false">
+<html>
+<head>
+    <title></title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'></link>
+
+</head>
+
+<body>
+        <style>
+            @import url("{!URLFOR($Resource.eLearning,          'CSS/spm-default.css')}");
+        </style>
+       
+        <ul class="content_list">
+            <li class="clearfix">
+                <div class="point_image"><img src="{!URLFOR($Resource.eLearning, 'images/icon1.png')}" /></div>
+                <div class="point_text">
+                <p id="overview-link" style="float:right;" ><a href="http://spm-v1.dealmakerhelp.com/Default.htm" target="_blank">Overview of Sales Performance Manager</a></p>
+                  
+                    <h2>Purpose</h2>
+                    <p>Use Pipeline when you are conducting your Pipeline Calls in order to:</p>
+        <ul>
+            <li> provide visibility into the value, status, pipeline mix and additions to the pipeline</li>
+            <li>help manage and predict your future revenue potential </li>
+        </ul>
+        <p>This will help to keep the team on track with a commonly understood set of measurements, using metrics for the pipeline questions that you care about. </p>
+        <p>It will also ensure that you stay on top of the health and integrity of your pipeline to optimize your team’s future revenue. </p>
+        
+        
+                    <div class="more_info">
+                    <p>Pipeline management is one of those tasks that are too rarely treated as urgent, even though everyone accepts that the health of your pipeline is one of the most critical factors that govern the health of your business.</p>
+        <p>As well as than monitoring new additions to the Pipeline - which should be monitored weekly - you should establish either a monthly or bi-weekly cadence for your strategic pipeline review sessions, depending on the sales cycle in your business. </p>
+        <p>Shorter sales cycles (measured in weeks) will require more frequent pipeline review sessions. </p>
+        <p> If the natural rhythm of your business maps to sales cycles that extend to three or more months, it is safe to restrict your strategic pipeline review sessions to once per month. </p>
+        <p>Your Pipeline call allows you to focus on early qualification, and identify strategies and resources that you may need to maintain momentum through the pipeline.
+</p>
+        <p>It is likely that there is already adequate focus on the latter stages of the pipeline, because they typically contain your active and Must Win deals that are closer to closing and are the focus of this particular quarter.  </p>
+        <p>However, to ensure the future health of your business, early pipeline is just as important in terms of overall pipeline health, managing your sales business, and consistently achieving quota.
+</p>
+        <p>Pipeline shows your team’s opportunities in Salesforce, organized by Revenue Type and Pipeline Status for a defined period. 
+
+</p>
+        <h3>Linking Pipeline to Sales Velocity</h3>
+        <p>How do you know if your pipeline is actually a valid indicator of future business?  </p>
+        <p>You need to identify risk in the pipeline so that you can proactively manage it.  </p>
+        <p>As you consider the opportunities in the pipeline, you need to make sure that your assessment is informed by your historical performance in terms of:</p>
+        <ul>
+            <li>the average size of won opportunities</li>
+            <li>your average winning sales cycle</li>
+            <li>your win rate (measure by value, not by count)</li>
+        </ul>
+        <p>Essentially, it comes down to being consistent and discerning about the opportunities in your pipeline, so that you can manage pipeline health and maximize win rate and opportunity value.  </p>
+        <p>There are two indicators that you will have learned from past performance (in Sales Velocity) that can help you to differentiate between good and bad opportunities in your pipeline:
+
+</p>
+        <ul>
+            <li><b>Average Deal Size Won</b>
+            </li>
+            <p>How big is a certain opportunity? Is it significantly larger than the average deal your company wins? </p>
+            <p>Size has a tremendous impact on your likelihood of converting an opportunity, so it is important to compare all opportunities in your Pipeline to your Average Deal Size. 
+
+</p>
+            <li><b>Sales Cycle Duration (Won)</b>
+            </li>
+            <p>The age of an opportunity’s age tells you a lot about how likely you are to convert it into revenue, based on past performance. </p>
+            <p>Opportunities that are in your pipeline for longer than your typical winning sales cycle are likely to be at risk. 
+
+</p>
+        </ul>
+        <p>We do not recommend using ‘Weighted Pipeline’ as a measure of pipeline value.  </p>
+        <p>People usually calculate Weighted Pipeline by multiplying the value of all deals in each stage of the pipeline by the probability associated with that stage, and then summing them all together.  </p>
+        <p>This makes no allowance for reduction in deal size as the opportunity progresses through the funnel. </p>
+        <p> It also equates $1,000,000 opportunity at 10% with a $200,000 opportunity at 50%, and that is clearly misguided. 
+
+</p>
+        <p>However, if you want to get an indication of the value that you might expect from your pipeline – remembering that it is just an indicator – you should apply Value Win Rate to the opportunities in the funnel. </p>
+                    </div>
+                    <p><a href="javascript:void[0]" class="more_info_link">More...</a></p>
+                </div>
+            </li>
+            <li class="clearfix">
+                <div class="point_image"><img src="{!URLFOR($Resource.eLearning, 'images/icon2.png')}" /></div>
+                <div class="point_text">
+                    <h2>How to Use with my Team</h2>
+                    <p><b>Analytics</b> is the best place to start getting an overall picture of your pipeline before you dive into the details.  To do this, you must understand:</p>
+        <ul>
+            <li>Pipeline Status</li>
+            <li>Opportunity Size Analysis</li>
+            <li>Adding to the Pipeline</li>
+            <li>Top 5 New Opportunities This Period</li>
+        </ul>
+                    <div class="more_info">
+                    <h3>Pipeline Status</h3>
+        <p><b>Pipeline Status</b> shows your Goal, your Active pipeline, and the value of the opportunities in the pipeline that are Stalled or Inactive.  </p>
+        <p>Based on the default settings, ‘Stalled’ is any opportunity that has not has a meaningful update in Salesforce in 30 days.  </p>
+        <p>Similarly ‘Inactive’ is any opportunity that has not had a meaningful update in Salesforce in 60 days or more.</p>
+        <p>First, you should assess whether you have enough opportunities to meet the pipeline goal. The information in the pipeline system must be pristine, continually updated to reflect progress, wins and losses. </p>
+        <p>You should identify sellers who are short of goal, and understand their business development activities to add to their pipeline. </p>
+        <p>Everyone must understand the language being used, and the seller must take care to accurately record the value of each opportunity. </p>
+        <p>However, if you focus solely on the value of the pipeline, you will have incomplete information that may be misleading.</p>
+        <p>Pipeline Status gives you the current state of your pipeline for a specific Revenue Type, separating out Active, Stalled and Inactive opportunities.  The apparent value of your pipeline can be misleading if you only look at the total value. It is always more prudent to look at the gap between Active and Goal, rather than total pipeline value. You will usually find some indicator of risk if an opportunity is either Stalled or Inactive.</p>
+        <p>When an opportunity is Stalled, it usually means that the seller is either paying insufficient attention to it (or not updating Salesforce) or that access to, or contact with, the customer has reduced. In either case, there is a need to coach the opportunity or encourage more diligent performance.</p>
+        <p>There is rarely a good reason for an opportunity to be Inactive. If the opportunity belongs in the pipeline, then it needs to be worked.  The only exception to this rule might be your ‘renewals-type‘ or ‘maintenance-type’ opportunities, where you record these in your CRM as open opportunities with a close date 12 months into the future, on the contract renewal date.  You should record such opportunities in Salesforce as a separate Revenue Type to separate them from your overall pipeline risk analysis.</p>
+        <p>In a proportion of cases, Inactive opportunities are deals that should have been closed out because the opportunity has been lost.  In other situations, the customer’s priorities have shifted and the opportunity is deferred, or it was never a qualified opportunity in the first place. Occasionally, opportunities may be Inactive because a seller has too many opportunities to work.</p>
+        <p>It is important that Inactive opportunities are appropriately managed. Closing out deals that are in fact lost, or asking Marketing to re-engage the customer in a marketing nurture campaign.</p>
+        <p>To maximize the value from your pipeline, both in actual revenue terms and as a compass to guide the business, you need to look at the opportunities that can potentially undermine the value in your pipeline, or bring risk and vulnerabilities to your future business.</p>
+        <h3>Opportunity Size Analysis</h3>
+        <p>If you want to fill a barrel with rocks and maximize the capacity of the barrel, you have to fill the gaps between the rocks with stones or pebbles. </p>
+        <p>It’s the same with your pipeline. Experienced sellers will understand that relying on a small number of big deals is risky, and they will balance their opportunity portfolio with smaller deals in order to keep the numbers moving, in case the big rock falls off the cliff. </p>
+        <p>Understanding the balance of the pipeline based on size helps you to assess your risk in the pipeline.</p>
+        <ul>
+            <li><b>Stones</b> would be your average opportunity size that you typically win. These are the deals that you know how to win and don't have any usual risk associated with them by virtue of their size alone.</li>
+            <li><b>Rocks</b> are deals that are larger than normal and would represent significant risk if lost.  Large deals are great, but usually require extra focus if you want to maximize the chance of winning.  They can have a material impact on the size of your pipeline, and you need to qualify rigorously to ensure that you don't have a false sense of security about your pipeline strength.</li>
+            <li><b>Pebbles</b> are opportunities that are smaller than average and may put an unreasonable demand on resources. Smaller-than-average deals often require the same level of effort as a Stone, but the return for effort is obviously smaller. Sellers that have a high balance of pebbles in their pipeline may need help to create value with the customer to increase the deal size.</li>
+        </ul>
+        <p>The size of the opportunity has a tremendous impact on your likelihood of converting an opportunity, so it is important to compare all opportunities in your Pipeline to your Average Deal Size Won.</p>
+        <p>Additionally, you should review the Average Sales Cycle Duration (won) in Sales Velocity, and compare the age of your existing opportunities to this duration.</p>
+        <h3>Adding to the Pipeline</h3>
+        <p><b>Adding to the Pipeline</b> shows the quantity of opportunities that are added to the pipeline in the period being reviewed, and the number that was Closed Won or Closed Lost.  </p>
+        <p>Because the number of open opportunities in the pipeline is reduced by any closed opportunity, you can subtract the total of closed opportunities from the number of opportunities added, to identify the 'delta' - the change to the number of opportunities in your pipeline. </p>
+        <p>Looking at the details behind this graph is a very quick way to see which sellers are adding opportunities, and you might spend a minute recognizing your leading pipeline builders.</p>
+        <p>This is your Pipeline flow. Every month, your Pipeline loses a certain percentage of its open opportunities as either Closed-Won or Closed-Lost. To prevent your Pipeline from shrinking, you need to create more new open opportunities than you lost or Closed Won, which means carefully tracking your Pipeline’s flow over time and increasing your Pipeline commensurately.</p>
+        <p>Getting new opportunities into the top of your sales funnel is the source of your raw material. Without that raw material, you can’t build a sales business.  It’s not enough to simply add new opportunities to your Pipeline – you must add enough to replace the opportunities that have flowed out as Won and Lost Deals.  The important points here are that you need to maintain continuous focus on filling the funnel, and that each seller has to own this problem for themselves.</p>
+        <h3>Top 5 New Opportunities This Period</h3>
+        <p><b>Top 5 New Opportunities This Period</b> shows the biggest five new opportunities that have been added in the period.  It is a quick way for you to keep focus on early qualification or early development of these opportunities.  </p>
+        <p>Early stage opportunity development is a key trait of winning deals, and you can quickly mark these opportunities as Must Win or Must Develop as appropriate.</p>
+        <p>Consider the following questions to guide your selection of Must Win deals:</p>
+        <ul>
+            <li>Is the opportunity of sufficient value that merits specific focused resources?</li>
+            <li>Is it a strategic competitive replacement to establish a beachhead for future business?</li>
+            <li>Is this a strategic or marquee account?</li>
+            <li>Does it provide an opportunity to establish a reference account for a new product?</li>
+            <li>Are you are defending a position against an important competitor?</li>
+            <li>Does it provide an opportunity to establish a reference customer in a new industry?</li>
+        </ul>
+        <p>Must Develop opportunities, like Must Win opportunities, are strategically important to win, but are not the deals you are planning to close in the immediate term. </p>
+        <p>The key thing is that you proactively decide to adopt a Develop Strategy that positions you for a future sale.</p>
+                    </div>
+                    <p><a href="javascript:void[0]" class="more_info_link">More...</a></p>
+                </div>
+            </li>
+            <li class="clearfix">
+                <div class="point_image"><img src="{!URLFOR($Resource.eLearning, 'images/icon3.png')}" /></div>
+                <div class="point_text">
+                    <h2>Actions to Consider</h2>
+                     <ul>
+            <li>Establish and communicate a vision for the cadence of your Pipeline Review calls, making sure that everyone is clear on the agenda, the preparation required, and the normal flow of the session.
+</li>
+            <li>
+At a basic level, ensure that everyone on the team understands his Pipeline Goals by Revenue Type.  This should be the easiest thing to do, but it is nevertheless essential that each of the sellers can tell what they need in their pipeline, and how to assess the gap.
+
+</li></ul>
+                    <div class="more_info">
+                    <ul>
+            <li>Ensure that Managers and sellers are fully conversant with the rules that determine Active, Stalled and Inactive, as well as the elements have been defined for Opportunity Size Risk Analysis, i.e. Rocks, Stones and Pebbles. Ideally, there will have been some consultation prior to the configuration of Dealmaker Sales Performance Manager.
+
+</li>
+            <li>It is important that everyone understands the value of accurate data. Establish a weekly cadence whereby you can be sure that the data in your Pipeline is accurate. This will make the calls more efficient and both sellers and managers will consequently spend less time massaging the pipeline.
+</li>
+        </ul>
+                    </div>
+                    <p><a href="javascript:void[0]" class="more_info_link">More...</a></p>
+                </div>
+            </li>
+            <li class="clearfix">
+                <div class="point_image"><img src="{!URLFOR($Resource.eLearning, 'images/icon4.png')}" /></div>
+                <div class="point_text">
+                    <h2>Top Risks to Pipeline</h2>
+                    <p>This section deals with the major risks to your pipeline:</p>
+                    <ul>
+                    <li>Not Enough Being Added to The Pipeline</li>
+                    <li>Stalled and Inactive Opportunities</li>
+                    <li>Opportunities Outside Your Sweet Spot Size</li>
+                    <li>Slow Moving Opportunities</li>
+                    <li>History of Low Value Win Rate (versus Number Win Rate)</li>
+                    </ul>
+                    
+       
+                   <div class="more_info">
+                    
+        
+            <h3>Not Enough Being Added to The Pipeline</h3>
+            <p>This is pretty obvious, but the biggest risk to pipeline is not maintaining a rigorous focus on adding opportunities in the top of the funnel.</p>
+            <p>Getting new opportunities into the top of your sales funnel is the source of your raw material. Without that raw material, you can’t build a sales business.</p>
+            <p> It’s not enough to simply add new opportunities to your Pipeline – you must add enough to replace the opportunities that have flowed out as Won and Lost Deals.</p>
+            <h3>Stalled and Inactive Opportunities</h3>
+            <p>The value of your pipeline is overstated if you have Stalled or Inactive opportunities. </p>
+            <p>It is likely that Stalled opportunities indicate that some there is new risk in a deal, whereas Inactive opportunities probably don't belong in the pipeline at all.</p>
+            <p>Without considering the actual status of Stalled and Inactive opportunities, you cannot get a true value of the pipeline, and that means that your future business is at risk.</p>
+            <h3>Opportunities Outside Your Sweet Spot Size</h3>
+            <p>We have all fallen at this hurdle – pursuing those enormous opportunities that can make the year or quarter without having muscle memory on how to do a deal of this scale. </p>
+            <p> If your pipeline has a disproportionate number of very large deals that are substantially larger than the size of deals that you normally win, it's likely that there is considerable risk to your pipeline. </p>
+            <p> Similarly, if your pipeline is full of many small deals, it's likely that you will spend equal resources on each of these deals, meaning that you will just not have enough time to win enough opportunities to make your number. </p>
+            <h3>Slow Moving Opportunities</h3>
+            <p>Deals that have been in your pipeline for materially longer than the time it usually takes to win a sale are unlikely to close. </p>
+            <p>Be ruthless in assessing opportunities that are moving unusually slowly. It usually speaks to a lack of a Compelling Event, or suggests that an opportunity does not in fact exist.  </p>
+            <p>This is why there are so many opportunities recorded as Closed Lost – No Decision.</p>
+            <h3>History of Low Value Win Rate (versus Number Win Rate) </h3>
+            <p>Consider your Value Win Rate compared to your Number Win Rate to assess how you might reasonably expect to perform against the total value in the pipeline. </p>
+            <p>If the average size of deals won is smaller than the average of all closed deals, you should consider the impact on the expected value from your existing pipeline if this performance continues, by applying the Value Win Rate percentage to the active pipeline value.
+</p>
+                    </div>
+                    <p><a href="javascript:void[0]" class="more_info_link">More...</a></p>
+                </div>
+            </li>
+            <li class="clearfix">
+                <div class="point_image"><img src="{!URLFOR($Resource.eLearning, 'images/icon5.png')}" /></div>
+                <div class="point_text">
+                    <h2>Best Practice</h2>
+                    <p>Emotionally, filling the pipeline is the definitely one of the hardest part of sales. Sellers need to see the value in maintaining a full and vibrant pipeline so that they are not dependent on having to force a few deals across the line to make the number. </p>
+        <p>There may be an expectation that filling the funnel is someone else’s job, but sellers need to take ownership of their own pipeline, and either build opportunities themselves or work with internal resources to make sure they are getting what they need.</p>
+        
+                    <div class="more_info">
+                    <ul>
+                    <li>Consider Sales Cycle, Average Deal Size and Value Win Rate when setting pipeline Goals.  The traditional method of applying 3x or 5x times your annual goal does consider these factors, and can be misleading.</li>
+            
+                      <li>Conduct Pipeline Review calls bi-weekly with each team member during the first two months of a quarter.  Begin with the Pipeline Status to review Active, Stalled and Inactive opportunities, and determine gap to Pipeline Goal.</li>
+            <li>Prepare in advance. Both manager and seller should get into a habit of coming to the call with the requisite information already in hand to have a productive meeting.  Review the Pipeline status/details in Dealmaker prior to the Pipeline Review call, and prepare questions.  In the manager’s case, the questions can be for clarification, but should be mainly focused on determining what assistance or guidance can be provided. 
+
+</li>
+            <li>Review any Stalled or Inactive opportunities to determine what actions need to be taken to accelerate deals, or whether opportunities need to be purged from the sales funnel.
+
+</li>
+            <li>Separate the review of existing pipeline opportunities from a discussion about the current activity on filling the funnel.  For funnel-building activities, look at net adds both in-period and since the last call. This ensures that sellers are building pipelines that not only serve the current reporting period, but also will give positive results in the future. 
+
+</li>
+            <li>Ensure that you have a customer-evidence-based sales process in place that governs how opportunities move from one stage of the funnel to the next, getting a common sales language in the team and a better understanding of funnel velocity.  Funnel velocity is at least as important as pipeline size. A formalized sales process using customer-verifiable outcomes helps to measure your progress through the buying cycle and optimize funnel velocity.
+</li>
+            <li>Look for risk.  Assess Opportunity Analysis Risk to uncover any dependencies on large deals.  Review opportunity age to highlight opportunities that are lingering the funnel.</li>
+        </ul>
+                    </div>
+                    
+                    <p><a href="javascript:void[0]" class="more_info_link">More...</a></p>
+                </div>
+                
+            </li>
+        </ul>       
+            
+        <p class="align-right"><a target="_blank" href="{!URLFOR($Resource.eLearning, 'PDF/pipeline.pdf')}">Printable version</a></p>
+        <p>&#160;</p>
+        
+         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript">
+        $('.more_info_link').click(function() {
+            $(this).parent().prev('.more_info').slideToggle('fast');
+            $(this).text(function(_,txt) {
+                var ret='';
+        
+                if ( txt == 'More...' ) {
+                   ret = 'Less...';
+                }else{
+                   ret = 'More...';
+                }
+                return ret;
+            });
+            return false;
+        });
+    </script>
+        
+    </body>
+
+
+</html>
+</apex:page>

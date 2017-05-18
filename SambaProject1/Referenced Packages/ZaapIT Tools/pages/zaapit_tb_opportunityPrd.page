@@ -1,0 +1,10 @@
+<apex:page standardController="Opportunity" extensions="zaapit.zp_OpportunityPrd"> 
+
+    <c:zaapit_tables_v1 />
+    <!-- Thank you for looking :) please contact us for customizing this application -->
+
+   <div class="extraDescTitle hd1">
+   {!IF(Opportunity['Pricebook2']!=null,'('+Opportunity['Pricebook2.Name']+')','')}
+   </div>
+
+</apex:page>

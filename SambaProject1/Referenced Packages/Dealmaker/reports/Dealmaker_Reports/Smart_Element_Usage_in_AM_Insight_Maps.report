@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Insight_Smart_Node__c.Insight_Strategy_Nodes__r$DM_Strategy_Map__c.Plan_Unit__c.Account_Plan__c</field>
+    </columns>
+    <columns>
+        <field>Insight_Smart_Node__c.Insight_Strategy_Nodes__r$DM_Strategy_Map__c.Plan_Unit__c.Name</field>
+    </columns>
+    <columns>
+        <field>Insight_Smart_Node__c.Insight_Strategy_Nodes__r$DM_Strategy_Map__c</field>
+    </columns>
+    <columns>
+        <field>Insight_Smart_Node__c.Insight_Strategy_Nodes__r$Short_Description__c</field>
+    </columns>
+    <description>For each Insight Element, show the Account Plans, their Plan Units and related Insight Maps in which the Insight Element is used.</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Insight_Smart_Node__c$Type__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Insight_Smart_Node__c$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>DEPRECATED Align Smart Elmt Usage AM IMs</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AM_Smart_Element_Usage__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Insight_Smart_Node__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

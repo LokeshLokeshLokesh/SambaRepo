@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Align_Search__c.Align_Search_Usages__r$Search_Item_Owner__c</field>
+    </columns>
+    <columns>
+        <field>Align_Search__c.Align_Search_Usages__r$Type__c</field>
+    </columns>
+    <columns>
+        <field>Align_Search__c$Type__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Align_Search__c.Align_Search_Usages__r$Used__c</field>
+    </columns>
+    <crossFilters>
+        <operation>with</operation>
+        <primaryTableColumn>Align_Search__c$Id</primaryTableColumn>
+        <relatedTable>Align_Search_Usage__c</relatedTable>
+        <relatedTableJoinColumn>Align_Search__c</relatedTableJoinColumn>
+    </crossFilters>
+    <description>For each Template Insight Map &amp; Insight Element Solution, show how the user accessed it (via browse / search phrase) and whether they viewed or actually used it.</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>Align_Search__c.Align_Search_Usages__r$CreatedDate</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Align_Search__c.Align_Search_Usages__r$Object_Name__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Align_Search__c$Phrase__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>CM Insight Map Browser Map&amp;Sol Usage</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Align_Searches_Usage__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Align_Search__c.Align_Search_Usages__r$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

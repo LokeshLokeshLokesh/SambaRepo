@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <webLinks>
+        <fullName>Add_to_Campaign</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Add to Campaign</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>var checkedIds=&quot;&quot;; 
+var checkedId1=&quot;&quot;; 
+var leadCount=0; 
+$(&quot;.lcbX input:checked&quot;).each(function(){ 
+checkedId1=$(this).parents(&quot;.lcbX:first&quot;).attr(&quot;rid&quot;); 
+//alert(checkedId1.length);
+if(checkedId1!=null &amp;&amp; checkedId1.length==18){
+    checkedId1=checkedId1.substring(0,15);
+}
+checkedIds+=&quot;&amp;ids=&quot;+checkedId1; 
+leadCount++; 
+}); 
+if(leadCount&lt;1){ 
+alert(&quot;Please select at least one row&quot;); 
+}else{ 
+var ret1=escape(&apos;../apex/zaapit__Add_To_Campaign_Completed?isdtp=vw&amp;s=&apos;);
+
+var win1=window.open(&quot;/ui/campaign/MassAddCMFromListingWizard?ent=lead&amp;retURL=&quot;+ret1+&quot;0&amp;wizardRetUrl=&quot;+ret1+&quot;1&amp;macmflw_idSourceType=List&amp;macmflw_memberType=Lead&quot;+checkedIds+&quot;&amp;isdtp=vw&quot;,&quot;Add to Campaign&quot;, &quot;height=800,width=800,top=100,left=100,fullscreen=0,scrollbars=yes&quot;);
+
+var timer = setInterval(function() { 
+if(win1.closed) { 
+clearInterval(timer); 
+jumpToClk(currPageCls,600); 
+} 
+}, 1000); 
+
+
+} 
+return false;</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Auto_Mark</fullName>
+        <availability>online</availability>
+        <description>for dedup manager</description>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Auto Mark</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>if(licenseStatus!=&apos;Active&apos;){
+alert(&quot;This is a premium feature – contact sales@zaapit.com to activate!&quot;);
+return;
+}
+var ix=1;$(&quot;.list .dataRow&quot;).each(function(){
+if(!$(this).hasClass(&quot;tcx&quot;+ix)){
+ix=1-ix;
+}else{
+$(this).find(&quot;.lcbXRow&quot;).click();
+}
+});</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Convert_leads</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Convert</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>var checkedIds=&quot;&quot;; 
+var checkedId1=&quot;&quot;; 
+var contOrg=&quot;&quot;; 
+var acc1=&quot;&quot;; 
+var contactCount=0; 
+$(&quot;.lcbX input:checked&quot;).each(function(){ 
+checkedId1=$(this).parents(&quot;.lcbX:first&quot;).attr(&quot;rid&quot;); 
+contOrg=contOrg+&quot;,.RID&quot;+checkedId1; 
+if(checkedId1!=null &amp;&amp; checkedId1.length&gt;15){ 
+checkedId1=checkedId1.substring(0,15); 
+} 
+checkedIds+=&quot;&amp;id=&quot;+checkedId1; 
+contactCount++; 
+}); 
+if(contactCount&gt;1 || contactCount&lt;1){ 
+ alert(&quot;Please select exactly 1 lead to convert!&quot;); 
+}else{ 
+
+var win1=window.open(&quot;/lead/leadconvert.jsp?&amp;retURL=%2Fapex%2Fzaapit__Convert_Completed&amp;isdtp=vw&quot;+checkedIds ,&quot;Merge_Contacts&quot;,&quot;height=800,width=800,top=100,left=100,fullscreen=0,scrollbars=yes&quot;); 
+win1.focus(); 
+
+var timer = setInterval(function() { 
+if(win1.closed) { 
+clearInterval(timer); 
+//$(&quot;.seatchInptFZP&quot;).keyup(); 
+jumpToClk(currPageCls,600);
+} 
+}, 1000); 
+
+} 
+return false;</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Mass_Convert</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Mass Convert</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>openMassConvert();</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Mass_Convert_L</fullName>
+        <availability>online</availability>
+        <description>Mass Convert in lightning</description>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Mass Convert (L)</masterLabel>
+        <openType>sidebar</openType>
+        <page>Mass_Convert</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>Mass_Emails</fullName>
+        <availability>online</availability>
+        <description>Send email in mass to selected leads</description>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Mass Emails</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>var checkedIds=&quot;&quot;; 
+var checkedId1=&quot;&quot;; 
+var leadCount=0; 
+$(&quot;.lcbX input:checked&quot;).each(function(){ 
+checkedId1=$(this).parents(&quot;.lcbX:first&quot;).attr(&quot;rid&quot;); 
+//alert(checkedId1.length); 
+if(checkedId1!=null &amp;&amp; checkedId1.length==18){ 
+//checkedId1=checkedId1.substring(0,15); 
+} 
+checkedIds+=&quot;,&quot;+checkedId1; 
+leadCount++; 
+}); 
+if(leadCount&lt;1){ 
+alert(&quot;Please select at least one row&quot;); 
+}else{ 
+
+
+function appendTags(){
+    $(&apos;#dialog-mass-email&apos;).remove();
+       
+        $(&apos;body&apos;).append(
+            &apos;&lt;div id=&quot;dialog-mass-email&quot; title=&quot;Mass Emails&quot;&gt;&apos; + 
+                &apos;&lt;div &gt;&apos; + 
+              
+                    &apos;&lt;div style=&quot;margin:10px;font-weight:bold;&quot;&gt;1) Select an email template:&lt;/div&gt; &apos; +
+                    &apos;&apos; + 
+                    &apos;&lt;div id=&quot;email-template&quot; style=&quot;max-height:250px;overflow:auto;;width:100%;&quot;&gt; &lt;div class=&quot;bbt1Loading&quot;&gt;&lt;/div&gt;&lt;/div&gt;&apos; +
+
+            &apos;&lt;/div&gt;&apos;+
+                &apos;&lt;div style=&quot;margin:10px;font-weight:bold;&quot;&gt;2) Processing Options:&apos;+
+&apos;&lt;/div&gt;&apos;+
+&apos;&lt;input type=&quot;checkbox&quot; name=&quot;bccME&quot; id=&quot;bccME&quot; checked/&gt; BCC me on one message&lt;br&gt;&apos; +
+&apos;&lt;input type=&quot;checkbox&quot; name=&quot;storeActME&quot; id=&quot;storeActME&quot; checked/&gt; Store an Activity for each message&lt;br&gt;&apos; +
+&apos;&lt;input type=&quot;checkbox&quot; name=&quot;useSignatureME&quot; id=&quot;useSignatureME&quot;/&gt; Use my signature&lt;br&gt;&apos; +
+//&apos;Mass Email Name &lt;input type=&quot;text&quot; name=&quot;descriptionME&quot; id=&quot;descriptionME&quot; /&gt;&apos; +
+
+
+                &apos;&apos; +
+                &apos;&apos;  
+
+        ); 
+    
+}
+
+function createPopupWindow(){
+
+        $( &quot;#dialog-mass-email&quot; ).dialog({
+            resizable: false,
+            width: (isSF1()?($(&quot;body&quot;).width()-10):400),
+            height:500,
+            //modal: true,                
+            buttons: {
+                &quot;Send Emails&quot;: 
+                    function() {
+                        sendMail();
+                    },
+                
+                Cancel: 
+                    function() {
+                        jQuery( this ).dialog( &quot;close&quot; );
+                    }
+            }
+        });
+
+}
+
+function messagePopupWindow(message){
+        $( &quot;#dialog-mass-email&quot; ).html(message).dialog({
+            resizable: false,
+            width: 400,
+            height:250,
+            //modal: true,                
+            buttons: {
+                
+                Close: 
+                    function() {
+                        $( this ).dialog( &quot;close&quot; );
+                    }
+            },close:function(){
+                $(&quot;.lcbX input:checked&quot;).click();
+            }
+        });
+}
+
+function fetchEmailTemplates(){
+
+ var queryZZZ=&quot;SELECT Id,Name FROM EmailTemplate order by name asc&quot;;
+     Visualforce.remoting.Manager.invokeAction(
+                remoteQueryAjax2,
+                queryZZZ, 
+                function(result, event){
+
+                    if (event.status &amp;&amp; result!=null) {
+					
+					    var innerHtml = &apos;&apos;;
+						var records=result;
+                        for(var i=0; i&lt;records.length; i++)
+                            innerHtml += 
+                                &apos;&lt;div class=&quot;maxwith350s&quot; onmouseover=&quot;fixTitlex1(this);&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;emailTemp&quot; value=&quot;&apos; + records[i].Id + &apos;&quot;/&gt; &lt;a href=&quot;/&apos; + records[i].Id + &apos;&quot; target=&quot;_blank&quot;&gt;Preview&apos; + 
+                                    
+                                &apos;&lt;/a&gt; &apos; + 
+                                    records[i].Name +
+                                &apos;&lt;/div&gt;&apos;;
+
+                        $(&apos;#email-template&apos;).html(innerHtml);
+					 } else if (event.type === &apos;exception&apos;) {
+                        if(event.message!=null &amp;&amp; ((event.message+&quot;&quot;).indexOf(&quot;Logged in&quot;)&gt;-1 || (event.message+&quot;&quot;).indexOf(&quot;Refresh page&quot;)&gt;-1)){
+                            self.location=self.location;
+                        }else if(event.message!=null &amp;&amp; (event.message+&quot;&quot;).indexOf(&quot;Unable to connect&quot;)==-1){
+                            if($(&quot;body:visible&quot;).size()&gt;0)alert(&quot;An error has occurred: &quot;+event.message);
+                        }
+                    } else {
+                        //self.location=self.location;
+                        // $(&quot;#&quot;+filterIdSpan+&quot; .availVals&quot;).html(&quot;&quot;);
+                        //alert(1);
+                    }
+                    
+                }, 
+                {escape: true,buffer:true,timeout: 90000}
+            );
+   }
+
+function sendMail(){
+   var checkedIdsX=&quot;&quot;;
+  $(&quot;.lcbX input:checked&quot;).each(function(){ 
+      checkedId1=$(this).parents(&quot;.lcbX:first&quot;).attr(&quot;rid&quot;); 
+
+      checkedIdsX+=&quot;,&quot;+checkedId1; 
+   }); 
+    var contactIds = checkedIdsX.substring(1).split(&quot;,&quot;);
+    var templateId = $(&quot;input[name=&apos;emailTemp&apos;]:checked&quot;).val();
+    //alert(templateId );
+    if( contactIds.length&gt;0 &amp;&amp; templateId!=&apos;&apos;){
+
+	   Visualforce.remoting.Manager.invokeAction(
+                remotesendMassEmails,
+                contactIds.join(&quot;,&quot;), 
+				templateId,
+				$(&quot;#storeActME&quot;).prop(&quot;checked&quot;),//saveAsActivity
+				$(&quot;#bccME&quot;).prop(&quot;checked&quot;),//bccSender
+				$(&quot;#useSignatureME&quot;).prop(&quot;checked&quot;),//useSignature
+				null,//replyTo &apos;noreply@salesforce.com&apos;
+                function(result, event){
+	
+					if (event.status &amp;&amp; result!=null) {
+						
+						if((result+&quot;&quot;)==&quot;OK&quot;){
+							 messagePopupWindow(&apos;&lt;br&gt;&lt;span class=&quot;ui-icon ui-icon-check&quot; style=&quot;float:left;margin-right:10px;display:inline-block;&quot;&gt;&lt;/span&gt;&lt;b&gt;Your email(s) have been submitted for processing.&lt;/b&gt;&lt;br&gt;&lt;br&gt;The Mass-Mailer result will be sent to you via email.&apos;);
+
+						}else{
+							messagePopupWindow(&apos;Your email(s) were not submitted due to an Error:&lt;br&gt;&apos;+result);
+						}
+		
+		} else if (event.type === &apos;exception&apos;) {
+                        if(event.message!=null &amp;&amp; ((event.message+&quot;&quot;).indexOf(&quot;Logged in&quot;)&gt;-1 || (event.message+&quot;&quot;).indexOf(&quot;Refresh page&quot;)&gt;-1)){
+                            self.location=self.location;
+                        }else if(event.message!=null &amp;&amp; (event.message+&quot;&quot;).indexOf(&quot;Unable to connect&quot;)==-1){
+                            if($(&quot;body:visible&quot;).size()&gt;0)alert(&quot;An error has occurred: &quot;+event.message);
+                        }
+                    } else {
+                        //self.location=self.location;
+                        // $(&quot;#&quot;+filterIdSpan+&quot; .availVals&quot;).html(&quot;&quot;);
+                        //alert(1);
+                    }
+                    
+                }, 
+                {escape: true,buffer:true,timeout: 90000}
+            );
+			
+    }
+}
+
+appendTags();
+fetchEmailTemplates();
+createPopupWindow();
+
+
+} 
+return false;</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Mass_Emails2</fullName>
+        <availability>online</availability>
+        <description>mass emails outlook</description>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Mass Emails via Outlook</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>var emails=&quot;&quot;;
+var emailSearch=0;
+$(&quot;.lcbX input:checked&quot;).each(function(){
+  emailSearch=1;
+  var email=$.trim($(this).parents(&quot;tr:first&quot;).find(&quot;td.email&quot;).text());
+  if(email!=&quot;&quot;){
+    emails+=&quot;;&quot;+email;
+  }
+});
+
+if(emails==&quot;&quot; &amp;&amp; emailSearch==0){
+ alert(&quot;Please select at least one row&quot;); 
+}else if(emails==&quot;&quot; &amp;&amp; emailSearch==1){
+ alert(&quot;Please add the email-column to the layout&quot;); 
+
+}else{
+emails=emails.substring(1);
+top.location=&quot;mailto:&quot;+escape(emails);
+$(&quot;button:contains(&apos;Create Tasks&apos;)&quot;).click();
+}
+return false;</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Mass_Merge</fullName>
+        <availability>online</availability>
+        <description>for dedup manager</description>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Mass Merge</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>massMergeX(&quot;Lead&quot;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Merge_Leads1</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Merge Leads</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>var checkedIds=&quot;&quot;; 
+var checkedId1=&quot;&quot;; 
+var leadCount=0;
+$(&quot;.lcbX input:checked&quot;).each(function(){ 
+checkedId1=$(this).parents(&quot;.lcbX:first&quot;).attr(&quot;rid&quot;);
+checkedIds+=&quot;&amp;cid=&quot;+checkedId1; 
+leadCount++;
+});
+if(leadCount&gt;3){ 
+alert(&quot;Please select up to 3 leads to merge!&quot;); 
+}else if(leadCount&lt;2){ 
+alert(&quot;Please select at least 2 leads to merge!&quot;); 
+}else{ 
+var win1=window.open(&quot;/lead/leadmergewizard.jsp?currentStage=0&amp;goNext=Merge%20Leads&amp;id=&quot;+checkedId1+&quot;&amp;p1=1&amp;p3=1&amp;p4=1&amp;p6=1&amp;p7=&amp;p8=&amp;visited_0=1&quot;+checkedIds+&quot;&amp;retURL=%2Fapex%2Fzaapit__Merge_Completed&amp;isdtp=vw&quot;,&quot;Merge_Leads&quot;,&quot;height=800,width=800,top=100,left=100,fullscreen=0,scrollbars=yes&quot;);
+
+var timer = setInterval(function() {   
+    if(win1.closed) {  
+        clearInterval(timer);  
+        //$(&quot;.seatchInptFZP&quot;).keyup(); 
+        jumpToClk(currPageCls,600);
+    }  
+}, 1000); 
+} 
+return false;</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Merge_Leads_L</fullName>
+        <availability>online</availability>
+        <description>Merge Leads in lightning</description>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Merge Leads (L)</masterLabel>
+        <openType>sidebar</openType>
+        <page>Merge_Leads</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>zp_actions</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>ZP Actions</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!requireScript($Label.zaapit__zp_action_link)}</url>
+    </webLinks>
+</CustomObject>

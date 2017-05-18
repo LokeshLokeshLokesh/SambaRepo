@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DMAPP_SAM</fullName>
+    <apiAccessLevel>Unrestricted</apiAccessLevel>
+    <description>License key for Dealmaker Smart Account Manager</description>
+    <namespacePrefix>DMAPP_SAM</namespacePrefix>
+    <types>
+        <members>DMAPP__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>DMAPP__c-DMAPP Layout</members>
+        <name>Layout</name>
+    </types>
+    <version>36.0</version>
+</Package>

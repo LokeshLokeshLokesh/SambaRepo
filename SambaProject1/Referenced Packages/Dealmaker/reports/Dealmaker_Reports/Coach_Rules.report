@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>DM_Coach_Rule__c$Order_Number__c</field>
+    </columns>
+    <columns>
+        <field>DM_Coach_Rule__c$Rule__c</field>
+    </columns>
+    <columns>
+        <field>DM_Coach_Rule__c$Advice_Template__c</field>
+    </columns>
+    <columns>
+        <field>DM_Coach_Rule__c.DM_Coach_Rule_Parts__r$Rule_Part_Name__c</field>
+    </columns>
+    <columns>
+        <field>DM_Coach_Rule__c.DM_Coach_Rule_Parts__r$Execution_Order__c</field>
+    </columns>
+    <columns>
+        <field>DM_Coach_Rule__c.DM_Coach_Rule_Parts__r$Rule_Part__c</field>
+    </columns>
+    <description>Lists the full set of Dealmaker Coach Rules available within the org, including the associated rule parts and advice text.</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>DM_Coach_Rule__c$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Coach Rules (Admin)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Coach_Rules__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>DM_Coach_Rule__c.DM_Coach_Rule_Parts__r$Execution_Order__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+</Report>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>An administration page for create goals for SPM.</description>
+    <label>Dealmaker SPM Team Admin</label>
+    <mobileReady>false</mobileReady>
+    <motif>Custom19: Wrench</motif>
+    <page>tas_spm_admin_app</page>
+</CustomTab>

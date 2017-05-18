@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>DM_DVLS_Curriculum_User__c$Owner.Name</field>
+    </columns>
+    <columns>
+        <field>DM_DVLS_Curriculum_User__c$DVLS_Curriculum__c.Name</field>
+    </columns>
+    <columns>
+        <field>DM_DVLS_Curriculum_User__c$Status__c</field>
+    </columns>
+    <columns>
+        <field>DM_DVLS_Curriculum_User__c$Mark__c</field>
+    </columns>
+    <columns>
+        <field>DM_DVLS_Curriculum_User__c.DM_DVLS_Module_Users__r$DVLS_Module__c.Name</field>
+    </columns>
+    <columns>
+        <field>DM_DVLS_Curriculum_User__c.DM_DVLS_Module_Users__r$Status__c</field>
+    </columns>
+    <columns>
+        <field>DM_DVLS_Curriculum_User__c.DM_DVLS_Module_Users__r$Score__c</field>
+    </columns>
+    <columns>
+        <field>DM_DVLS_Curriculum_User__c.DM_DVLS_Module_Users__r.DM_DVLS_Component_Users__r$DVLS_Component__c.Name</field>
+    </columns>
+    <columns>
+        <field>DM_DVLS_Curriculum_User__c.DM_DVLS_Module_Users__r.DM_DVLS_Component_Users__r$Status__c</field>
+    </columns>
+    <columns>
+        <field>DM_DVLS_Curriculum_User__c.DM_DVLS_Module_Users__r.DM_DVLS_Component_Users__r$Score__c</field>
+    </columns>
+    <columns>
+        <field>DM_DVLS_Curriculum_User__c.DM_DVLS_Module_Users__r.DM_DVLS_Component_Users__r$Score_Rollup__c</field>
+    </columns>
+    <columns>
+        <field>DM_DVLS_Curriculum_User__c.DM_DVLS_Module_Users__r.DM_DVLS_Component_Users__r$DVLS_Component__c.Question_Rollup__c</field>
+    </columns>
+    <description>Detailed report showing eLearning progress at the curriculum, module and component level per user.
+
+Note that curricula, modules or components will not display if
+they have not been started.</description>
+    <format>Matrix</format>
+    <name>eLearning Progress Detail</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>eLearning_Activity__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>DM_DVLS_Curriculum_User__c.DM_DVLS_Module_Users__r.DM_DVLS_Component_Users__r$LastModifiedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,508 @@
+<apex:page controller="Update_Anything.MassUpdateController" docType="html-5.0" tabStyle="Update_Anything__tab">
+    <apex:sectionHeader title="Update/Delete Anything" id="idSecHeader"/>
+    <style> 
+        .Processing{
+         position: fixed;
+         background: url('/img/loading32.gif');
+         background-repeat: no-repeat;
+         background-position: center;
+         width: 100%;
+         height: 100%;
+         z-index: 10004;
+         left: 0%;
+         top: 0%; 
+        }
+        .custPopup{
+            background-color: white;
+            border-width: 2px;
+            border-style: solid;
+            z-index: 9999;
+            left: 50%;
+            padding:10px;
+            position: fixed;
+            width: 800px;
+            margin-left: -300px;
+            top:100px;
+        }
+        .popupBackground{
+            background-color:black;
+            opacity: 0.20;
+            filter: alpha(opacity = 20);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 9998;
+        }
+    </style> 
+     <script>
+        //For scheduler
+        function changeValue(buttonId) {
+            document.getElementById(buttonId).checked = false;
+            if(buttonId=='radiobutton1'){
+                document.getElementById('j_id0:j_id2:pageBlokId:selectedDayOfMonth').disabled = true;
+                document.getElementById('j_id0:j_id2:pageBlokId:weekNameId').disabled = false;
+                document.getElementById('j_id0:j_id2:pageBlokId:dayNameId').disabled = false;
+                document.getElementById('j_id0:j_id2:pageBlokId:monthName').disabled = false;
+                
+                document.getElementById('j_id0:j_id2:pageBlokId:selectedDayOfMonth').value='';
+            }else{          
+                document.getElementById('j_id0:j_id2:pageBlokId:weekNameId').disabled = true;
+                document.getElementById('j_id0:j_id2:pageBlokId:dayNameId').disabled = true;
+                document.getElementById('j_id0:j_id2:pageBlokId:monthName').disabled = true;
+                document.getElementById('j_id0:j_id2:pageBlokId:selectedDayOfMonth').disabled = false;
+                
+                document.getElementById('j_id0:j_id2:pageBlokId:weekNameId').value='';
+                document.getElementById('j_id0:j_id2:pageBlokId:dayNameId').value='';
+            }
+        }
+        function onLoadDisableItems(){
+            if(document.getElementById('radiobutton1') !=null)
+            {
+                document.getElementById('j_id0:j_id2:pageBlokId:weekNameId').disabled = true;
+                document.getElementById('j_id0:j_id2:pageBlokId:dayNameId').disabled = true;
+                document.getElementById('j_id0:j_id2:pageBlokId:monthName').disabled = true;
+                document.getElementById('j_id0:j_id2:pageBlokId:selectedDayOfMonth').disabled = true;  
+            }
+        }
+        function displayQueryPanelData(){
+            var messageToConfirm='';
+            var messageToConfirm2=''
+            if(document.getElementById("j_id0:j_id2:pageBlokId:hiddenVal2Id") !=null && document.getElementById("j_id0:j_id2:pageBlokId:hiddenVal2Id").value>500){
+                messageToConfirm2='You can update/delete 500 records at a time with free version of this app. Do you want to continue?';
+            }else{
+                messageToConfirm2='Do you want to continue?';
+            }
+            
+            if(document.getElementById("j_id0:j_id2:pageBlokId:hiddenVal2Id") !=null && document.getElementById("j_id0:j_id2:pageBlokId:hiddenVal2Id").value=='0'){
+                alert('No records returned matching the criteria.');
+                return;
+            }else if(document.getElementById("j_id0:j_id2:pageBlokId:hiddenVal2Id") !=null && document.getElementById("j_id0:j_id2:pageBlokId:hiddenVal2Id").value=='40001')
+                messageToConfirm=' More than 40,000 records returned matching the criteria. ';
+            else if(document.getElementById("j_id0:j_id2:pageBlokId:hiddenVal2Id") !=null && document.getElementById("j_id0:j_id2:pageBlokId:hiddenVal2Id").value!='null')
+                messageToConfirm= document.getElementById("j_id0:j_id2:pageBlokId:hiddenVal2Id").value +' records returned matching the criteria. ';
+            else 
+                messageToConfirm='Do you really want to proceed?';
+
+            
+            if(confirm(messageToConfirm+messageToConfirm2)){
+                    if(document.getElementById("j_id0:j_id2:pageBlokId:hiddenValId").value=='true'){
+                        if(confirm('Do you want to save this query for future use?')){
+                                        ShowQuerySavePanel();
+                                        return;
+                        }
+                    }
+                    UpdateFields();
+                    return;
+            }
+            return;
+                                
+        }
+    </script>
+  <apex:form >
+      <apex:pageBlock id="pageBlokId">
+        <apex:pageMessages id="pb" rendered="{!NOT(ShowQueryNamePanel) && NOT(ShowSchedulerPanel)}" escape="false"></apex:pageMessages>
+        <apex:pageBlockButtons rendered="{!IsRedirectedFromAdminSetting}" location="top">
+            <apex:commandButton value="Back to admin setting page" action="{!BackToAdminSettingPage}" status="idStatus"/>
+        </apex:pageBlockButtons>
+        <apex:actionStatus id="idStatus" startStyleClass="Processing" ></apex:actionStatus>
+        <apex:actionFunction name="checkQueryMatchStatus" action="{!checkQueryMatchStatus}" oncomplete="displayQueryPanelData();" status="idStatus" reRender="pageBlokId">
+            <apex:param id="aname2" name="methodName" value="" />
+        </apex:actionFunction>
+        <apex:actionFunction name="ShowQuerySavePanel" action="{!ShowQuerySavePanel}" status="idStatus" reRender="pageBlokId"/>
+        <apex:actionFunction name="UpdateFields" action="{!UpdateFields}" status="idStatus" rerender="pageBlokId"/>
+        
+        <apex:outputPanel rendered="{!NOT(isStartNewUpdate)}">
+            <!-----Select operation update/delete type section code start here -------------->
+            <apex:pageBlockSection title="Select type of operation"/>
+            <br/>
+                <table width="100%" border="0">
+                    <tr>
+                        <td><apex:outputLabel ><b>Select: </b></apex:outputLabel>
+                            <apex:actionRegion >
+                                <apex:selectList value="{!selectedOperation}" size="1" id="selectedOperation">
+                                        <apex:selectOptions value="{!operationNames}"/>
+                                        <apex:actionSupport event="onchange"  status="idStatus" action="{!onChangeOperationTypes}" rerender="QueryTypePnl,Objectpnl,UpdateButtons,pb" />
+                                </apex:selectList>
+                            </apex:actionRegion>
+                        </td><td></td>
+                    </tr>
+                </table> 
+            <br/>
+            <!-----Select operation update/delete type section code end here -------------->
+            
+            <!-----Select Query type section code start here -------------->
+            <apex:outputPanel id="QueryTypePnl">
+                <apex:outputPanel rendered="{!selectedOperation!='' && selectedOperation !='Null'}">
+                    <apex:pageBlockSection title="Select existing query/new query"/>
+                    <br/>
+                        <table width="100%" border="0">
+                            <tr>
+                                
+                                <td>  
+                                    <apex:actionRegion >
+                                        <apex:outputLabel ><b>Select: </b></apex:outputLabel>
+                                        <apex:selectList value="{!selectedQueryType}" size="1">
+                                                <apex:selectOptions value="{!QueryTypes}"/>
+                                                <apex:actionSupport event="onchange" action="{!onChangeQueryTypes}" status="idStatus" rerender="QueryPnl,Objectpnl,pb" />
+                                        </apex:selectList>
+                                    </apex:actionRegion>
+                                </td>
+                                <td >
+                                    <apex:actionRegion >
+                                        <apex:outputPanel id="QueryPnl">
+                                            <apex:outputPanel rendered="{!selectedQueryType!='' && selectedQueryType !='Null' && selectedQueryType=='ExistingQuery'}">
+                                                <apex:outputLabel ><b>Query Name: </b></apex:outputLabel>
+                                                <apex:inputField value="{!logObj.Update_Anything__Query_Name__c}" rendered="{!selectedOperation=='Update'}">
+                                                    <apex:actionSupport event="onchange" action="{!getObjectPanelData}" status="idStatus" rerender="Objectpnl,pb" />
+                                                </apex:inputField>
+                                                <apex:inputField value="{!logObj.Update_Anything__Delete_Query_Name__c}" rendered="{!selectedOperation=='Delete'}">
+                                                    <apex:actionSupport event="onchange" action="{!getObjectPanelData}" status="idStatus" rerender="Objectpnl,pb" />
+                                                </apex:inputField>
+                                            </apex:outputPanel>
+                                        </apex:outputPanel>
+                                    </apex:actionRegion>
+                                </td>
+                            </tr>
+                        </table> 
+                    <br/>
+                </apex:outputPanel>
+            </apex:outputPanel>
+            <!-----Select Query type section code end here -------------->
+            
+            <!-------id="Objectpnl" start here--------------------------------->
+            <apex:outputPanel id="Objectpnl">
+                <apex:outputPanel rendered="{!selectedOperation!='' && ((selectedQueryType=='NewQuery') || ((selectedQueryType=='ExistingQuery') && (logObj.Update_Anything__Query_Name__c!=null || logObj.Update_Anything__Delete_Query_Name__c!=null)))}">
+                  <apex:pageBlockSection title="Select Object"/>
+                  <br/>
+                    <table width="100%" border="0">
+                        <tr>
+                            <td><apex:outputLabel ><b>Object Name: </b></apex:outputLabel>
+                                <apex:actionRegion >
+                                    <apex:selectList value="{!selectedObject}" size="1">
+                                            <apex:selectOptions value="{!ObjectNames}"/>
+                                            <apex:actionSupport event="onchange"  action="{!getFilters}" status="idStatus" rerender="pnlFieldValue,pnlCaseFilter,UpdateButtons,pb" />
+                                    </apex:selectList>
+                                </apex:actionRegion>
+                            </td><td></td>
+                        </tr>
+                    </table> 
+                    <br/>
+                    
+                <!-----Filter fields section code start here -------------->
+                <apex:outputPanel id="pnlCaseFilter">
+                     <apex:outputPanel rendered="{!selectedOperation!='' && selectedObject!='' && selectedObject !='Null' && lstWrapperDataCase.size!=0}">
+                        <apex:pageBlockSection title="Add Filters"/>
+                        <apex:variable var="CaseVar" value="{!0}"/>
+                        <br/>
+                        <table width="100%" cellpadding="2" cellspacing="2" border="0" >
+                            <apex:repeat value="{!lstWrapperDataCase}" var="obj" id="repeat" >
+                            
+                             <tr>
+                                 <apex:actionRegion >
+                                    <td  align="left"> 
+                                
+                                        <apex:selectList value="{!obj.strSelectedField}" size="1" >
+                                            <apex:selectOptions value="{!obj.lstSObjectFields}"></apex:selectOptions>
+                                            <apex:actionSupport event="onchange" action="{!changeFilterOnFieldSelection}" status="idStatus" reRender="pnlCaseFilter,showSampleData,pb">
+                                                <apex:param name="CaseVar" assignTo="{!intCaseRow2}" value="{!CaseVar}" />
+                                            </apex:actionSupport>
+                                        </apex:selectList>
+                                   
+                                    </td>
+                                    <td  align="left"> 
+                                        <apex:selectList value="{!obj.strSelectedCondtion}" size="1" rendered="{!obj.isTextField=='string' && obj.strSelectedField!='' && obj.strSelectedField!='None'}">
+                                            <apex:selectOptions value="{!obj.lstPropertyCondition1}"></apex:selectOptions>
+                                        </apex:selectList>
+                                        
+                                        <apex:selectList value="{!obj.strSelectedCondtion}" size="1" rendered="{!obj.isTextField=='not string' && obj.strSelectedField!='' && obj.strSelectedField!='None'}">
+                                            <apex:selectOptions value="{!obj.lstPropertyCondition2}"></apex:selectOptions>
+                                        </apex:selectList>
+                                                                                        
+                                        <apex:selectList value="{!obj.strSelectedCondtion}" size="1" rendered="{!(obj.isTextField=='reference' || obj.isTextField=='others') && obj.strSelectedField!='' && obj.strSelectedField!='None'}">
+                                            <apex:selectOptions value="{!obj.lstPropertyCondition3}"></apex:selectOptions>
+                                        </apex:selectList>
+                                    </td>
+                                 </apex:actionRegion>
+                                 <td  align="left">
+                                    <apex:inputField id="FilterFieldVal" value="{!obj.SobjectFieldValue[obj.strSelectedField]}" rendered="{!obj.strSelectedField!='' && obj.strSelectedField!='None' && obj.isMoreFilter==true}"/>
+                                    <apex:inputField id="FilterFieldVal1" value="{!obj.readOnlyFieldSOBJ[obj.readOnlyFieldName]}" rendered="{!obj.strSelectedField!='' && obj.strSelectedField!='None' && obj.isMoreFilter==false}"/>
+                                     &nbsp;<apex:outputLabel rendered="{!obj.strSelectedField!='' && obj.strSelectedField!='None' && obj.isMoreFilter==false && obj.isTextField=='reference'}">(you must enter salesforce id here.)</apex:outputLabel>
+                                                                   </td>
+                                <td align="left">
+                                    <apex:commandLink action="{!addFilterRow}" value="Add Row" reRender="pnlCaseFilter,pb" status="idStatus" style="padding-left:15px;" rendered="{!obj.strSelectedField!='' && obj.strSelectedField!='None'  && CaseVar == (lstWrapperDataCase.size-1)}">
+                                        <apex:param name="CaseVar" assignTo="{!intCaseRow}" value="{!CaseVar}" />
+                                    </apex:commandLink>
+                                    <apex:commandLink action="{!removeFilterRow}" value="Remove" reRender="pnlCaseFilter,pb" style="padding-left:15px;" status="idStatus" rendered="{!IF(CaseVar == 0,false,true)}" immediate="true">
+                                       <apex:param name="CaseVar" assignTo="{!intCaseRow}" value="{!CaseVar}" />
+                                    </apex:commandLink>
+                                </td>                          
+                            </tr>
+                             
+                            <apex:variable var="CaseVar" value="{!CaseVar+1}"/>
+                            </apex:repeat> 
+                            
+                            <tr>
+                                <td colspan="3" align="left"> 
+                                    <br/>
+                                    <apex:outputPanel id="showSampleDataButton" >
+                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <apex:commandButton value=" Show Sample Data" action="{!showSampleData}" reRender="showSampleData,showSampleDataButton,pb" status="idStatus" rendered="{!NOT(isSampleDataVisible)}" />
+                                        &nbsp;&nbsp;<apex:commandButton value=" Refresh Data " action="{!showSampleData}" reRender="showSampleData,showSampleDataButton,pb" status="idStatus" rendered="{!isSampleDataVisible}" />
+                                                                                        &nbsp;&nbsp;<apex:commandButton value=" Hide Sample Data" action="{!hideSampleData}" reRender="showSampleData,showSampleDataButton,pb" status="idStatus" rendered="{!isSampleDataVisible}"/>
+                                                                                        
+                                    </apex:outputPanel>
+                                </td>   
+                            </tr>
+                            
+                        </table> 
+                            
+                        <apex:outputPanel id="showSampleData">
+                            <apex:pageBlockTable value="{!SampleDataList}" var="data" rendered="{!isSampleDataVisible && SampleDataList.size!=0}">
+                                <apex:repeat value="{!SampleDataFields}" var="obj1" id="repeat1" >
+                                    <apex:column value="{!data[obj1]}" />
+                                </apex:repeat>
+                                <br/>
+                            </apex:pageBlockTable>
+                            
+                            <apex:outputText rendered="{!isSampleDataVisible && SampleDataList.size==0}">
+                                <b><font color="red" size="2">No matching records found.</font></b>
+                            </apex:outputText>
+                        </apex:outputPanel>  
+                        
+                    </apex:outputPanel>
+                </apex:outputPanel>
+                <!-----Filter fields section code end here -------------->
+                    
+                <!-----Update fields section code start here -------------->
+                <apex:outputPanel id="pnlFieldValue" >
+                    <apex:outputPanel rendered="{!selectedOperation=='Update' && selectedObject!='' && selectedObject !=Null && lstWrapperDataFields.size!=0}">
+                        <apex:pageBlockSection title="Select Fields to update"/>
+                            <apex:variable var="CaseVar1" value="{!0}"/>
+                            <br/>
+                            <table width="100%" cellpadding="2" cellspacing="2" border="0" >
+                                <apex:repeat value="{!lstWrapperDataFields }" var="obj" id="repeat1" >
+                                 <tr>
+                                    <td align="left"> 
+                                        <apex:actionRegion >
+                                            <apex:selectList value="{!obj.strSelectedField}" size="1">
+                                                <apex:selectOptions value="{!obj.lstSObjectFields}"></apex:selectOptions>
+                                                <apex:actionSupport event="onchange" action="{!changeFieldOnSelection}" status="idStatus" reRender="pnlFieldValue">
+                                                    <apex:param name="CaseVar1" assignTo="{!intCaseRow3}" value="{!CaseVar1}" />
+                                                </apex:actionSupport>
+                                            </apex:selectList>
+                                        </apex:actionRegion>
+                                    </td>
+                                     <td align="left">
+                                        <apex:inputField id="FieldUpdateVal" value="{!obj.SobjectFieldValue[obj.strSelectedField]}" rendered="{!obj.strSelectedField!='' && obj.strSelectedField!='None'}" html-formnovalidate="formnovalidate"/>
+                                    </td>
+                                    <td align="left">
+                                        <apex:commandLink action="{!addFieldRow}" value="Add Row" reRender="pnlFieldValue" status="idStatus" style="padding-left:15px;" rendered="{!obj.strSelectedField!='' && obj.strSelectedField!='None' && CaseVar1 == (lstWrapperDataFields.size-1)}">
+                                            <apex:param name="CaseVar1" assignTo="{!intCaseRow1}" value="{!CaseVar1}" />
+                                        </apex:commandLink>
+                                        <apex:commandLink action="{!removeFieldRow}" value="Remove" reRender="pnlFieldValue" style="padding-left:15px;" status="idStatus" rendered="{!IF(CaseVar1 == 0,false,true)}" immediate="true">
+                                           <apex:param name="CaseVar1" assignTo="{!intCaseRow1}" value="{!CaseVar1}" />
+                                        </apex:commandLink>
+                                    </td>   
+                                    <td align="left">
+                                    </td>   
+                                </tr>
+                                <apex:variable var="CaseVar1" value="{!CaseVar1+1}"/>
+                                </apex:repeat> 
+                                
+                            </table> 
+                            <br/>
+                        </apex:outputPanel>
+                    </apex:outputPanel>  
+                    <!-----Update fields section code end here -------------->
+                    
+                    <!-----Update buttons code start here -------------->
+                    <apex:outputPanel id="UpdateButtons" >
+                        <apex:outputPanel rendered="{!selectedOperation!='' && selectedObject!='' && selectedObject !=Null}">
+                            <table width="100%" cellpadding="2" cellspacing="2" border="0" >
+                                <tr>
+                                    <td colspan="3" align="Center"> 
+                                    
+                                        <br/>
+                                        <apex:commandButton value="{!IF(selectedOperation='Update', ' Update Now ',' Delete Now ')}" onclick="validateData('UpdateFields');return false;" rendered="{!selectedQueryType!='' && selectedQueryType !='Null'}"/>&nbsp;&nbsp;
+                                        <apex:commandButton value="{!IF(selectedOperation='Update', ' Schedule Update ',' Schedule Delete ')}" onclick="validateData('ShowscheduleJob');return false;" rendered="{!selectedQueryType!='' && selectedQueryType !='Null'}"/>
+                                    
+                                        <script type = "text/javascript">
+                                            function validateData(methodName) {
+                                                if(document.getElementById('j_id0:j_id2:pageBlokId:repeat1:0:FieldUpdateVal')==null && document.getElementById('j_id0:j_id2:pageBlokId:selectedOperation').value=='Update'){
+                                                    alert('Please select atleast one field to update.');
+                                                    return;
+                                                }else if(document.getElementById('j_id0:j_id2:pageBlokId:repeat:0:FilterFieldVal')==null && document.getElementById('j_id0:j_id2:pageBlokId:repeat:0:FilterFieldVal1')==null){
+                                                    if(!confirm('All existing records for the selected object will be updated/deleted as no filter is applied. Do you want to continue?')){
+                                                        return;
+                                                    }
+                                                }
+                                                    checkQueryMatchStatus(methodName);
+                                                return;
+                                            }
+                                        </script>
+                                    </td>   
+                                </tr>
+                            </table> 
+                        </apex:outputPanel>
+                    </apex:outputPanel>
+                    <!-----Update buttons code end here -------------->
+                    
+                </apex:outputPanel>
+            </apex:outputPanel>
+            <!---id="Objectpnl" Closed--->
+        
+        </apex:outputPanel>
+        
+        <apex:outputPanel rendered="{!isStartNewUpdate}">
+            <br/>
+            <apex:commandLink action="{!StartNewUpdate}" value="Start New Update/Delete" reRender="pageBlokId" status="idStatus" style="padding-left:15px;"/>
+            <br/>
+        </apex:outputPanel> 
+        
+         <!----Scheduler wizard start here--->
+        
+         <apex:outputPanel id="SchedulerPanel" >
+           <apex:outputPanel rendered="{!ShowSchedulerPanel && NOT(isStartNewUpdate)}" styleClass="popupBackground" layout="block" />
+           <apex:outputPanel rendered="{!ShowSchedulerPanel && NOT(isStartNewUpdate)}" styleClass="custPopup">
+           <apex:pageMessages rendered="{!ShowSchedulerPanel}" escape="false"></apex:pageMessages>
+           <apex:pageBlockSection title="{!IF(selectedOperation='Update', ' Schedule Update ',' Schedule Delete ')}" rendered="{!ShowSchedulerPanel}"/>
+            <table width="100%" border="0">
+                <tr>
+                    <td >
+                    <apex:outputPanel id="divPanel1" layout="none">
+                        <b>Frequency:</b>&nbsp;&nbsp;
+                        <apex:selectRadio layout="pageDirection" value="{!selectedScheduleType}">
+                            <apex:selectOption itemLabel="Weekly" itemValue="Weekly"/>
+                            <apex:selectOption itemLabel="Monthly" itemValue="Monthly"/>
+                            
+                            <apex:actionSupport event="onchange" action="{!changeCondition}" status="idStatus" rerender="SchedulerPanel"/>
+                        </apex:selectRadio>
+                    </apex:outputPanel>
+                    </td>
+                    <td >
+                    <apex:actionRegion >
+                    <apex:outputPanel rendered="{!selectedScheduleType=='Weekly' }" layout="none">
+                        <b>Recurs every week on:</b>&nbsp;&nbsp;
+                        <apex:selectCheckboxes layout="pageDirection" value="{!selectedWeekdays}">
+                            <apex:selectOption itemLabel="Sunday" itemValue="1"/>
+                            <apex:selectOption itemLabel="Monday" itemValue="2"/>
+                            <apex:selectOption itemLabel="Tuesday" itemValue="3"/>
+                            <apex:selectOption itemLabel="Wednesday" itemValue="4"/>
+                            <apex:selectOption itemLabel="Thursday" itemValue="5"/>
+                            <apex:selectOption itemLabel="Friday" itemValue="6"/>
+                            <apex:selectOption itemLabel="Saturday" itemValue="7"/>
+                        </apex:selectCheckboxes>
+                    </apex:outputPanel>
+                    </apex:actionRegion>
+                    </td>
+                    <apex:actionRegion >
+                    <td >
+                    <br/><br/>
+                        <apex:outputPanel rendered="{!selectedScheduleType=='Monthly' }" layout="none">
+                            <input type="radio" id="radiobutton1" onclick="changeValue('radiobutton2')"></input>
+                            <b>On day</b>&nbsp;&nbsp;
+                            <apex:selectList value="{!selectedDayOfMonth}" size="1" id="selectedDayOfMonth" >
+                                    <apex:selectOptions value="{!DaysOfMonth}"/>
+                            </apex:selectList>
+                            &nbsp;&nbsp;<b>of every month.</b>&nbsp;&nbsp;
+                        </apex:outputPanel>
+                    </td>
+                    <td > 
+                    <br/><br/>
+                        <apex:outputPanel rendered="{!selectedScheduleType=='Monthly' }" layout="none"> 
+                            <input type="radio" id="radiobutton2" onclick="changeValue('radiobutton1')"></input>
+                            <b>On</b>&nbsp;&nbsp;
+                            <apex:selectList value="{!weekName}" size="1" id="weekNameId" >
+                                    <apex:selectOption itemLabel="Select" itemValue=""/>
+                                    <apex:selectOption itemLabel="1st" itemValue="1"/>
+                                    <apex:selectOption itemLabel="2nd" itemValue="2"/>
+                                    <apex:selectOption itemLabel="3rd" itemValue="3"/>
+                                    <apex:selectOption itemLabel="4th" itemValue="4"/>
+                            </apex:selectList>&nbsp;&nbsp;
+                            <apex:selectList value="{!dayName}" size="1" id="dayNameId" >
+                                <apex:selectOption itemLabel="Select" itemValue=""/>
+                                <apex:selectOption itemLabel="Sunday" itemValue="1"/>
+                                <apex:selectOption itemLabel="Monday" itemValue="2"/>
+                                <apex:selectOption itemLabel="Tuesday" itemValue="3"/>
+                                <apex:selectOption itemLabel="Wednesday" itemValue="4"/>
+                                <apex:selectOption itemLabel="Thursday" itemValue="5"/>
+                                <apex:selectOption itemLabel="Friday" itemValue="6"/>
+                                <apex:selectOption itemLabel="Saturday" itemValue="7"/>
+                            </apex:selectList>
+                            &nbsp;&nbsp;<b>of every </b>&nbsp;&nbsp;
+                            <apex:selectList value="{!monthName}" id="monthName" size="1" >
+                                <apex:selectOptions value="{!MonthsofYear}"/>
+                            </apex:selectList>
+                            &nbsp;&nbsp;<b>month(s). </b>&nbsp;&nbsp;
+                        </apex:outputPanel>
+                        </td>
+                        </apex:actionRegion>
+                    </tr>
+                </table>
+                <apex:outputPanel > 
+                    <br/>
+                        <b>Start Time:</b>&nbsp;&nbsp;
+                        <apex:selectList value="{!selectedhour}" size="1">
+                                <apex:selectOptions value="{!hours}"/>
+                        </apex:selectList>&nbsp;&nbsp;
+                        <apex:selectList value="{!selectedMinute}" size="1">
+                            <apex:selectOptions value="{!minutes}"/>
+                        </apex:selectList>
+                    <br/><br/>
+                    <b>Start Date:</b>&nbsp;&nbsp;
+                    <apex:input type="date" value="{!startdate}"/>
+                    <br/><br/>
+                    <b>End Date:</b>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <apex:input type="date" value="{!enddate}"/>
+                    <br/><br/>
+                    
+                        <b>Enter Scheduler Name:</b>&nbsp;&nbsp; <apex:inputText value="{!SchedulerNameToSave}"/> 
+                    <br/><br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <apex:outputPanel id="showScheduleButton" >
+                        <apex:commandButton value=" Schedule " action="{!scheduleJob}" reRender="pageBlokId" status="idStatus"/>&nbsp;&nbsp;
+                        <apex:commandButton value=" Cancel " action="{!cancelScheduleJob}" reRender="pageBlokId" status="idStatus"/>
+                    </apex:outputPanel>
+                </apex:outputPanel>
+            </apex:outputPanel>
+            <script>
+            window.onload=onLoadDisableItems();
+        </script>
+        </apex:outputPanel>
+        
+        <!----Scheduler wizard end here--->
+        
+         <!-- for pop window code start here-->
+         
+        <apex:outputPanel id="queryPanel">
+            <apex:inputHidden value="{!isQuerychanged}" id="hiddenValId"/>
+             <apex:inputHidden value="{!totalRecordToUpdateCount}" id="hiddenVal2Id"/>
+            <apex:outputPanel rendered="{!ShowQueryNamePanel && NOT(isStartNewUpdate)}" styleClass="popupBackground" layout="block" />
+                <apex:outputPanel rendered="{!ShowQueryNamePanel && NOT(isStartNewUpdate)}" styleClass="custPopup">
+                <apex:pageMessages rendered="{!ShowQueryNamePanel}" id="pb2" escape="false"></apex:pageMessages>
+                <apex:pageBlockSection title="Save Query" rendered="{!ShowQueryNamePanel && NOT(isStartNewUpdate)}"/>   
+                    <br/>
+                    
+                        <b>Enter Query Name:</b>&nbsp;&nbsp; <apex:inputText value="{!QueryNameToSave}"/> 
+                    <br/><br/>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <apex:commandButton value=" Save " action="{!saveQueryAndUpdateFields}" reRender="pageBlokId" status="idStatus"/>
+                    <apex:actionRegion >
+                        &nbsp;<apex:commandButton value="{!IF(selectedOperation='Update', ' Cancel Update ',' Cancel Delete ')}" status="idStatus" action="{!cancelScheduleJob}" rerender="pageBlokId" immediate="true" html-formnovalidate="formnovalidate"/>
+                        &nbsp;<apex:commandButton value="Continue without saving query" action="{!UpdateFields}" rerender="pageBlokId" status="idStatus" immediate="true" html-formnovalidate="formnovalidate"/>
+                        <br/><br/>
+                    </apex:actionRegion>
+            </apex:outputPanel>
+        </apex:outputPanel>
+        
+         <!-- for pop window code end here-->
+         
+      </apex:pageBlock>
+     
+  </apex:form>
+</apex:page>

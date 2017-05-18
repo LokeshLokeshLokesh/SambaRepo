@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity.DM_Opportunity_Extras__r.DM_Decision_Criterions__r$Criterion__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.DM_Opportunity_Extras__r.DM_Decision_Criterions__r.Decision_Criteria_Score__r$Political_Map_Contact__c.Political__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.DM_Opportunity_Extras__r.DM_Decision_Criterions__r.Decision_Criteria_Score__r$Importance__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.DM_Opportunity_Extras__r.DM_Decision_Criterions__r.Decision_Criteria_Score__r$Computed_Rank__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.DM_Opportunity_Extras__r.DM_Decision_Criterions__r$Our_Position__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.DM_Opportunity_Extras__r.DM_Decision_Criterions__r$Score_Rollup__c</field>
+    </columns>
+    <description>Detailed report on the Decision Criteria per opportunity. Shows the decision criteria and their importance for each Key Player. Also shows Our Position and the overall Priority.</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.DM_Opportunity_Extras__r.DM_Decision_Criterions__r.Decision_Criteria_Score__r$Political_Map_Contact__c.Contact__c.Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Decision Criteria Details</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Decision_Criteria__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Opportunity.DM_Opportunity_Extras__r.DM_Decision_Criterions__r.Decision_Criteria_Score__r$Computed_Rank__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$CloseDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

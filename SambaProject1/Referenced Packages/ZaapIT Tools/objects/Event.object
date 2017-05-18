@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <webLinks>
+        <fullName>Create_Follow_Up_Event</fullName>
+        <availability>online</availability>
+        <description>Create Follow-Up Event &amp; copy description!</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Create Follow-Up Event</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>var url=&quot;/{!Event.Id}/e?clone=1&amp;retURL=&quot;+escape(top.location);
+top.location=url;</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Create_Follow_Up_Task</fullName>
+        <availability>online</availability>
+        <description>Create Follow-Up Task &amp; copy description!</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Create Follow-Up Task</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>var url=&quot;/00T/e?who_id={!Event.Who}&amp;what_id={!Event.What}&amp;tsk5=&quot;+ escape(&quot;{!JSINHTMLENCODE((Event.Subject))}&quot;)+&quot;&amp;tsk6=&quot;+(escape(&quot;{!SUBSTITUTE(JSINHTMLENCODE(Event.Description),&apos;\n&apos;,&apos; &apos;)}&quot;))+&quot;&amp;retURL=&quot;+escape(top.location);
+top.location=url;</url>
+    </webLinks>
+    <webLinks>
+        <fullName>zp_actions</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>ZP Actions</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!requireScript($Label.zaapit__zp_action_link)}</url>
+    </webLinks>
+</CustomObject>

@@ -1,0 +1,24 @@
+<apex:page sidebar="true" >
+
+    <c:zaapit_tables_v1 />
+    <!-- Thank you for looking :) please contact us for customizing this application -->
+    <script>
+    
+    function DLXmpl(){
+    	$(".actionLink:contains('Download')").each(function(){
+    		var dlx=$(this);
+    		var parent1=$(this).parents("tr:first");
+    		var aname=parent1.find(".oSt_name a[alnk]");
+    		dlx.attr("href",aname.attr("alnk"));
+    		dlx.attr("download",aname.text());
+    		dlx.addClass("DLXMul");
+    		dlx.attr("target","_blank");
+    		dlx.attr("onclick","");
+    	});
+    }
+    $(document).ready(function(){
+    	DLXmpl();
+    	$("body").bind("OnRenderDone",DLXmpl);
+    });
+    </script>
+</apex:page>

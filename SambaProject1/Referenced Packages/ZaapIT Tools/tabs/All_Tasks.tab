@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Tasks Tab  - Smart Activity Manager</description>
+    <label>All Tasks</label>
+    <mobileReady>false</mobileReady>
+    <motif>Custom62: Chalkboard</motif>
+    <page>zaapit_tb_taskWL_ALL_SAM</page>
+</CustomTab>
