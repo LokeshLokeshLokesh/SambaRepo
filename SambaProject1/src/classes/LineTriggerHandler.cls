@@ -12,15 +12,10 @@
 //test for commit pull 1
 // Commnt for Push class 
 public class LineTriggerHandler
-<<<<<<< HEAD
-{
-	// changes no. 1
-	// changes no. 2
-	// changes no. 3
-=======
 {  
      // master change1
->>>>>>> refs/heads/master
+	// changes no. 2
+	// changes no. 3
     //Checking for duplicate Question number in same Questionnaire, same Language and same Section
     public static void checkduplicateQNOs(List<Line__c> newTrigger, Map<id, Line__c> newTriggerMap)
     {
